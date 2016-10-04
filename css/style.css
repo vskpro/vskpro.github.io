@@ -1,0 +1,335 @@
+@import 'https://fonts.googleapis.com/css?family=Calligraffitti|Caveat|Amatic+SC|Raleway';
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+header {
+  overflow: hidden;
+  display: table!important;
+  width: 100%;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  background:rgba(0,0,50,0.9);
+  z-index: 1;
+}
+
+nav.menu {
+  overflow: hidden;
+}
+
+nav.menu ul {
+  overflow: hidden;
+  list-style-type: none;
+  float:right;
+  margin-bottom: 0px;
+}
+
+nav.menu ul li {
+  float: left;
+}
+
+nav.menu ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  color:#dcdcdc;
+  font-family: 'Calligraffitti';
+  font-size: 1.3em;
+}
+.logo {
+  font-size: 2.5em;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Caveat';
+  padding:0px 5px;
+  -webkit-filter: drop-shadow(2px 3px 5px grey);
+  color:white;
+}
+#about,#skills,#portfolio,#contact {
+  width: 75%;
+  margin:auto;
+  padding: 20px;
+  background:rgba(0,0,0,0.6);
+  margin-top: 100px;
+}
+
+.dp-wrapper {
+  height: 160px;
+  max-height: 100%;
+  width: 160px;
+  max-width: 100%;
+  margin: 20px;
+  margin-left: 50%;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0px rgba(0,0,108,0.8);
+  transform: translateX(-50%);
+}
+.dp-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  transition: all 0.6s ease;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.4;
+}
+.dp-wrapper img:hover {
+  transform: rotate(-2deg) scale(1.1);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.attract-line div {
+  width: 300px;
+  max-width: 100%;
+  background: #1B5E20;
+  background:rgba(0,0,120,0.7);
+  margin: auto;
+  height: 2px;
+}
+
+.desc {
+  padding:30px;
+  font-family: 'Raleway';
+  font-size: 1.2em;
+  color: #dcdcdc;
+  text-align: justify;
+}
+
+
+/* Filters CSS Custom Made */
+
+#projects-container {
+  height: 100%;
+}
+
+#filters {
+  list-style-type: none;
+  //background:rgba(0,0,50,0.9);
+  margin: 20px 15px;
+}
+
+#filters li{
+  float: left;
+}
+#filters li a {
+  display: block;
+  padding:5px 25px;
+  text-decoration: none;
+  color:#dcdcdc;
+  transition: 0.3s all ease;
+  font-size: 1.2em;
+  font-family: 'Raleway';
+}
+
+.highlight {
+  background: #dcdcdc;
+  color:#000!important;
+}
+
+#filters li a:hover {
+  background: #dcdcdc;
+  opacity: 0.85;
+  color:#000;
+}
+
+/* Elements CSS CUstom Made */
+
+.project {
+  margin-bottom: 2.2%;
+}
+.single-project {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: 'Raleway';
+}
+.single-project img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.left-overlay {
+  position: absolute;
+  top:-100%;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  transition: 0.3s all ease;
+}
+.right-overlay {
+  position: absolute;
+  bottom:-100%;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(0,0,100,0.8);
+  transition: 0.3s all ease;
+}
+
+.single-project:hover .left-overlay {
+  top:0;
+}
+.single-project:hover .right-overlay {
+  bottom:0;
+}
+
+.center-the-element {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.center-the-element span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color:#dcdcdc;
+}
+.center-the-element span a{
+  text-decoration: none;
+  color:#dcdcdc;
+  transition: all 0.2s ease;
+}
+.center-the-element span a:hover i{
+  color:#fff;
+  transform: scale(1.1);
+}
+
+
+
+/*Skills Section Styles*/
+.skills-wrapper {
+  padding: 25px 15px;
+}
+.languages-known {
+  height: 250px;
+  display: flex;
+  opacity: 0.8;
+  position: relative;
+  overflow: hidden;
+}
+
+/*Icon Backgrounds*/
+.lk-html5{
+  background: #FFB300;
+}
+.lk-css3 {
+  background: #E65100;
+}
+.lk-js {
+  background: #0277BD;
+}
+.lk-jquery{
+  background: #9E9D24;
+}
+.lk-ajax {
+  background: #6A1B9A;
+}
+.lk-bootstrap {
+  background: #AEEA00;
+}
+.lk-php{
+  background: #FF5722;
+}
+.lk-mysql {
+  background: #8BC34A;
+}
+.lk-git {
+  background: #1B5E20;
+}
+
+.center-icon {
+  height: 90px;
+  transition: 0.3s all ease-in;
+  margin: auto;
+}
+.additional-content {
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  color: #dcdcdc;
+  background: rgba(0,0,0,0.8);
+  padding: 5px 0px;
+  text-align: center;
+  transition: 0.3s all ease-in;
+  font-family: 'Raleway';
+  font-size: 1.1em;
+}
+.languages-known:hover .additional-content {
+  bottom: 0;
+}
+.languages-known:hover .center-icon {
+  transform: scale(0.9);
+}
+.section-heading {
+  text-align: center;
+  font-size: 2.5em;
+  color:#dcdcdc;
+  padding: 5px 0px;
+  font-family: 'Amatic SC';
+}
+
+a:focus {
+  outline: none;
+}
+
+
+
+
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+/* Responsive Styles */
+
+/*
+
+1) Remove background from body 
+2) Strech the content to 100%;
+3) Take care of Isotope
+4) Take care of the header
+*/
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgba(0,0,0,0.6);
+    background:url('../images/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 2em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 4px 0px;
+  }
+  body {
+    background: rgba(0,0,0,0.9);
+  }
+  #about,#skills,#portfolio,#contact {
+    width: 100%;
+    margin:auto;
+    padding: 20px;
+    background:rgba(0,0,0,0.6);
+    margin-top: 100px;
+  }
+}
