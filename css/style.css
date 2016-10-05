@@ -1,4 +1,24 @@
-@import 'https://fonts.googleapis.com/css?family=Calligraffitti|Caveat|Amatic+SC|Raleway';
+@font-face {
+    font-family: Calligraffitti;
+    src: url('../fonts/Calligraffitti-Regular.ttf');
+}
+@font-face {
+    font-family: Amatic SC;
+    src: url('../fonts/AmaticSC-Regular.ttf');
+}
+
+@font-face {
+    font-family: Caveat;
+    src: url('../fonts/Caveat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@import 'https://fonts.googleapis.com/css?family=Amatic+SC|Calligraffitti|Caveat|Raleway';
+
 * {
   padding: 0px;
   margin: 0px;
@@ -334,7 +354,19 @@ a:focus {
 .googleplus a{
   color:#d34836;
 }
-
+.go-to-top i {
+  position: fixed;
+  bottom: 20px;
+  right:20px;
+  padding: 8px 6px;
+  background: maroon;
+  color:#dcdcdc;
+}
+.go-to-top:hover {
+  position: fixed;
+  color:#fff;
+  opacity: 0.8;
+}
 
 
 
