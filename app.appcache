@@ -1,4 +1,36 @@
 CACHE MANIFEST
+# 2016-10-05
+CACHE:
+css/style.css
+css/normalize.css
+images/background.jpg
+images/bootstrap.png
+images/brainstorm.png
+images/css3.png
+images/git.png
+images/html5.png
+images/jasveersingh.png
+images/jquery.png
+images/js.png
+images/kiranfilmventures.png
+images/monkstarmusic.png
+images/mysql.png
+images/nenuproducer.png
+images/odishanews360.png
+images/php.png
+images/planettree.png
+images/pwmc.png
+images/rabindrakumarjena.png
+images/silly_article.png
+images/sillymonksapp.png
+images/sillymonksnetwork.png
+images/sportzworkz.png
+images/telugutitans.png
+images/dp.jpg
+
+js/script.js
+js/isotope.js
+
 NETWORK:
 *
 FALLBACK:
