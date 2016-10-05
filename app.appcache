@@ -1,8 +1,21 @@
 CACHE MANIFEST
 # 2016-10-05
 CACHE:
+
+#cache the offline page
+no-internet.html
+
+#local styles
 css/style.css
 css/normalize.css
+
+#external links
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
+https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
+
+#images
 images/background.jpg
 images/bootstrap.png
 images/brainstorm.png
@@ -33,5 +46,6 @@ js/isotope.js
 
 NETWORK:
 *
+
 FALLBACK:
 no-internet.html
