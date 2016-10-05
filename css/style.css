@@ -376,6 +376,7 @@ a:focus {
     width: 100%;
     text-align: center;
     padding: 4px 0px;
+    margin: 10px 0px;
   }
   body {
     background: rgba(0,0,0,0.9);
@@ -389,5 +390,8 @@ a:focus {
   }
   .dp-wrapper img {
     opacity: 1;
+  }
+  nav.menu ul li a  {
+    padding: 10px 20px;
   }
 }

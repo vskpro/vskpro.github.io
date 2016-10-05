@@ -1,2 +1,9 @@
 CACHE MANIFEST
-images/background.jpg
+images/
+index.html
+css/style.css
+css/normalize.css
+NETWORK:
+*
+FALLBACK:
+offline.html
