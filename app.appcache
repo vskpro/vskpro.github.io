@@ -1,9 +1,5 @@
 CACHE MANIFEST
-images/
-index.html
-css/style.css
-css/normalize.css
 NETWORK:
 *
 FALLBACK:
-offline.html
+no-internet.html
