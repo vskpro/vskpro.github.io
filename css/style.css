@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 header {
   overflow: hidden;
   display: table!important;
@@ -126,7 +125,7 @@ nav.menu ul li a {
   font-family: 'Raleway';
 }
 
-.highlight {
+.highlight,.active-link {
   background: #dcdcdc;
   color:#000!important;
 }
@@ -244,7 +243,7 @@ nav.menu ul li a {
 }
 
 .center-icon {
-  height: 90px;
+  height: 60px;
   transition: 0.3s all ease-in;
   margin: auto;
 }
@@ -279,6 +278,62 @@ a:focus {
   outline: none;
 }
 
+#contact {
+  margin-bottom: 50px;
+}
+
+/*Social Media Styles*/
+
+.social-media-wrapper {
+  padding: 40px 0px;
+  margin: 20px 0px;
+}
+.social-media-wrapper a {
+  text-decoration: none;
+  font-size: 3em;
+  padding: 0px 5px;
+  transition: all 0.4s ease-in;
+}
+
+.social-media-wrapper a:hover i {
+  animation: shake 1.2s linear;
+}
+
+@keyframes shake {
+  0% {
+         
+         -webkit-transform: rotate(5deg);
+
+  }
+  50% {
+         -webkit-transform: rotate(0deg) scale(1.3);
+
+  }
+
+  70% {
+         -webkit-transform: rotate(-10deg) scale(0.9);
+
+  }
+  100% {
+         -webkit-transform: rotate(3deg) scale(1.1);
+
+  }
+}
+
+.linkedin a{
+  color:#0177B5;
+  transition: all 0.4s ease-in;
+}
+
+.facebook a{
+  color:#3B579D;
+}
+.github a{
+  color:#810081;
+}
+.googleplus a{
+  color:#d34836;
+}
 
 
 
@@ -331,5 +386,8 @@ a:focus {
     padding: 20px;
     background:rgba(0,0,0,0.6);
     margin-top: 100px;
+  }
+  .dp-wrapper img {
+    opacity: 1;
   }
 }

@@ -5,10 +5,17 @@
 		$(".smooth-scroll").on('click', function(e) {
 			// prevent default anchor click behavior
 			e.preventDefault();
+
+			//change link colors
+			$(".smooth-scroll").removeClass('active-link');
+			$(this).addClass('active-link');
+
 			// animate
 			$('html, body').animate({
 				scrollTop: $(this.hash).offset().top - 100
 			}, 850);
+
+
 		});
 
 		
