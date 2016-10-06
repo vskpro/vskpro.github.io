@@ -1,3 +1,12 @@
+/* 
+Title: My Portfolio
+Developer: Sai kiran Veeraneni
+Owner: Sai kiran Veeraneni
+Date: 2016-10-06
+Description: This is my portfolio custom built from scratch.
+Link :https://vskpro.github.io
+*/
+
 (function($){
 
 	$(document).ready(function(){
@@ -60,3 +69,12 @@
 	}); //end of document ready
 
 })(jQuery);
+
+/* 
+Title: My Portfolio
+Developer: Sai kiran Veeraneni
+Owner: Sai kiran Veeraneni
+Date: 2016-10-06
+Description: This is my portfolio custom built from scratch.
+Link :https://vskpro.github.io
+*/

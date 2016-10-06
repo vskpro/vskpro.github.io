@@ -1,3 +1,12 @@
+/* 
+Title: My Portfolio
+Developer: Sai kiran Veeraneni
+Owner: Sai kiran Veeraneni
+Date: 2016-10-06
+Description: This is my portfolio custom built from scratch.
+Link :https://vskpro.github.io
+*/
+
 @import 'https://fonts.googleapis.com/css?family=Amatic+SC|Calligraffitti|Caveat|Raleway';
 
 * {
@@ -349,7 +358,6 @@ footer {
   overflow: hidden;
   display: table!important;
   width: 100%;
-  position: fixed;
   width: 100%;
   bottom:0;
   left: 0;
@@ -383,17 +391,17 @@ footer {
 
 
 
-
+/* 
+Title: My Portfolio
+Developer: Sai kiran Veeraneni
+Owner: Sai kiran Veeraneni
+Date: 2016-10-06
+Description: This is my portfolio custom built from scratch.
+Link :https://vskpro.github.io
+*/
 
 /* Responsive Styles */
 
-/*
-
-1) Remove background from body 
-2) Strech the content to 100%;
-3) Take care of Isotope
-4) Take care of the header
-*/
 
 @media screen and (min-width: 768px) {
   body {
@@ -453,8 +461,13 @@ footer {
     position: relative;
     overflow: hidden;
   }
-  footer {
-    position: relative;
-  }
 }
 
+/* 
+Title: My Portfolio
+Developer: Sai kiran Veeraneni
+Owner: Sai kiran Veeraneni
+Date: 2016-10-06
+Description: This is my portfolio custom built from scratch.
+Link :https://vskpro.github.io
+*/
