@@ -453,5 +453,8 @@ footer {
     position: relative;
     overflow: hidden;
   }
+  footer {
+    position: relative;
+  }
 }
 
