@@ -280,7 +280,7 @@ a:focus {
 }
 
 #contact {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 /*Social Media Styles*/
@@ -335,21 +335,6 @@ a:focus {
 .googleplus a{
   color:#d34836;
 }
-.go-to-top i {
-  position: fixed;
-  bottom: 20px;
-  right:20px;
-  padding: 8px 6px;
-  background: maroon;
-  color:#dcdcdc;
-}
-.go-to-top:hover {
-  position: fixed;
-  color:#fff;
-  opacity: 0.8;
-}
-
-
 
 .isotope-item {
   z-index: 2;
@@ -359,6 +344,45 @@ a:focus {
   pointer-events: none;
   z-index: 1;
 }
+
+footer {
+  overflow: hidden;
+  display: table!important;
+  width: 100%;
+  position: fixed;
+  width: 100%;
+  bottom:0;
+  left: 0;
+  background:rgba(0,0,50,1);
+  z-index: 1;
+  padding: 5px 0px;
+  text-align: center;
+  color:#dcdcdc;
+  font-family: 'Amatic SC';
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+
+.coffee {
+  color:#593C1F;
+}
+
+.music {
+  color:#810081;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive Styles */
@@ -430,3 +454,4 @@ a:focus {
     overflow: hidden;
   }
 }
+
