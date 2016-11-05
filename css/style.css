@@ -47,8 +47,8 @@ nav.menu ul li a {
   display: block;
   padding: 20px;
   color:#dcdcdc;
-  font-family: 'Calligraffitti';
-  font-size: 1.3em;
+  font-family: 'Amatic SC';
+  font-size: 1.8em;
 }
 .logo {
   font-size: 2.5em;
@@ -254,7 +254,7 @@ nav.menu ul li a {
 }
 
 .center-icon {
-  height: 70px;
+  height: 55px;
   transition: 0.3s all ease-in;
   margin: auto;
 }
@@ -449,6 +449,7 @@ Link :https://vskpro.github.io
   }
   nav.menu ul li a  {
     padding: 10px 20px;
+    font-size: 1.4em;
   }
   #filters {
     list-style-type: none;
