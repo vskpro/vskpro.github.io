@@ -72,6 +72,13 @@
 /* Small Devices, Tablets */
 @media (min-width : 768px) and (max-width: 991px) {
 
+	.ts-speaker-session.left {
+		margin-top: 20px;
+	}
+	.countdown > div {
+		margin: 0px 25px;
+	}
+
 	/* top info */
 
 	ul.top-info li{
@@ -367,6 +374,13 @@
 @media (max-width : 767px){
 
 	/* Top bar */
+
+	.ts-speaker-session.left {
+		margin-top: 20px;
+	}
+	.countdown > div {
+		margin: 0px 15px;
+	}
 
 	ul.top-info{
 		text-align: center;
@@ -867,6 +881,9 @@
 
 	.banner-content-wrap:before{
 		border: 0;
+	}
+	.countdown > div {
+		margin: 0px 10px;
 	}
 
 }

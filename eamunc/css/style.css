@@ -871,7 +871,7 @@ ul.navbar-nav > li:hover > a{
     background-size: cover;
     -webkit-backface-visibility: hidden;
     background-position-y: 85px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -1517,6 +1517,7 @@ ul.navbar-nav > li:hover > a{
     color: #ffffff;
     background-color: #1c1c24;
     background-image: url(../images/parallax1.jpg);
+    background-image: url(../images/assets/blur-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1660,6 +1661,7 @@ ul.navbar-nav > li:hover > a{
 .ts-speakers-bg{
     background-color: #f5f5f5;
     background-image: url(../images/parallax2.jpg);
+    background-image: url(../images/assets/blur-banner.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -1688,6 +1690,8 @@ ul.navbar-nav > li:hover > a{
 .ts-speaker-image {
     position: relative;
     text-align: center;
+    /* border: ridge 2px #2EB483; */
+    border: ridge 4px #a8adab;
 }
 
 .ts-speaker-image:after {
@@ -1974,6 +1978,7 @@ ul.navbar-nav > li:hover > a{
 .ts-pricing {
     background-color: #f5f5f5;
     background-image: url(../images/parallax2.jpg);
+    background-image: url(../images/assets/blur-banner.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -2261,6 +2266,7 @@ h4.panel-title a.collapsed:before {
 
 .footer-logo{
     margin: 30px 0;
+    
 }
 
 /* Footer social */
@@ -2478,6 +2484,7 @@ h4.panel-title a.collapsed:before {
 .ts-action.bg-image{
     background-color: #f5f5f5;
     background-image: url(../images/parallax2.jpg);
+    background-image: url(../images/assets/blur-banner.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -3140,10 +3147,11 @@ label {
     color: white;
 }
 .committee-info {
-    margin-top: 10px;
-    border-top: 1px solid #dcdcdc;
+    /* margin-top: 10px; */
+    /* border-top: 1px solid #dcdcdc; */
 }
 .footer-logo img {
     height: 140px;
     background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.68);
 }
