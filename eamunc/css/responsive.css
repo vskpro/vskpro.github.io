@@ -885,6 +885,9 @@
 	.countdown > div {
 		margin: 0px 5px;
 	}
+	.countdown div > span {
+		font-size: 24px;
+	}
 
 }
 
