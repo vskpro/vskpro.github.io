@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MLN Foods & Beverages Pvt Ltd</title>
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="../../css/modern-business.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="loading-screen">
+        <div class="center text-center full-width">
+            <h3 class="bold">Loading</h3>
+            <p>Please wait...</p>
+        </div>
+    </div>
+
+    <div class="mobile-orientation-lock">
+        <div class="center text-center">
+            <h5>We do not support landscape mode.</h5>
+            <h6>Please rotate your device</h6>
+        </div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <button id="goTop" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../images/inverse-logo.png" class="logo" alt="">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars" style="font-size: 1.5rem"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownBrands" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Brands
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBrands">
+                            <a class="dropdown-item" href="../../fruit-juices.html">Fruit Juices</a>
+                            <a class="dropdown-item" href="../../brands.html?water">Water Bottles</a>
+                            <a class="dropdown-item" href="../../brands.html?chocolates">Chocolates</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../contact.html">Franchising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="section-choco">
+        <img src="../../images/brands/chocolates/springopop-page.jpg" class="img-fluid" alt="">
+    </section>
+
+    <footer class="py-5 bg-light">
+        <div class="container">
+            <div class="social-container">
+                <ul class="social-list-wrapper">
+                    <li>
+                        <a href="https://www.facebook.com/MLN-2320772438134112/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="https://twitter.com/FoodsMln" target="_blank">
+                              <i class="fab fa-twitter"></i>
+                          </a>
+                          <a href="https://www.instagram.com/aindhri_innovations/" class="hide"  target="_blank">
+                              <i class="fab fa-instagram"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/in/mln-foods-27a66417a/" target="_blank">
+                              <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://www.youtube.com/channel/UCi8hqtBd6_4llx-bdkCKvsQ" target="_blank">
+                              <i class="fab fa-youtube"></i>
+                          </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="m-0 text-center">Copyright &copy; MLN Foods & Beverages Pvt Ltd 2019</p>
+        </div>
+    </footer>
+
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/particle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../../js/main.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: false,
+                centerMode: true,
+                arrows: false,
+                focusOnSelect: true
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

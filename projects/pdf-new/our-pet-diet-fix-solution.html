@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <title>New UI | Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Raleway|Montserrat:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="primary-bg">
+
+    <div class="preloader">
+        <div class="center">
+            <div class="img-wrapper">
+                <img src="./assets/images/loading.gif" class="img-responsive" alt="Loading...">
+                <!-- <img src="https://media.giphy.com/media/U3wwuyh8AVkwU/giphy.gif" class="img-responsive" alt="Loading..."> -->
+            </div>
+            <div class="loading-title">
+                Loading...
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky fixed">
+
+        <div class="top-bar clearfix">
+            <div class="float-right-md">
+                <ul class="top-bar-ul clearfix">
+                    <li>
+                        <a href="#" class="inline-block cart-wrapper">
+                            <span class="badge badge-xs badge-danger">9</span>
+                            <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Cart
+                        </a>
+                    </li>
+                    <li class="dropdown language-wrapper">
+                        <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+                            <i class="fa fa-language fa-lg" aria-hidden="true"></i>
+                            English
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu width-auto animated fadeIn">
+                            <li>
+                                <a href="#">हिंदी</a>
+                            </li>
+                            <li>
+                                <a href="#">தமிழ்</a>
+                            </li>
+                            <li>
+                                <a href="#">తెలుగు</a>
+                            </li>
+                            <li>
+                                <a href="#">മലയാളം</a>
+                            </li>
+                            <li>
+                                <a href="#">ಕನ್ನಡ</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown language-wrapper">
+                        <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+                            <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                            Admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu width-auto animated fadeIn">
+
+                            <li>
+                                <a href="profile.html">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="orders.html">
+                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                    Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                                    Logout
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="inline-block bold neon-text" style="padding-right: 0px;">Login</a>
+                        <span class="inline-block neon-text">|</span>
+                        <a href="#" class="inline-block neon-text bold" style="padding-left: 0px;">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-container primary-bg">
+            <div class="container-fluid">
+                <div class="clearfix nav-holder">
+                    <div class="pull-left logo-wrapper">
+                        <a href="index.html">
+                            <img src="./assets/images/logo-inverse.png" class="img-responsive" alt="pet diet fix logo">
+                        </a>
+                    </div>
+                    <div class="pull-right nav-wrapper">
+                        <nav class="menu-wrapper clearfix">
+                            <span class="close-mobile-menu">&times;</span>
+                            <ul class="my-nav clearfix">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="active dropdown-toggle" data-toggle="dropdown">About
+                                        <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu full-width-on-mobile animated fadeIn">
+                                        <li>
+                                            <a href="who-we-are.html">Who We Are</a>
+                                        </li>
+                                        <li>
+                                            <a href="our-story.html">Our Story</a>
+                                        </li>
+                                        <li>
+                                            <a class="active" href="our-pet-diet-fix-solution.html">Our Pet Diet Fix Solution</a>
+                                        </li>
+                                        <li>
+                                            <a href="pet-feeding-guildness.html">Pet Feeding Guidelines</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="store.html">Store</a>
+                                </li>
+                                <li>
+                                    <a href="recipes.html">Recipes</a>
+                                </li>
+                                <li>
+                                    <a href="our-challenge.html">Our Challenge</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="mobile-menu-toggle-wrapper">
+                            <div class="mobile-overlay"></div>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="javascript:void(0)" class="mobile-menu-toggler">
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="fixed-spacing">
+
+        <div class="sections-wrapper white-bg">
+
+            <div class="white-bg pd-40">
+                <div class="sec-heading big-text text-center black-text">Our Pet Diet Fix Solution</div>
+                <div class="bdivider divider-auto black-bg"></div>
+            </div>
+
+            <div class="neon-bg pd-40 black-text">
+                <div class="sec-title light-black-text f-30 text-center">
+                    What is the
+                    <strong class="black-text bold">Pet diet fix</strong> Solution?
+                </div>
+                <div class="sec-content mt-30">
+                    <div class="line-height-2 black-text">
+                        <p>
+                            In simple words, we have taken the positives of both processed foods and home foods and had created the perfect food solution;
+                            that is, we have formulated the right home food recipe and also the right nutritional mix that
+                            goes along with it.
+                        </p>
+                        <p>
+                            Our pet diet solution is not intended to be used as an occasional nutritional supplement. It is an essential part of the
+                            daily home food consumed by your beloved pets.
+                        </p>
+                        <p>
+                            Our pet diet fix solution has been created after years of extensive research and testing in 6 nutritional zones of India
+                            by our team of scientists, veterinary doctors and nutrition experts, who have decades of experience
+                            in the pet nutrition industry.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="black-bg pd-40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="./assets/images/pet.png" alt="" class="heartbeat w-140 m-auto img-responsive">
+                        </div>
+                        <div class="col-xs-12 mt-30">
+                            <h3 class="f-30 neon-text">
+                                Best Quality:
+                            </h3>
+                            <ul style="list-style-type:none" class="line-height-2 f-16">
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    Our recipes are formulated by the world’s renowned pet nutrition scientists
+                                </li>
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    Our nutrition mix is made in a third-party verified and GMP certified facility, with the highest quality and safety standards
+                                </li>
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    Our quick to make (QTM) recipes are prepared by you in 9 to 18 minutes in your kitchen and under your supervision with fresh,
+                                    hygienic ingredients locally available in all seasons.
+                                </li>
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    We meet the highest standards of the global organizations such as NRC and AAFCO. We comply with Indian Nutrition Table and
+                                    dietary guidelines of National Institute of Nutrition of India
+                                </li>
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    We have conducted multiple tests in 6 nutrition zones in India and ensured that our recipes and nutrition mix are perfectly
+                                    safe and absolutely healthy
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr style="border-top: 1px solid #0a0a0a; height: 1px;">
+                        </div>
+                    </div>
+                    <div class="row mt-30">
+                        <div class="col-xs-12">
+                            <div class="col-xs-12">
+                                <img src="./assets/images/pet.png" alt="" class="heartbeat w-140 m-auto img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 mt-30">
+                            <h3 class="f-30 neon-text">
+                                Best Cost:
+                            </h3>
+                            <ul style="list-style-type:none" class="line-height-2 f-16">
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    Our cost is highly economical than packaged pet food</li>
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    A pet parent can save up to 50% to 70%* of cost by switching to pet diet fix from packaged pet food *the range of % values
+                                    change as per the size of the pet and its dietary requirements
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr style="border-top: 1px solid #0a0a0a; height: 1px;">
+                        </div>
+                    </div>
+                    <div class="row mt-30">
+                        <div class="col-xs-12">
+                            <div class="col-xs-12">
+                                <img src="./assets/images/pet.png" alt="" class="heartbeat w-140 m-auto img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 mt-30">
+                            <h3 class="f-30 neon-text">
+                                Best Nutrition:
+                            </h3>
+                            <ul style="list-style-type:none" class="line-height-2 f-16">
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    We provide the exact nutrition as per the pet’s weight and life stage and recipe categories
+                                </li>
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    Our pet diet solution is power packed with entire 37 nutrients compared to 27 nutrients available in cheap quality packaged
+                                    food. Pet diet fix has a digestibility of 90%, compared to 60% digestibility of cheap
+                                    quality packaged food
+
+                                </li>
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    We comply with Indian Nutrition Table so that your pets get the correct nutrition. Not a calorie more, not a calorie less
+                                </li>
+                                <li>
+                                    <i class="fa fa-check neon-text"></i>
+                                    We guarantee the 9 signs of good health for your pets in 8 weeks; else you get your money back*
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neon-bg pd-40 black-text text-center">
+                <h5>
+                    *Conditions apply. Post satisfactory explanation to Aindhri associate on pet feeding practice
+                </h5>
+            </div>
+
+            <div class="white-bg pd-40">
+                <div class="black-box pd-40 drop-shadow">
+                    <h3 class="neon-text">
+                        How to use pet diet fix
+                    </h3>
+                    <div class="answer line-height-2 f-16 mt-30">
+                        <p class="l-height ">
+                            All you have to do is consult your nearest pet store / your trusted veterinary doctor / direct retailer / pet diet fix ambassador
+                            or simply log on to our website; choose the weight range, life stage and recipe category. Our
+                            unique ‘usage calculator’ processes several thousands of diet calculations in a second and
+                        </p>
+                        <p class="l-height">
+                            You will know the exact portion of the recipe that needs to be fed to your pet and also the right mix that will go with it
+                            perfectly. You can take a print out of it for your cooking reference and buy the mix from our
+                            website... since the information is available in 6 Indian languages, it is easy to understand.
+                        </p>
+                        <p class="l-height">
+                            Also, our ‘quick to make’ (QTM) recipe can be cooked in a very less time of 9-18 minutes…, all you have to do is cook the
+                            recipe, add the mix as per the suggested serving and voila! A well balanced nutritional pet food
+                            is ready.
+                        </p>
+                        <p class="l-height">
+                            It is not necessary that you have to add our mix with our QTM recipe alone. The mix can be added to any home made solid food
+                            that is healthy for your pet and you will get all the essential nutrients. But, we recommend
+                            using our QTM recipes for optimum results. All our QTM recipes are available in your kitchen
+                            in all seasons and are already tested on millions of pets over several centuries. Hence, they
+                            are perfectly safe.
+                        </p>
+                        <p class="l-height">
+                            Also all our recipes and nutritional mixes have been created after years of research and testing on numerous pets. All our
+                            formulations comply with NRC and AAFCO guidelines.
+                        </p>
+                        <p class="l-height">
+                            In addition, all our recipes also comply with NIN’s Indian Nutrition Tables and your pet will get the right nutrition available
+                            in the Indian food. This is a first of its kind achievement in the Indian market dominated by
+                            foreign players.
+                        </p>
+                        <p class="l-height">
+                            Rest assured that your pet will get the right calories that will keep it hale and healthy.
+                        </p>
+                    </div>
+                </div>
+                <div class="black-box pd-40 drop-shadow mt-30">
+                    <h3 class="neon-text">
+                        What are the benefits of petdietfix
+                    </h3>
+                    <div class="answer f-16 mt-30">
+                        <ul style="list-style-type:none" class="line-height-2">
+                            <li>
+                                <i class="fa fa-check neon-text"></i>
+                                Your pet will get well balanced home food with entire 37 nutrients that will keep it hale and healthy.
+                            </li>
+                            <li>
+                                <i class="fa fa-check neon-text"></i>
+                                Secondly, the petdietfix food is 90% digestible compared to the 60% digestibility of the cheaper quality packaged food.
+                            </li>
+                            <li>
+                                <i class="fa fa-check neon-text"></i>
+                                Thirdly, the pet diet fix food solution will not cause dehydration and hence it is highly useful in summer and rainy seasons
+                                where most of the pets develop health issues.
+                            </li>
+                            <li>
+                                <i class="fa fa-check neon-text"></i>
+                                Fourthly, the website is user friendly and is available in 6 regional languages to maximize user benefits
+                            </li>
+                            <li>
+                                <i class="fa fa-check neon-text"></i>
+                                Fifthly, the first of its kind ‘usage calculator’ will give you the exact recipe as per your pet’s exact needs. No vague
+                                weight ranges and feeding guidelines anymore
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check neon-text"></i>
+                                Most importantly, Pet diet fix solution is highly economical. A pet parent can feed our pet diet fix food to their pets at
+                                a monthly price which is 50%-70% less than the packaged food. Yes! You heard it right. Our
+                                pet diet fix mix and our home food QTM recipes are 50%-70% less costly than your packaged
+                                food. For example, a 500 grams veg recipe mix will last for 5 months for a 4 kg Pomeranian
+                                dog. You can feed the best quality pet diet fix food solution to it at a monthly expenditure
+                                of 400-500 rupees only whereas it will take a minimum of 1000-1500 rupees to feed the same
+                                with packaged food diet for a whole month.
+                            </li>
+
+                            <li>
+                                <i class="fa fa-check neon-text"></i>
+                                To conclude, pet diet fix is offering you a well-balanced pet food solution that is of the highest quality and at the same
+                                time it is lot more economical than any other available pet food.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neon-bg pd-40 black-text">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="big-content f-30 text-left">
+                                <strong class="">PET DIET FIX</strong> INTERNATIONAL STANDARDS
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="">
+                                <p class="line-height-2 f-16">
+                                    All formulations have been painstakingly created after years of research, after testing on many pet dogs. They comply with
+                                    NRC and AAFCO guidelines. Also, this is the first time that recipes were formulated as
+                                    per Indian nutritional table and they comply with the national institute of nutrition
+                                    (NIN) guidelines. Rest assured that your pet will get the right calories as per the Indian
+                                    food table. Not a calorie more, not a calorie less!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="black-bg pd-40 white-text">
+                <div class="sec-title  f-30 text-center">
+                    IDEAL SITUATIONS FOR USING
+                    <strong class="neon-text bold">PET DIET FIX</strong> FOOD SOLUTION
+                </div>
+                <div class="bdivider divider-auto neon-bg"></div>
+                <div class="text-center mt-30 f-16">
+                    <p class="line-height-2">
+                        Pet parents can give the best pet food to their pet at a cost of
+                        <span class="neon-text">50% to 70%*</span> less than packaged food. This is a minimum
+                        <span class="neon-text">2 times</span> more economical than the packaged pet food available in the market.
+                    </p>
+                    <p class="neon-text">
+                        *the range of % values change as per the size of the pet and its dietary requirements
+                    </p>
+                </div>
+            </div>
+
+            <div class="white-bg pd-40">
+                <div class="container-fluid">
+                    <div class="row bg-light mt-30">
+                        <div class="col-xs-12">
+                            <h3 class="f-30 black-text">
+                                For Puppy (15 kgs)
+                            </h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="black-box drop-shadow">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered pd-30 text-left">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="color:#dafd00" class="f20">PET DIET FIX Home Food Premium (Monthly Cost Rs)</th>
+                                                        <th scope="col" style="color:#dafd00" class="f20">Popular brand premium packaged dry food (Approx. Monthly Cost Rs)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Home food
+                                                            <strong class="neon-text">1650</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Nutrition Mix
+                                                            <strong class="neon-text">580</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Cost
+                                                            <strong class="neon-text">2260</strong>
+                                                        </td>
+                                                        <td class="bold white-text">4908</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="neon-text" colspan="2">
+                                                            You Save
+                                                            <strong class="white-text">2648</strong> Rupees every month or
+                                                            <strong class="white-text">54% </strong>% savings (1.8 times less).
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="black-box drop-shadow">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered text-left">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="color:#dafd00" class="f20">PET DIET FIX Home Food Economy (Monthly Cost Rs)</th>
+                                                        <th scope="col" style="color:#dafd00" class="f20">Popular brand packaged dry food (Approx. Monthly Cost Rs)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Home food
+                                                            <strong class="neon-text">1075</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Nutrition Mix
+                                                            <strong class="neon-text">780</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Total Cost
+                                                            <strong class="neon-text">1855</strong>
+                                                        </td>
+                                                        <td class="bold white-text">4500</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="neon-text" colspan="2">
+                                                            You Save
+                                                            <strong class="white-text">2645</strong> Rupees every month or
+                                                            <strong class="white-text">59% </strong>savings (1.8 times less).
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bg-light mt-30">
+                        <div class="col-xs-12 sec-pad">
+                            <h3 class="black-text f-30">
+                                For Adult (25 kgs)
+                            </h3>
+                        </div>
+                        <div class="col-xs-12 sec-pad">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="black-box drop-shadow">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered text-left">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="color:#dafd00" class="f20">PET DIET FIX Home Food Premium (Monthly Cost Rs)</th>
+                                                        <th scope="col" style="color:#dafd00" class="f20">Popular brand premium packaged dry food (Approx. Monthly Cost Rs)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Home food
+                                                            <strong class="neon-text">784</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Nutrition Mix
+                                                            <strong class="neon-text">545</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Cost
+                                                            <strong class="neon-text">1329</strong>
+                                                        </td>
+                                                        <td class="bold white-text">2900</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="neon-text" colspan="2">
+                                                            You Save
+                                                            <strong class="white-text">1571</strong> Rupees every month or
+                                                            <strong class="white-text">54%</strong> savings (1.8 times less).
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="black-box drop-shadow">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered text-left">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="color:#dafd00" class="f20">PET DIET FIX Home Food Economy (Monthly Cost Rs)</th>
+                                                        <th scope="col" style="color:#dafd00" class="f20">Popular brand packaged dry food (Approx. Monthly Cost Rs)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Home food
+                                                            <strong class="neon-text">923</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Nutrition Mix
+                                                            <strong class="neon-text">288</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Total Cost
+                                                            <strong class="neon-text">1211</strong>
+                                                        </td>
+                                                        <td class="bold white-text">2500</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="neon-text" colspan="2">
+                                                            You Save
+                                                            <strong class="white-text">1289</strong> Rupees every month or
+                                                            <strong class="white-text">52%</strong> savings (1.8 times less).
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bg-light mt-30">
+                        <div class="col-xs-12 sec-pad">
+                            <h3 class="f-30 black-text">
+                                For Pregnant Dog (25 kgs)
+                            </h3>
+                        </div>
+                        <div class="col-xs-12 sec-pad">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="black-box drop-shadow">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered text-left">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="color:#dafd00" class="f20">PET DIET FIX Home Food Premium (Monthly Cost Rs)</th>
+                                                        <th scope="col" style="color:#dafd00" class="f20">Popular brand premium packaged dry food (Approx. Monthly Cost Rs)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Home food
+                                                            <strong class="neon-text">2420</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Nutrition Mix
+                                                            <strong class="neon-text">893</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Cost
+                                                            <strong class="white-text">3313</strong>
+                                                        </td>
+                                                        <td class="bold neon-text">6600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="neon-text" colspan="2">
+                                                            You Save
+                                                            <strong class="white-text">3287</strong> Rupees every month or
+                                                            <strong class="white-text">50%</strong> savings (1.6 times less).
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="black-box drop-shadow">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered text-left">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="color:#dafd00" class="f20">PET DIET FIX Home Food Economy (Monthly Cost Rs)</th>
+                                                        <th scope="col" style="color:#dafd00" class="f20">Popular brand packaged dry food (Approx. Monthly Cost Rs)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Home food
+                                                            <strong class="neon-text">1512</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Nutrition Mix
+                                                            <strong class="neon-text">1092</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Total Cost
+                                                            <strong class="white-text">2604</strong>
+                                                        </td>
+                                                        <td class="bold neon-text">6600</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="neon-text" colspan="2">
+                                                            You Save
+                                                            <strong class="white-text">3996</strong> Rupees every month or
+                                                            <strong class="white-text">61%</strong> savings (1.6 times less).
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bg-light mt-30">
+                        <div class="col-xs-12 sec-pad">
+                            <h3 class="f-30 black-text">
+                                For Lactating Mother (25 kgs)
+                            </h3>
+                        </div>
+                        <div class="col-xs-12 sec-pad">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="black-box drop-shadow">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered text-left">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="color:#dafd00" class="f20">PET DIET FIX Home Food Premium (Monthly Cost Rs)</th>
+                                                        <th scope="col" style="color:#dafd00" class="f20">Popular brand premium packaged dry food (Approx. Monthly Cost Rs)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Home food
+                                                            <strong class="neon-text">3911</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Nutrition Mix
+                                                            <strong class="neon-text">1492</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Cost
+                                                            <strong class="neon-text">5403</strong>
+                                                        </td>
+                                                        <td class="bold white-text">12896</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="neon-text" colspan="2">
+                                                            You Save
+                                                            <strong class="white-text">7493</strong> Rupees every month or
+                                                            <strong class="white-text">58%</strong> savings (2.0 times less).
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="black-box drop-shadow">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered text-left">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="color:#dafd00" class="f20">PET DIET FIX Home Food Economy (Monthly Cost Rs)</th>
+                                                        <th scope="col" style="color:#dafd00" class="f20">Popular brand packaged dry food (Approx. Monthly Cost Rs)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Home food
+                                                            <strong class="neon-text">2496</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Cost of Nutrition Mix
+                                                            <strong class="neon-text">1812</strong>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            Total Cost
+                                                            <strong class="neon-text">4308</strong>
+                                                        </td>
+                                                        <td class="bold neon-text">12896</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="neon-text" colspan="2">
+                                                            You Save
+                                                            <strong class="white-text">8588</strong> Rupees every month or
+                                                            <strong class="white-text">67%</strong> savings (2 times less).
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <footer class="neon-bg">
+        <div class="container-fluid">
+            <div class="row mt-90 black-text">
+                <div class="col-sm-12 col-md-4 footer-image">
+                    <img src="./assets/images/logo-real.png" alt="Logo" class="img-responsive">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer-heading">Help</div>
+                    <div class="footer-content">
+                        <ul class="line-height-2-5">
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer-heading">Pet Diet Fix</div>
+                    <div class="footer-content">
+                        <ul class="line-height-2-5">
+                            <li>
+                                <a href="who-we-are.html">About</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="testimonials.html">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-90 black-text">
+                <div class="col-xs-12 text-center pd-20">
+                    &copy; 2018. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

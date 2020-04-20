@@ -1,0 +1,228 @@
+html,body{
+    font-size: 16px;
+}
+.cardio-bg{
+    background-color:#c72032;
+}
+.gastro-bg{
+    background-color:#227b78;
+}
+.renal-canine-bg{
+    background-color:#649c41;
+}
+.renal-feline-bg{
+    background-color: #862c75;
+}
+.super-recovery-bg{
+    background-color: #37449e;
+}
+
+.cardio-color{
+    color:#c72032;
+}
+.gastro-color{
+    color:#227b78;
+}
+.renal-canine-color{
+    color:#649c41;
+}
+.renal-feline-color{
+    color: #862c75;
+}
+.super-recovery-color{
+    color: #37449e;
+}
+
+.product-main{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    position: relative;
+}
+
+.main-content{
+    max-width: 435px;
+    margin-top:9rem;
+    text-align: center;
+    padding: 0 1rem .5rem 1rem;
+}
+.product-title{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.product-tag{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .35rem 30% .35rem 30%;
+    background-color: #cccccc;
+}
+
+.product-content{
+    font-weight: 600;
+}   
+
+.percentage-container{
+    display: flex;
+}
+.nutritional-profile{
+    display: flex;
+    padding: 2rem;
+}
+.nutritional-profile .heading{
+    font-weight:700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.nutrition-percent {
+    padding: 1rem;
+    height:5rem;
+    background-color: darkgrey;
+    text-align: center;
+    display: flex;
+}
+.nutrition-percent .name{
+    margin:auto;
+}
+.nutrition-percent.light {
+    background-color: lightgrey;
+}
+.nutrition-percent.four {
+    width:22%;
+}
+.nutrition-percent.one {
+    width:16%;
+}
+.nutrition-percent.eight {
+    width:22%;
+}
+.nutrition-percent.eighty {
+    width:40%;
+}
+
+.highlights{
+    /* background-color: #c72032; */
+    display: flex;
+    position: relative;
+    padding:2rem;
+}
+.highlights img {
+    position: absolute;
+    left: 50%;
+    width: 26%;
+    bottom: 50%;
+}
+.highlights .heading{
+    color:whitesmoke;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding:1rem;
+    padding-bottom: 0;
+    text-align: left;
+}
+.highlights .content{
+    color:whitesmoke;
+}
+.highlights .content ul li{
+    margin-left: 1rem;
+}
+.highlights .content ul li{
+    padding:.5rem;
+}
+
+.additional-content{
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding:2rem;
+}
+.additional-content .content {
+    flex-basis: 30%;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.additional-content .tagline{
+    font-weight: 800;
+    /* color:#c72032; */
+    text-transform: uppercase;
+}
+.additional-content p{
+    font-weight: 600;
+}
+.additional-content .recommended {
+    flex-basis: 50%;
+}
+.additional-content .recommended ul{
+    font-size: 1rem;
+}
+.additional-content .recommended .dark{
+    background-color: darkgray;
+}
+.additional-content .recommended .light{
+    background-color: lightgray;
+}
+.additional-content .recommended p:not(.heading){
+    padding:.6rem;
+}
+.instructions{
+    text-align: center;
+    /* background-color: #c72032; */
+    padding:2rem .5rem 2rem .5rem;
+}
+.instructions .heading{
+    color:whitesmoke;
+}
+.instructions p{
+    color:whitesmoke;
+}
+@media screen and (max-width: 968px){
+    html,body{
+        font-size: 14px;
+    }
+    .product-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-tag{
+        background-color: darkgray;
+    }
+    .product-main::after{
+        width: 100%;
+        height: 78%;
+        top: 20%;
+        z-index: -1;
+    }
+    .main-content{
+        margin-top: 1rem;
+        color:whitesmoke;
+    }
+    .product-main img {
+        width:40%;
+        height:50%;
+    }
+    .percentage-container{
+        flex-direction: column;
+    }
+    .nutrition-percent {
+        width:100%!important;
+    }
+    .additional-content{
+        flex-direction: column;
+    }
+    .highlights img {
+        display: none;
+    }
+}
+@media screen and (max-width: 1055px){
+    .nutritional-container{
+        flex-basis: 100%;
+    }
+    .highlights img {
+        left: 68%;
+        bottom: 9%;
+    }
+}

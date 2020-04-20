@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petdietfix | Welcome</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon1.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="./assets/css/progress-tracker.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/site-lang.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/login.component.css">
+    <link rel="stylesheet" href="./assets/css/register.component.css">
+    <link rel="stylesheet" href="./assets/css/homepage.component.css">
+    <link rel="stylesheet" href="./assets/css/product.component.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/color.css">
+    <style>
+        /*-- header---*/
+
+        header {
+            background: #fff;
+        }
+
+        header .navbar-brand {
+            padding-top: 0;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .nav li a.active,
+        .nav li a:hover,
+        .navbar-right>li>a.active,
+        .navbar-right>li>a:hover {
+            cursor: pointer;
+            border-bottom: 2px solid #dafd00 !important;
+            color: #dafd00;
+        }
+
+        .navbar-right .dropdown-menu li a:hover {
+            border-bottom: 0px !important;
+            color: #dafd00 !important;
+        }
+
+        .navbar-header {
+            width: inherit !important;
+        }
+
+        .navbar-right>li>a {
+            line-height: 40px !important;
+        }
+
+        .cart-dropdown .dropdown-menu {
+            left: auto !important;
+            right: 0 !important;
+            background: #fff !important;
+        }
+
+        .total-content {
+            padding: 10px 0
+        }
+
+        .total-txt {
+            border-top: 1px solid #ddd;
+            display: block;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        .dropdown-menu>li>a:focus,
+        .dropdown-menu>li>a:hover {
+            background: transparent !important;
+        }
+
+        .cartIcon .badge {
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+
+        .navbar-nav {
+            margin-top: 20px;
+            margin-right: 8px;
+        }
+
+        .top-nav {
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 10px;
+        }
+
+        .top-nav li {
+            display: inline-block;
+            list-style: none;
+
+
+        }
+
+        .nav li a,
+        .top-nav li a {
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #333;
+        }
+
+        .top-nav li a {
+
+            display: inline-block;
+            padding: 2px 8px;
+            position: relative;
+
+        }
+
+        .support-links {
+            margin-right: 20px;
+        }
+
+        .user-dropdown {
+            left: auto !important;
+            right: 0;
+            top: 30px;
+        }
+
+        .user-dropdown li {
+            display: block;
+            padding: 6px;
+            width: 100%;
+        }
+
+        .cart-dropdown a {
+            top: 5px;
+        }
+
+        .triangle-down {
+            background: #000;
+            margin-left: 20px;
+
+        }
+
+        .cartIcon i {
+            margin-left: 10px;
+        }
+
+        .triangle-down li a {
+            color: #fff !important;
+            padding: 8px 2px;
+        }
+
+        .triangle-down li:first-child a:before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 17px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 34px solid #151515;
+            position: absolute;
+            left: -27px;
+            top: -4px;
+        }
+
+        .nav .open>a,
+        .nav .open>a:focus,
+        .nav .open>a:hover,
+        .nav>li>a:focus,
+        .nav>li>a:hover {
+            background-color: #fff;
+            border-color: transparent !important;
+        }
+
+        .navbar-right .dropdown-menu {
+            left: 0;
+            right: auto;
+            background: #000;
+
+        }
+
+        .navbar-right .dropdown-menu li a {
+            color: #fff;
+            font-weight: normal;
+        }
+
+        .dropdown-menu>li>a:focus,
+        .dropdown-menu>li>a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .navbar-toggle {
+            background: #333;
+        }
+
+        .navbar-toggle .icon-bar {
+            background: #fff;
+        }
+
+        .cartIcon i {
+            font-size: 20px;
+        }
+
+        .user-dropdown li a:hover {
+            background: #333;
+            display: block;
+            color: #333;
+            border-bottom: 0px;
+        }
+
+
+        @media (min-width:767px) and (max-width:968px) {
+            .des-content {
+                margin-top: 0;
+            }
+
+
+        }
+
+
+        @media (max-width:467px) {
+
+            .triangle-down {
+                margin-left: 0;
+            }
+
+            .des-content h1 {
+                font-size: 24px;
+            }
+            #main-container {
+                padding: 15px;
+            }
+            .des-content h3 {
+                margin-bottom: 10px;
+            }
+            .store-link {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <style>
+        #particles-js {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .banner-wrapper {
+            margin-bottom: 25px;
+        }
+
+        #main-container {
+            padding: 0px;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="./assets/css/custom.css">
+
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <div id="wrapper">
+        <div class="container-fluid">
+            <header>
+                <nav class="navbar navbar-fixed-top">
+                    <div class="clearfix equiry-contet">
+                        <ul *ngIf="!hideElement" class="top-nav triangle-down  pull-right ">
+                            <li>
+                                <a style="cursor: pointer;" data-toggle="modal" data-target="#LoginModal">Login</a>
+                            </li>
+                            <li>
+                                <a>/</a>
+                            </li>
+                            <li>
+                                <a style="cursor: pointer;" data-toggle="modal" data-target="#SignupModal">signup</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav support-links pull-right">
+
+                            <li class="dropdown cart-dropdown">
+                                <a class="dropdown-toggle waves-effect waves-light cartIcon" data-toggle="dropdown" href="javascript:">
+
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="badge badge-xs badge-danger">2</span>
+                                    Cart
+                                </a>
+                                <div class="dropdown-menu mailbox">
+
+                                    <div class="drop-title">
+                                        There are {{ 2 }} item(s) in your cart
+                                    </div>
+                                    <div class="list-wrapper">
+                                        <div class="media cart-media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="
+                                                        alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Product Name</h4>
+                                                <div>
+                                                    Unit Price: 20 INR
+                                                </div>
+                                                <div>
+                                                    Quantity: 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media cart-media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="
+                                                        alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Product Name</h4>
+                                                <div>
+                                                    Unit Price: 20 INR
+                                                </div>
+                                                <div>
+                                                    Quantity: 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center total-content">
+                                        <strong class="ng-tns-c1-0 total-txt">Sub-Total: {{cartSubTotal}}</strong>
+                                        <br />
+                                        <button class="btn btn-inverse" routerLink="/cart">{{labels.GotoCart}}</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="dropdown" *ngIf="hideElement">
+                                <a href="javascript:" class="dropdown-toggle u-dropdown text-blue" data-toggle="dropdown" aria-expanded="false">
+                                    Admin
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu user-dropdown animated flipInY">
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="fa fa-user"></i> Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="orders.html">
+                                            <i class="fa fa-list-ol"></i> My Orders</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-power-off"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="javascript:" class="dropdown-toggle u-dropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <!-- Current Language Label below -->
+                                    <i class="fa fa-language"></i> English
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu user-dropdown animated fadeIn">
+                                    <!-- Loop LI element below to show list of languages -->
+                                    <li>
+                                        <a href="javascript:">Hindi</a>
+                                    </li>
+                                    <!-- End of LI Loop -->
+
+                                    <li>
+                                        <a href="javascript:">Telugu</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:">Tamil</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./assets/images/logo1.png" alt="logo" width="100%" />
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="homepage-english.html" class="active">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" class="active">About
+
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="about-us-1.html">Company Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-2.html">Who We Are</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-3.html">Our Story</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-4.html">Our Pet Diet Fix Solution</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-5.html">Our Philosopy</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="store.html">Store</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="challenge.html">OurChallage</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+
+                </nav>
+            </header>
+            <div id="main-container">
+
+                <div class="row">
+                    <div class="col-xs-12 banner-wrapper">
+                        <img src="./assets/images/store-ban.png" style="margin: auto" class="img-responsive" alt="Ad Banner">
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="store-img-wrapper">
+                            <div class="bg-color grey-bg animated fadeIn">
+                                <div class="num-wrapper animated slideInDown">
+                                    <h1>01</h1>
+                                </div>
+                                <div class="img-wrapper">
+                                    <img src="./assets/images/1.png" class="animated slideInUp img-responsive" alt="product" />
+                                </div>
+                                <div class="title-wrapper animated slideInDown">
+                                    Pedigree Adult Dog Food Chicken & Vegetables, 10 kg Pack
+                                </div>
+                            </div>
+                            <div class="view-product-wrapper">
+                                <a class="btn btn-inverse" href="productdetails.html">View Product</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="store-img-wrapper">
+                            <a class="" href="productdetails.html">
+                                <div class="bg-color blue-bg animated fadeIn">
+                                    <div class="num-wrapper animated slideInDown">
+                                        <h1>01</h1>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img src="./assets/images/1.png" class="animated slideInUp img-responsive" alt="product" />
+                                    </div>
+                                    <div class="title-wrapper animated slideInDown">
+                                        Pedigree Adult Dog Food Chicken & Vegetables, 10 kg Pack
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="store-img-wrapper">
+                            <div class="bg-color green-bg animated fadeIn">
+                                <div class="num-wrapper animated slideInDown">
+                                    <h1>01</h1>
+                                </div>
+                                <div class="img-wrapper">
+                                    <img src="./assets/images/1.png" class="animated slideInUp img-responsive" alt="product" />
+                                </div>
+                                <div class="title-wrapper animated slideInDown">
+                                    Pedigree Adult Dog Food Chicken & Vegetables, 10 kg Pack
+                                </div>
+                            </div>
+                            <div class="view-product-wrapper">
+                                <a class="btn btn-inverse" href="productdetails.html">View Product</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-content clearfix">
+
+                <ul>
+                    <li>
+                        <span class="line-border"></span>
+                    </li>
+                    <li>2018 &copy; copyright |</li>
+                    <li>allrights reserved</li>
+                </ul>
+                <ul class="hidden-xs pull-right">
+                    <li>
+                        <span class="line-border"></span>
+                    </li>
+                    <li>privacy policy /</li>
+                    <li>tems & conditions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="./assets/js/tween.min.js"></script>
+    <script src="./assets/js/MorphSVGPlugin.min.js"></script>
+    <script src="./assets/js/particles.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'assets/data/particles.json', null);
+    </script>
+
+    <script src="./assets/js/sitelanguage-animations.js"></script>
+
+    <script>
+        $(".navbar-nav li a").click(function (event) {
+            if (!$(this).hasClass('dropdown-toggle')) {
+                var toggle = $(".navbar-toggle").is(":visible");
+                if (toggle) {
+                    $(".navbar-collapse").collapse('hide');
+                }
+            }
+        });
+    </script>
+    <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>

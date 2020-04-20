@@ -1,0 +1,165 @@
+ol.mytracker {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ol.mytracker li {
+    display: inline-block;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+ol.mytracker[data-mytracker-steps="2"] li {
+    width: 49%;
+}
+
+ol.mytracker[data-mytracker-steps="3"] li {
+    width: 33%;
+}
+
+ol.mytracker[data-mytracker-steps="4"] li {
+    width: 24%;
+}
+
+ol.mytracker[data-mytracker-steps="5"] li {
+    width: 19%;
+}
+
+ol.mytracker[data-mytracker-steps="6"] li {
+    width: 16%;
+}
+
+ol.mytracker[data-mytracker-steps="7"] li {
+    width: 14%;
+}
+
+ol.mytracker[data-mytracker-steps="8"] li {
+    width: 12%;
+}
+
+ol.mytracker[data-mytracker-steps="9"] li {
+    width: 11%;
+}
+
+ol.mytracker li.mytracker-done {
+    color: black;
+    border-bottom: 4px solid #dadf00;
+}
+
+ol.mytracker li.mytracker-todo {
+    color: silver;
+    border-bottom: 4px solid silver;
+}
+
+ol.mytracker li:after {
+    content: "\00a0\00a0";
+}
+
+ol.mytracker li:before {
+    position: relative;
+    bottom: -2.5em;
+    float: left;
+    left: 50%;
+    line-height: 1em;
+}
+
+ol.mytracker li.mytracker-done:before {
+    content: "\2713";
+    color: white;
+    background-color: #dadf00;
+    height: 2.2em;
+    width: 2.2em;
+    line-height: 2.2em;
+    border: none;
+    border-radius: 2.2em;
+}
+
+ol.mytracker li.mytracker-todo:before {
+    content: "\039F";
+    color: silver;
+    background-color: silver;
+    height: 2.2em;
+    width: 2.2em;
+    line-height: 2.2em;
+    border: none;
+    border-radius: 2.2em;
+}
+
+.new-shipment .status {
+    width: 25%;
+    float: left;
+}
+
+.new-shipment .status>span {
+    height: 4px;
+    width: 100%;
+    display: inline-block;
+    background: #dcdcdc;
+    margin-top: 10px;
+}
+
+.new-shipment .status>span.confirm {
+    height: 4px;
+    width: 100%;
+    display: inline-block;
+    background: #dadf00;
+    margin-top: 10px;
+}
+.new-shipment .status>span::after {
+    content: '\2713';
+    display: inline-block;
+    background: silver;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    font-size: 14px;
+    color: white;
+}
+.new-shipment .status>span.confirm::after {
+    content: '\2713';
+    display: inline-block;
+    background: yellowgreen;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    font-size: 14px;
+    color: white;
+}
+
+@media screen and (max-width: 580px) {
+
+    .new-shipment .status>span {
+        height: 50px;
+        width: 4px;
+    }
+    .new-shipment .status>span.confirm {
+        height: 50px;
+        width: 4px;
+    }
+
+    .new-shipment .status {
+        width: 100%;
+        float: none;
+    }
+    .new-shipment .status>span::after {
+        left: -7px;
+    }
+    .new-shipment .status>span.confirm::after {
+        content: '\2713';
+        display: inline-block;
+        background: yellowgreen;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        position: relative;
+        top: -10px;
+        font-size: 14px;
+        color: white;
+        left: -7px;
+    }
+}

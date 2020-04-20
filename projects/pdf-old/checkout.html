@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petdietfix | Welcome</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon1.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="./assets/css/progress-tracker.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/site-lang.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/login.component.css">
+    <link rel="stylesheet" href="./assets/css/register.component.css">
+    <link rel="stylesheet" href="./assets/css/homepage.component.css">
+    <link rel="stylesheet" href="./assets/css/product.component.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/color.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+
+    <style>
+        #particles-js {
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="./assets/css/custom.css">
+
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <div id="wrapper">
+        <div class="container-fluid">
+
+            <header>
+                <nav class="navbar navbar-fixed-top">
+                    <div class="clearfix equiry-contet">
+                        <ul *ngIf="!hideElement" class="top-nav triangle-down  pull-right ">
+                            <li>
+                                <a style="cursor: pointer;" data-toggle="modal" data-target="#LoginModal">Login</a>
+                            </li>
+                            <li>
+                                <a>/</a>
+                            </li>
+                            <li>
+                                <a style="cursor: pointer;" data-toggle="modal" data-target="#SignupModal">signup</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav support-links pull-right">
+
+                            <li class="dropdown cart-dropdown">
+                                <a class="dropdown-toggle waves-effect waves-light cartIcon" data-toggle="dropdown" href="javascript:">
+
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="badge badge-xs badge-danger">2</span>
+                                    Cart
+                                </a>
+                                <div class="dropdown-menu mailbox">
+
+                                    <div class="drop-title">
+                                        There are {{ 2 }} item(s) in your cart
+                                    </div>
+                                    <div class="list-wrapper">
+                                        <div class="media cart-media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="
+                                                        alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Product Name</h4>
+                                                <div>
+                                                    Unit Price: 20 INR
+                                                </div>
+                                                <div>
+                                                    Quantity: 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media cart-media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="
+                                                        alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Product Name</h4>
+                                                <div>
+                                                    Unit Price: 20 INR
+                                                </div>
+                                                <div>
+                                                    Quantity: 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center total-content">
+                                        <strong class="ng-tns-c1-0 total-txt">Sub-Total: {{cartSubTotal}}</strong>
+                                        <br />
+                                        <button class="btn btn-inverse" routerLink="/cart">{{labels.GotoCart}}</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="dropdown" *ngIf="hideElement">
+                                <a href="javascript:" class="dropdown-toggle u-dropdown text-blue" data-toggle="dropdown" aria-expanded="false">
+                                    Admin
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu user-dropdown animated flipInY">
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="fa fa-user"></i> Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="orders.html">
+                                            <i class="fa fa-list-ol"></i> My Orders</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-power-off"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="javascript:" class="dropdown-toggle u-dropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <!-- Current Language Label below -->
+                                    <i class="fa fa-language"></i> English
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu user-dropdown animated fadeIn">
+                                    <!-- Loop LI element below to show list of languages -->
+                                    <li>
+                                        <a href="javascript:">Hindi</a>
+                                    </li>
+                                    <!-- End of LI Loop -->
+
+                                    <li>
+                                        <a href="javascript:">Telugu</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:">Tamil</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./assets/images/logo1.png" alt="logo" width="100%" />
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="homepage-english.html" class="active">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" class="active">About
+
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="about-us-1.html">Company Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-2.html">Who We Are</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-3.html">Our Story</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-4.html">Our Pet Diet Fix Solution</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-5.html">Our Philosopy</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="store.html">Store</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="challenge.html">OurChallage</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+
+                </nav>
+            </header>
+
+            <div id="main-container">
+
+                <div class="checkout-links-wrapper clearfix">
+                    <ul class="checkout-links-holder">
+                        <!-- Add *completed* class to checkout-link when done -->
+                        <li class="checkout-link active" data-checkout='login'>Login / Register</li>
+                        <li class="checkout-link" data-checkout='address'>Address</li>
+                        <li class="checkout-link" data-checkout='payment'>Payment</li>
+                        <li class="checkout-link no-margin-right" data-checkout='order'>Order Place</li>
+                    </ul>
+                </div>
+
+                <div class="checkout-content-wrapper">
+                    <div class="animated fadeIn  checkout active" id="login">
+
+                        <div class="checkout-content">
+                            <div class="form-wrapper" id="login-wrapper">
+                                <form action="/action_page.php" class="row text-left">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="checkout-input form-control" id="username">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="text" class="checkout-input form-control" id="password">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-inverse">Login</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12">
+                                        <hr>
+                                        <h4>New to petdietfix?</h4>
+                                        <a href="javascript:void(0)" class="btn btn-inverse showRegister"> Create an account </a>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="checkout-content">
+                            <div class="form-wrapper" id="register-wrapper">
+                                <form action="/action_page.php" class="row text-left">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="firstName">First Name</label>
+                                            <input type="text" class="checkout-input form-control" id="firstName">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name</label>
+                                            <input type="text" class="checkout-input form-control" id="lastName">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="email">Email address:</label>
+                                            <input type="email" class="checkout-input form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="phoneNumber">Phone Number</label>
+                                            <input type="text" class="checkout-input form-control" id="phoneNumber">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-success">Register</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12">
+                                        <hr>
+                                        <h4>Existing customer?</h4>
+                                        <a href="javascript:void(0)" class="btn btn-inverse showLogin">Login Here</a>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="clearfix">
+                            <div class="pull-left">
+                                <!-- <button class="btn btn-disabled" data-checkout="none">Prev</button> -->
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn btn-inverse checkout-nav-link" data-checkout="address">
+                                    Next
+                                    <i class="fa fa-chevron-right fa-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="animated fadeIn checkout" id="address">
+                        <div>
+                            <a href="javascript:void(0)" class="btn add-address btn-inverse">Add New Address</a>
+                            <br>
+                            <br>
+                            <div class="form-wrapper address-wrapper hidden">
+                                <form action="/action_page.php" class="row text-left">
+
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="Pincode">Pincode</label>
+                                            <input type="text" class="checkout-input form-control" id="Pincode">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="Locality">Locality</label>
+                                            <input type="text" class="checkout-input form-control" id="Locality">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="Address">Address</label>
+                                            <textarea class="checkout-input form-control" name="" id="Address" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="City">City</label>
+                                            <input type="text" class="checkout-input form-control" id="City">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="State">State</label>
+                                            <input type="text" class="checkout-input form-control" id="State">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="Landmark">Landmark</label>
+                                            <input type="text" class="checkout-input form-control" id="Landmark">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-inverse">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <!-- Loop Start -->
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="address-list-wrapper">
+                                        <div>
+                                            Plot Number: 123, My colony, My city,
+                                            <br> My State - 123456.
+                                        </div>
+                                        <div class="address-actions">
+                                            <span class="edit-button" title="Select">
+                                                <i class="fa fa-check fa-lg"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Loop End -->
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="address-list-wrapper">
+                                        <div>
+                                            Plot Number: 123, My colony, My city,
+                                            <br> My State - 123456.
+                                        </div>
+                                        <div class="address-actions">
+                                            <span class="edit-button" title="Select">
+                                                <i class="fa fa-check fa-lg"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <br>
+                            <div class="pull-left">
+                                <button class="btn btn-default checkout-nav-link" data-checkout="login">
+                                    <i class="fa fa-chevron-left fa-lg"></i> Prev
+                                </button>
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn btn-inverse checkout-nav-link" data-checkout="payment">
+                                    Next
+                                    <i class="fa fa-chevron-right fa-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animated fadeIn checkout" id="payment">
+                        <div>
+                            <div class="top-bar-checkout">
+                                <h3>Some dummy content</h3>
+                            </div>
+                            <div>
+                                <form class="form-inline" action="/action_page.php">
+
+                                    <div class="form-group">
+                                        <label for="coupon">Apply Coupon</label>
+                                        <input type="text" class="checkout-input form-control" id="coupon">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-inverse">Apply</button>
+                                </form>
+                            </div>
+                            <div>
+                                <br>
+                            </div>
+                            <div class="clearfix full-width-pulls">
+                                <div class="pull-left payment-type cod">
+                                    <label class="radio-inline payment-option-radio">
+                                        <input type="radio" name="optradio"> Cash on Delivery
+                                    </label>
+                                </div>
+                                <div class="pull-right pull-left-on-sm payment-type online">
+                                    <label class="radio-inline payment-option-radio">
+                                        <input type="radio" name="optradio"> Pay Online
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="payment-gateways hide">
+                                <a href="#" class="inline-block">
+                                    <img src="new-ui/assets/images/paytm_logo.png" alt="Paytm" class="img-responsive">
+                                </a>
+                                <a href="#" class="inline-block">
+                                    <img src="new-ui/assets/images/razorpay_logo.png" alt="RazorPay" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <hr>
+                            <div class="text-right">
+                                <h4>Total Amount</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <div class="clearfix">
+                            <div class="pull-left">
+                                <button class="btn btn-default checkout-nav-link" data-checkout="address">
+                                    <i class="fa fa-chevron-left fa-lg"></i> Prev
+                                </button>
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn btn-inverse checkout-nav-link" data-checkout="order">
+                                    Next
+                                    <i class="fa fa-chevron-right fa-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animated fadeIn checkout" id="order">
+                        <div class="pd-80">
+                            <h3>
+                                <i class="fa fa-check fa-lg"></i>
+                                Put your thank you message here
+                            </h3>
+                            <h4>
+                                Your reference id is #123456789
+                            </h4>
+                            <div>
+                                <br>
+                            </div>
+                            <div>
+                                <a href="store.html" class="btn btn-inverse">Shop Again</a>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="pull-left">
+                                <button class="btn btn-default checkout-nav-link" data-checkout="payment">
+                                    <i class="fa fa-chevron-left fa-lg"></i> Prev</button>
+                            </div>
+                            <!-- <div class="pull-right">
+                                <button class="btn btn-success checkout-nav-link" data-checkout="address">Next</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-content clearfix">
+
+            <ul>
+                <li>
+                    <span class="line-border"></span>
+                </li>
+                <li>2018 &copy; copyright |</li>
+                <li>allrights reserved</li>
+            </ul>
+            <ul class="pull-right">
+                <li>
+                    <span class="line-border"></span>
+                </li>
+                <li>privacy policy /</li>
+                <li>tems & conditions</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="./assets/js/tween.min.js"></script>
+    <script src="./assets/js/MorphSVGPlugin.min.js"></script>
+    <script src="./assets/js/particles.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'assets/data/particles.json', null);
+    </script>
+
+    <script src="./assets/js/sitelanguage-animations.js"></script>
+
+    <script>
+        $(".navbar-nav li a").click(function (event) {
+            if (!$(this).hasClass('dropdown-toggle')) {
+                var toggle = $(".navbar-toggle").is(":visible");
+                if (toggle) {
+                    $(".navbar-collapse").collapse('hide');
+                }
+            }
+        });
+    </script>
+    <script src="./assets/js/checkout.js"></script>
+    <script src="./assets/js/custom.js"></script>
+
+    <script>
+        $('.add-address').on('click', function () {
+            $('.address-wrapper').removeClass('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

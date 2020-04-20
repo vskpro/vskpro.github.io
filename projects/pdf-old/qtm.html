@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petdietfix | Welcome</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon1.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Dependecy Styles -->
+
+    <link type="text/css" rel="stylesheet" href="./assets/css/progress-tracker.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/site-lang.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/login.component.css">
+    <link rel="stylesheet" href="./assets/css/homepage.component.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/color.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/custom.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .block {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .recipe-wrapper .image {
+            width: 200px;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .recipe-wrapper .title {
+            font-size: 1.25em;
+            color: black;
+            background: #dafd00;
+            font-weight: bold;
+            text-transform: capitalize;
+            box-shadow: 0px 1px 2px 0px #00000094;
+            padding: 5px;
+        }
+
+        #main-container {
+            padding: 0px;
+        }
+
+        .black-bg {
+            background: black;
+        }
+
+        .neon-bg {
+            background: #dafd00;
+        }
+
+        .pd-40 {
+            padding: 40px;
+        }
+
+        .pd-40-80 {
+            padding: 40px 80px;
+        }
+
+        .white-text {
+            color: white !important;
+        }
+
+        .neon-text {
+            color: #dafd00 !important;
+        }
+
+        .mb-50 {
+            margin-bottom: 50px;
+        }
+
+        .mb-30 {
+            margin-bottom: 30px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .recipe-title {
+            font-weight: bold;
+            font-size: 1.25em;
+        }
+
+        .sub-heading {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.15em;
+            display: inline-block;
+            text-decoration: underline;
+        }
+
+        .line-height-2 {
+            line-height: 2;
+        }
+
+        .prep-time {
+            text-align: center;
+            font-weight: bold;
+            color: black;
+            font-size: 1.25em;
+            border: 2px solid black;
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 50px;
+        }
+
+        .prep-time-inverse {
+            text-align: center;
+            font-weight: bold;
+            color: #dafd00;
+            font-size: 1.25em;
+            border: 2px solid #dafd00;
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 50px;
+        }
+
+        .note-wrapper {
+            border-radius: 10px;
+            padding: 20px;
+            /* box-shadow: 2px 2px 9px -3px #000; */
+            border: 2px solid black;
+        }
+
+        .note-wrapper-inverse {
+            border-radius: 10px;
+            padding: 20px;
+            /* box-shadow: 2px 2px 9px -3px #dafd00; */
+            border: 2px solid #dafd00;
+        }
+
+        .recipe-veg {
+            display: inline-block;
+            border: 1px solid green;
+            padding: 2px 5px;
+            color: green;
+            font-size: 14px;
+        }
+
+        .recipe-non-veg {
+            display: inline-block;
+            border: 1px solid red;
+            padding: 2px 5px;
+            color: red;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .pd-40-80 {
+                padding: 40px;
+            }
+        }
+
+        .calc-wrapper {
+            position: fixed;
+            bottom: 0px;
+            right: 10%;
+            z-index: 9;
+        }
+
+        .calc-content {
+            background: #3c3c3c;
+            position: relative;
+            box-shadow: 0px 0px 10px 0px #000000;
+        }
+
+        .close-button {
+            position: absolute;
+            right: 25px;
+            font-size: 2em;
+            top: 0px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .calc-button {
+            text-align: center;
+            font-size: 1.25em;
+            text-transform: uppercase;
+            color: #dafd00;
+            font-weight: 500;
+            padding: 5px 30px;
+            background: #3c3c3c;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            padding-top: 12px;
+            cursor: pointer;
+            box-shadow: 0px -5px 10px -5px #000000;
+        }
+
+        .calc-button:hover {
+            background: #242424;
+        }
+
+        .form-control {
+            background: #020202;
+            border: 1px solid white;
+            color: #fff;
+        }
+
+        .form-group label {
+            color: white;
+        }
+
+        .wrapper {
+            max-height: 400px;
+            overflow-y: auto;
+            min-width: 275px;
+            max-width: 100%;
+            padding: 15px 25px;
+        }
+
+        .dark-table {
+            border: 1px solid black;
+            border-color: transparent;
+        }
+
+        .dark-table>thead>tr>th {
+            border: 1px solid black;
+            font-size: 14px;
+            padding: 5px 8px;
+            font-weight: bold;
+            color: black;
+            border-color: transparent;
+        }
+
+        .dark-table>tbody>tr>td {
+            border: 1px solid black;
+            font-size: 14px;
+            padding: 5px 8px;
+            border-color: transparent;
+
+        }
+
+        .neon-table {
+            border: 1px solid #dafd00;
+            border-color: transparent;
+        }
+
+        .neon-table>thead>tr>th {
+            border: 1px solid #dafd00;
+            font-size: 14px;
+            padding: 5px 8px;
+            font-weight: bold;
+            color: #dafd00;
+            border-color: transparent;
+        }
+
+        .neon-table>tbody>tr>td {
+            font-weight: bold;
+            border: 1px solid #dafd00;
+            font-size: 14px;
+            padding: 5px 8px;
+            border-color: transparent;
+        }
+
+        .hightlight-pdf-mix {
+            background: #FF5722;
+            display: inline-block;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+        }
+
+        @media print {
+            .hightlight-pdf-mix {
+                background: white;
+                border-radius: 0px;
+                font-weight: normal;
+                color: black;
+                display: block;
+            }
+        }
+
+        @keyframes border-pulsate {
+            0% {
+                border-color: rgb(255, 0, 0);
+            }
+            50% {
+                border-color: rgba(0, 255, 255, 0);
+            }
+            100% {
+                border-color: rgb(255, 0, 0);
+            }
+        }
+
+        .content-table-wrapper {
+            border: 2px solid;
+        }
+
+        .highlight-recipe {
+            animation: border-pulsate 2s 3;
+        }
+
+        @media screen and (max-width: 767px) {
+            .calc-wrapper {
+                position: fixed;
+                bottom: 0px;
+                right: 0;
+                z-index: 9;
+                width: 60%;
+                margin: auto;
+                left: 0;
+            }
+            .wrapper {
+                min-width: 100px;
+                width: auto;
+            }
+        }
+
+        /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+        /* Landscape */
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+            .wrapper {
+                max-height: 225px;
+            }
+        }
+
+        /* Landscape */
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+            .wrapper {
+                max-height: 250px;
+            }
+        }
+
+        /* Landscape */
+
+        @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+            .wrapper {
+                max-height: 275px;
+            }
+        }
+
+        /* Landscape */
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+            .wrapper {
+                max-height: 220px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+    <div class="calc-wrapper">
+        <div class="calc-content hide">
+            <div class="close-button">&times;</div>
+            <div class="wrapper">
+                <form class="my-scroll-form">
+                    <div class="form-group">
+                        <label for="sel1">Select list:</label>
+                        <select class="form-control" name="qtm_recipe" id="qtm_recipe" required="">
+                            <option value="">QTM Recipe type</option>
+                            <option value="economy">Economy</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Select list:</label>
+                        <select class="form-control" name="pet_life_stage" id="pet_life_stage" required="">
+                            <option value="">Life Stage</option>
+                            <option value="puppy">Puppy</option>
+                            <option value="adult">Adult Canine</option>
+                            <option value="pregnant">Pregnant Canine</option>
+                            <option value="lactating">Lactating Canine</option>
+                            <option value="old" style="display: none;">Elder Canine</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Select list:</label>
+                        <select class="form-control" id="pet_flavour" name="pet_flavour" required="">
+                            <option value="">Recipe Type</option>
+                            <option value="veg" style="display: none;">Veg</option>
+                            <option value="nveg">Non-Veg</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Select list:</label>
+                        <select class="form-control" name="no_of_puppy" id="no_of_puppy">
+                            <option value="">No Of Puppy</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Select list:</label>
+                        <select class="form-control" name="in_x_week" id="in_x_week">
+                            <option value="">In X Week</option>
+                            <option value="1">1st</option>
+                            <option value="2">2nd</option>
+                            <option value="3">3rd</option>
+                            <option value="4">4th or more</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Select list:</label>
+                        <select class="form-control" id="pet_flavour" name="pet_flavour" required="">
+                            <option value="">Recipe Type</option>
+                            <option value="veg" style="display: none;">Veg</option>
+                            <option value="nveg">Non-Veg</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-default" style="border:none;font-weight:bold">Calculate</button>
+                </form>
+            </div>
+        </div>
+        <div class="calc-button open-calc">Diet Calculator</div>
+    </div>
+    <div id="wrapper">
+        <div class="container-fluid">
+
+            <header>
+                <nav class="navbar navbar-fixed-top">
+                    <div class="clearfix equiry-contet">
+                        <ul *ngIf="!hideElement" class="top-nav triangle-down  pull-right ">
+                            <li>
+                                <a style="cursor: pointer;" data-toggle="modal" data-target="#LoginModal">Login</a>
+                            </li>
+                            <li>
+                                <a>/</a>
+                            </li>
+                            <li>
+                                <a style="cursor: pointer;" data-toggle="modal" data-target="#SignupModal">signup</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav support-links pull-right">
+
+                            <li class="dropdown cart-dropdown">
+                                <a class="dropdown-toggle waves-effect waves-light cartIcon" data-toggle="dropdown" href="javascript:">
+
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="badge badge-xs badge-danger">2</span>
+                                    Cart
+                                </a>
+                                <div class="dropdown-menu mailbox">
+
+                                    <div class="drop-title">
+                                        There are {{ 2 }} item(s) in your cart
+                                    </div>
+                                    <div class="list-wrapper">
+                                        <div class="media cart-media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="
+                                                        alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Product Name</h4>
+                                                <div>
+                                                    Unit Price: 20 INR
+                                                </div>
+                                                <div>
+                                                    Quantity: 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media cart-media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="
+                                                        alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Product Name</h4>
+                                                <div>
+                                                    Unit Price: 20 INR
+                                                </div>
+                                                <div>
+                                                    Quantity: 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center total-content">
+                                        <strong class="ng-tns-c1-0 total-txt">Sub-Total: {{cartSubTotal}}</strong>
+                                        <br />
+                                        <button class="btn btn-inverse" routerLink="/cart">{{labels.GotoCart}}</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="dropdown" *ngIf="hideElement">
+                                <a href="javascript:" class="dropdown-toggle u-dropdown text-blue" data-toggle="dropdown" aria-expanded="false">
+                                    Admin
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu user-dropdown animated flipInY">
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="fa fa-user"></i> Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="orders.html">
+                                            <i class="fa fa-list-ol"></i> My Orders</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-power-off"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="javascript:" class="dropdown-toggle u-dropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <!-- Current Language Label below -->
+                                    <i class="fa fa-language"></i> English
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu user-dropdown animated fadeIn">
+                                    <!-- Loop LI element below to show list of languages -->
+                                    <li>
+                                        <a href="javascript:">Hindi</a>
+                                    </li>
+                                    <!-- End of LI Loop -->
+
+                                    <li>
+                                        <a href="javascript:">Telugu</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:">Tamil</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./assets/images/logo1.png" alt="logo" width="100%" />
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="homepage-english.html" class="active">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" class="active">About
+
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="about-us-1.html">Company Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-2.html">Who We Are</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-3.html">Our Story</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-4.html">Our Pet Diet Fix Solution</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-5.html">Our Philosopy</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="store.html">Store</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="challenge.html">OurChallage</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+
+                </nav>
+            </header>
+
+            <div id="main-container">
+
+                <div class="row black-bg pd-40">
+                    <div class="title mb-30">
+                        <h2 class="neon-text">Our Quick To Make (QTM) recipes are tailor-made for your furry friend.</h2>
+                    </div>
+                    <div>
+                        <h6 class="white-text">For information on accurate grammage, head over to
+                            <a href="#" class="neon-text">Diet Calculator</a> and input your pet’s details.</h6>
+                    </div>
+                    <div>
+                        <h6 class="white-text">
+                            These recipes are displayed here for your reference and convenience. You can access the exact details of ingredient quantities
+                            along with the entire procedure (and a quick tip!) on the Diet Calculator page.
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="row neon-bg pd-40-80 qtm-recipe-1">
+                    <div class="col-xs-12">
+                        <div class="recipe-title black-text mb-50">
+                            <span class="recipe-non-veg">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </span>
+                            ADULT CANINE - WITHOUT MILK - NON VEG - BOTH ECONOMY AND PREMIUM
+                        </div>
+                        <div class="row text-left black-text">
+                            <div class="col-xs-12 col-sm-5">
+                                <div class="sub-heading">Ingredients:</div>
+                                <div class="content content-table-wrapper">
+                                    <table class="table table-bordered dark-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Ingredients</th>
+                                                <th>Quantity(grams)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Rice (raw, milled)
+                                                </td>
+                                                <td>
+                                                    66.7 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Maize (dry)
+                                                </td>
+                                                <td>
+                                                    4.3 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Soybean meal
+                                                </td>
+                                                <td>
+                                                    19.5 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    French beans (country)
+                                                </td>
+                                                <td>
+                                                    14.4 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Egg (whole, boiled)
+                                                </td>
+                                                <td>
+                                                    14.4 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Chicken (skinless, boneless)
+                                                </td>
+                                                <td>
+                                                    21.5 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Chicken liver
+                                                </td>
+                                                <td>
+                                                    7.2 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Soybean oil
+                                                </td>
+                                                <td>
+                                                    5.7 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Pet diet fix NPPL mix
+                                                </td>
+                                                <td class="hightlight-pdf-mix">
+                                                    9.3 gram(s)
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary">Print</button>
+                            </div>
+                            <div class="col-xs-12 col-sm-7">
+                                <div class="sub-heading">Procedure:</div>
+                                <div class="content mb-30">
+                                    <p class="line-height-2">
+                                        Soak the peas and Bengal gram overnight. Light the stove; add soya bean oil to the cooker along with the washed vegetables
+                                        and mix thoroughly. Add the rice and red gram. Mix it well. Add the boiled shell-less
+                                        egg, and mash it thoroughly. Use scrambled eggs if it is more convenient for you.
+                                        Add two glasses of water for every glass of rice. Seal the cooker and let the mixture
+                                        cook. Switch off the stove after 3 whistles. Open the cooker once it has cooled down.
+                                        Add the nutritional mix to it after a gap of 5 minutes or until the food has reached
+                                        room temperature. Mix well. Your recipe is ready!
+                                    </p>
+                                </div>
+                                <div class="prep-time">
+                                    Preparation time: 10 minutes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-50"></div>
+                        <div class="row text-left black-text">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="sub-heading">
+                                    Cooking tip:
+                                </div>
+                                <div class="mb-20">
+                                    <span class="line-height-2" style="font-weight: 400;font-size: 14px">
+                                        For the busy working man and woman, some Petdietfix tips to help save time and money while cooking for your pet!
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <ul class="line-height-2">
+                                        <li>
+                                            For quicker cooking, use pre-cooked rice and vegetables. Just light the stove, add the soybean oil. Add all the pre-cooked
+                                            ingredients. Add the boiled shell-less egg, and mash it thoroughly. Use scrambled
+                                            eggs if it is more convenient for you. Mix everything (so that the flavour of
+                                            the yolk reaches every morsel of the rice. Your dog will absolutely love this!
+                                            ) Cook the same for 3-4 minutes. Add the nutritional mix to it after a gap of
+                                            5 minutes or until the food has reached room temperature. Mix properly. Your
+                                            pet’s food will be ready in less than 5 minutes. Provide the suggested quantity
+                                            of milk separately.
+                                        </li>
+                                        <li>
+                                            Cooked vegetables have a shelf life of 4 days in the fridge. Pre-cooked vegetables and rice can make the process of cooking
+                                            for your pet a much speedier process!
+                                        </li>
+                                        <li>
+                                            Add sufficient water separately to keep your pet hydrated!
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-left black-text mb-30">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="sub-heading">
+                                    Serving tip:
+                                </div>
+                                <div class="content">
+                                    <ul class="line-height-2">
+                                        <li>
+                                            One table spoon is roughly 3.5 grams of petdietfix nutrition mix. You may round off the daily requirement to the nearest
+                                            number of table spoons required, like 1 or 2 or 3 table spoons.
+                                        </li>
+                                        <li>
+                                            Uncooked rice of 1 cup generally weighs around 175-185 grams. Cooked rice of 1 cup generally weighs around 195-200 grams.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-left black-text">
+                            <div class="col-xs-12 col-sm-12 note-wrapper wow animated bounceInRight">
+                                <div class="sub-heading">
+                                    Note:
+                                </div>
+                                <div class="content">
+                                    <ul class="line-height-2">
+                                        <li>
+                                            The recipe provided is for an entire day’s nutrition. Please divide the portions based on the number of meals you feed your
+                                            pet in a day.
+                                        </li>
+                                        <li>
+                                            Do not add the nutritional mix while cooking, as nutrients degenerate at higher temperatures. Wait until the cooked food
+                                            has reached room temperature before adding the nutritional mix. Mix well.
+                                        </li>
+                                        <li>
+                                            Pet Diet Fix has been tested on canines of various life stages and age groups and has proven to be 100% safe. However, some
+                                            canines are especially susceptible to gassy gut. If you notice any signs of this
+                                            in your canine, reduce the quantity of peas and dals by half. This will solve
+                                            the problem!
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row black-bg pd-40-80 qtm-recipe-2">
+                    <div class="col-xs-12">
+                        <div class="recipe-title neon-text mb-50">
+                            <span class="recipe-veg">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </span> ADULT CANINE - WITHOUT MILK - VEG - BOTH ECONOMY AND PREMIUM
+                        </div>
+                        <div class="row text-left white-text">
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="sub-heading neon-text">Ingredients:</div>
+                                <div class="content content-table-wrapper">
+                                    <table class="table table-bordered neon-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Ingredients</th>
+                                                <th>Quantity(grams)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Rice (raw, milled)
+                                                </td>
+                                                <td>
+                                                    66.7 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Maize (dry)
+                                                </td>
+                                                <td>
+                                                    4.3 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Soybean meal
+                                                </td>
+                                                <td>
+                                                    19.5 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    French beans (country)
+                                                </td>
+                                                <td>
+                                                    14.4 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Egg (whole, boiled)
+                                                </td>
+                                                <td>
+                                                    14.4 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Chicken (skinless, boneless)
+                                                </td>
+                                                <td>
+                                                    21.5 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Chicken liver
+                                                </td>
+                                                <td>
+                                                    7.2 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Soybean oil
+                                                </td>
+                                                <td>
+                                                    5.7 gram(s)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left;">
+                                                    Pet diet fix NPPL mix
+                                                </td>
+                                                <td class="hightlight-pdf-mix">
+                                                    9.3 gram(s)
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary">Print</button>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="sub-heading neon-text">Procedure:</div>
+                                <div class="content mb-30">
+                                    <p class="line-height-2">
+                                        Soak the peas and Bengal gram overnight. Light the stove; add soya bean oil to the cooker along with the washed vegetables
+                                        and mix thoroughly. Add the rice and red gram. Mix it well. Add the boiled shell-less
+                                        egg, and mash it thoroughly. Use scrambled eggs if it is more convenient for you.
+                                        Add two glasses of water for every glass of rice. Seal the cooker and let the mixture
+                                        cook. Switch off the stove after 3 whistles. Open the cooker once it has cooled down.
+                                        Add the nutritional mix to it after a gap of 5 minutes or until the food has reached
+                                        room temperature. Mix well. Your recipe is ready!
+                                    </p>
+                                </div>
+                                <div class="prep-time-inverse">
+                                    Preparation time: 10 minutes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-50"></div>
+                        <div class="row text-left white-text">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="sub-heading">
+                                    <span class="neon-text">
+                                        Cooking tip:
+                                    </span>
+
+                                </div>
+                                <div class="mb-20">
+                                    <span class="line-height-2" style="font-weight: 400;font-size: 14px">
+                                        For the busy working man and woman, some Petdietfix tips to help save time and money while cooking for your pet!
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <ul class="line-height-2">
+                                        <li>
+                                            For quicker cooking, use pre-cooked rice and vegetables. Just light the stove, add the soybean oil. Add all the pre-cooked
+                                            ingredients. Add the boiled shell-less egg, and mash it thoroughly. Use scrambled
+                                            eggs if it is more convenient for you. Mix everything (so that the flavour of
+                                            the yolk reaches every morsel of the rice. Your dog will absolutely love this!
+                                            ) Cook the same for 3-4 minutes. Add the nutritional mix to it after a gap of
+                                            5 minutes or until the food has reached room temperature. Mix properly. Your
+                                            pet’s food will be ready in less than 5 minutes. Provide the suggested quantity
+                                            of milk separately.
+                                        </li>
+                                        <li>
+                                            Cooked vegetables have a shelf life of 4 days in the fridge. Pre-cooked vegetables and rice can make the process of cooking
+                                            for your pet a much speedier process!
+                                        </li>
+                                        <li>
+                                            Add sufficient water separately to keep your pet hydrated!
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-left white-text mb-30">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="sub-heading neon-text">
+                                    Serving tip:
+                                </div>
+                                <div class="content">
+                                    <ul class="line-height-2">
+                                        <li>
+                                            One table spoon is roughly 3.5 grams of petdietfix nutrition mix. You may round off the daily requirement to the nearest
+                                            number of table spoons required, like 1 or 2 or 3 table spoons.
+                                        </li>
+                                        <li>
+                                            Uncooked rice of 1 cup generally weighs around 175-185 grams. Cooked rice of 1 cup generally weighs around 195-200 grams.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-left white-text">
+                            <div class="col-xs-12 col-sm-12 note-wrapper-inverse wow animated bounceInLeft">
+                                <div class="sub-heading">
+                                    Note:
+                                </div>
+                                <div class="content">
+                                    <ul class="line-height-2">
+                                        <li>
+                                            The recipe provided is for an entire day’s nutrition. Please divide the portions based on the number of meals you feed your
+                                            pet in a day.
+                                        </li>
+                                        <li>
+                                            Do not add the nutritional mix while cooking, as nutrients degenerate at higher temperatures. Wait until the cooked food
+                                            has reached room temperature before adding the nutritional mix. Mix well.
+                                        </li>
+                                        <li>
+                                            Pet Diet Fix has been tested on canines of various life stages and age groups and has proven to be 100% safe. However, some
+                                            canines are especially susceptible to gassy gut. If you notice any signs of this
+                                            in your canine, reduce the quantity of peas and dals by half. This will solve
+                                            the problem!
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-content clearfix">
+
+                <ul>
+                    <li>
+                        <span class="line-border"></span>
+                    </li>
+                    <li>2018 &copy; copyright |</li>
+                    <li>allrights reserved</li>
+                </ul>
+                <ul class="hidden-xs pull-right">
+                    <li>
+                        <span class="line-border"></span>
+                    </li>
+                    <li>privacy policy /</li>
+                    <li>tems & conditions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(".navbar-nav li a").click(function (event) {
+            if (!$(this).hasClass('dropdown-toggle')) {
+                var toggle = $(".navbar-toggle").is(":visible");
+                if (toggle) {
+                    $(".navbar-collapse").collapse('hide');
+                }
+            }
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+
+            $('.open-calc').on('click', function () {
+                $('.calc-content').toggleClass('hide');
+                $(this).toggleClass('hide');
+            });
+
+            $('.close-button').on('click', function () {
+                $('.calc-content').toggleClass('hide');
+                $('.calc-button').toggleClass('hide');
+            });
+
+            $('.my-scroll-form').submit(function (e) {
+                e.preventDefault();
+                // alert(1);
+                // scroll to the given class and add the highlight class
+                $('html, body').animate({
+                    scrollTop: ($('.qtm-recipe-2').offset().top - 100)
+                }, 500);
+
+                // Add highlight-recipe class to table
+                // highlight-recipe
+
+                $('.qtm-recipe-2 .content-table-wrapper').toggleClass('highlight-recipe');
+
+                $('.calc-content').toggleClass('hide');
+                $('.calc-button').toggleClass('hide');
+
+            });
+
+
+        });
+
+    </script>
+
+    <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>

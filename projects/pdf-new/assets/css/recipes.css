@@ -1,0 +1,137 @@
+.recipe-table>.table {
+    background: black;
+    border: none;
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.recipe-table>.table>thead>tr>th {
+    font-size: 18px;
+    text-align-last: center;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid #272727;
+}
+
+.recipe-table>.table>tbody>tr>td {
+    border: none;
+    padding: 0px;
+}
+
+.recipe-table>.table>tbody>tr>td>a {
+    text-decoration: underline;
+    color: white;
+    padding: 12px;
+    display: inline-block;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.recipe-table>.table>tbody>tr>td>a:hover {
+    color: #dafd00;
+}
+
+.recipe-table-title {
+    font-size: 22px;
+}
+
+.recipe-list-wrapper, .recipe-wrapper {
+    margin: auto;
+    margin-top: 50px;
+    width: 550px;
+    max-width: 100%;
+}
+
+.recipe-list-wrapper>ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.recipe-list-wrapper>ul>li {
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background: #dafd00;
+    transition: 0.3s;
+}
+
+.recipe-list-wrapper>ul>li:hover {
+    color: rgb(24, 24, 24);
+    box-shadow: 0px 3px 5px 0px #6f6f6f;
+}
+
+.recipe-list-wrapper>ul>li>a {
+    font-size: 16px;
+    display: block;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.recipe-title {
+    background: black;
+    padding: 20px;
+    color: #dafd00;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recipe-links {
+    margin: 10px auto;
+}
+
+.recipe-links>ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.recipe-links>ul>li {
+    display: block;
+    width: 50%;
+    background: #dafd00;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: 0.3s;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.recipe-links>ul>li:hover {
+    color: rgb(24, 24, 24);
+    box-shadow: 0px 3px 5px 0px #6f6f6f;
+}
+
+.recipe-links>ul>li>a {
+    font-size: 16px;
+    display: block;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.recipe-title > span > img {
+    width: 50px;
+    display: inline-block;
+}
+
+.small-text {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.recipe-border {
+    border: 1px solid #dcdcdc;
+    margin-bottom: 10px;
+}
+
+.f-16 h6 {
+    font-size: 14px!important;
+}

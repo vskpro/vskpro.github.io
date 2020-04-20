@@ -1,0 +1,246 @@
+.panel-group {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.panel-group .panel {
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+.panel.active .panel-heading {
+    background: #000;
+    border-bottom: 1px solid #dcdcdc;
+    color: white;
+}
+
+.panel-heading {
+    border-radius: 0px;
+}
+
+.panel .panel-body {
+    display: none;
+}
+
+.panel.active .panel-body {
+    display: block;
+}
+
+.panel.active .edit-panel-button {
+    display: none;
+}
+
+.panel-heading {
+    font-weight: bold;
+}
+
+.panel .number {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #000000;
+    color: #dafd00;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.panel.active .number {
+    display: inline-block;
+    padding: 2px 10px;
+    background: #dafd00;
+    color: #000;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.edit-wrapper {
+    margin-top: 10px;
+}
+
+.sub-heading {
+    /* margin-left: 35px; */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.edit-panel-button, .edit-panel-button:focus, .edit-panel-button:hover {
+    border: 2px solid #000;
+    color: #dafd00;
+    padding: 2px 10px;
+    background: #000;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 100%!important;
+}
+
+/* .price-details-wrapper {
+    position: fixed;
+    right: 20px;
+    top: 135px;
+    color: black;
+    padding: 20px 25px;
+    border: 1px solid #dcdcdc;
+    width: auto;
+    background: #f7f7f7;
+} */
+
+.form-wrapper {
+    padding: 10px;
+}
+
+.privacy-modal-content {
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.total-wrapper {
+    text-align: left;
+    font-size: 1.52em;
+}
+
+.payment-type>label {
+    border: 1px solid #dcdcdc;
+    padding: 20px 40px;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.payment-type>label>input {
+    height: 17px;
+    width: 17px;
+    margin-left: -25px!important;
+}
+
+.payment-type {
+    margin-bottom: 10px;
+}
+
+.payment-option-sub-heading {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.selected-payment {
+    background: #dafd00;
+}
+
+.payment-condition {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.price-details-wrapper {
+    position: fixed;
+    top: auto;
+    right: auto;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.price-details-wrapper hr, .price-heading {
+    display: none;
+}
+
+.price-list>div {
+    display: inline-block;
+}
+
+.price-list>div::after {
+    content: '|';
+}
+
+.price-list>div:last-child::after {
+    content: '';
+}
+
+.amount-payable>strong {
+    color: #dafd00;
+}
+
+.payment-gateways {
+    margin: 10px auto;
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+}
+
+.payment-gateways a {
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    margin: auto;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.payment-gateways a > img {
+    width: 200px;
+    max-width: 100%;
+    margin: auto;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.payment-gateways a > img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 991px) {
+    .panel-group {
+        margin: auto;
+    }
+    .price-details-wrapper {
+        position: fixed;
+        top: auto;
+        right: auto;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background: black;
+        color: white;
+        border: none;
+        text-align: center;
+    }
+    .price-details-wrapper hr, .price-heading {
+        display: none;
+    }
+    .price-list>div {
+        display: inline-block;
+    }
+    .price-list>div::after {
+        content: '|';
+    }
+    .price-list>div:last-child::after {
+        content: '';
+    }
+    .amount-payable>strong {
+        color: #dafd00;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .media-left {
+        width: 100%;
+        display: block;
+    }
+    .media-left>img {
+        margin: auto;
+    }
+    .media-heading {
+        font-size: 1.15em;
+    }
+}

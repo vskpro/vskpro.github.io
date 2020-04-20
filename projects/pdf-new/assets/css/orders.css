@@ -1,0 +1,42 @@
+.panel-heading>.pull-left>span, .panel-heading>.pull-right>span {
+    margin-right: 20px;
+}
+
+.panel-heading>.pull-left>span>div:first-child, .panel-heading>.pull-right>span>div:first-child {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.panel-heading>.pull-left>span>div:last-child, .panel-heading>.pull-right>span>div:last-child {
+    font-size: 14px;
+}
+
+.panel-heading .pull-right a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.panel-heading .pull-right a:hover {
+    color: rgb(43, 43, 43);
+}
+.panel-body > .pull-left > .inline-block > div > a {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+.panel-group .panel {
+    margin-bottom: 20px;
+}
+
+.order-image {
+    width: 100px;
+}
+
+.no-decoration {
+    text-decoration: none!important;
+    width: 120px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}

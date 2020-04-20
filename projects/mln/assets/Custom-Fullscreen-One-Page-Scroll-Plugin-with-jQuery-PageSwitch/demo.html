@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery PageSwitch Plugin Example</title>
+	<link rel="stylesheet" type="text/css" href="css/PageSwitch.css">
+	<style type="text/css">
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#container, .selections, .selection { height: 100%; }
+
+.selection img {
+  width: 100%;
+  height: 100%;
+}
+
+#selection0,  #selection1,  #selection2,  #selection3,  #selection4 {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+  color: grey;
+}
+
+#selection0 { background-image: url(https://placeimg.com/1024/768/animals); }
+
+#selection1 { background-image: url(https://placeimg.com/1024/768/arch); }
+
+#selection2 { background-image: url(https://placeimg.com/1024/768/nature); }
+
+#selection3 { background-image: url(https://placeimg.com/1024/768/tech); }
+
+#selection4 { background-image: url(https://placeimg.com/1024/768/people); }
+
+.left { float: left; }
+
+h1 {
+  font-size: 6em;
+  font-weight: normal;
+  transform: translateX(-100%);
+}
+
+p {
+  font-size: 2em;
+  margin: 0.5em 0 2em 0;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+ width: 100%  -webkit-transform:translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#selection0 .title {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation: sectitle0 1s ease-in-out 100ms forwards;
+  animation: sectitle0 1s ease-in-out 100ms forwards;
+}
+
+#selection0 p {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+  animation: sec0 1s ease-in-out 100ms forwards;
+}
+ @-webkit-keyfarmes 
+sectitle0 {  0% {
+ -webkit-transform:translateX(-100%);
+ transform:translateX(-100%);
+}
+ 100% {
+ -webkit-transform:translateX(0);
+ transform:translateX(0);
+}
+}
+ @keyfarmes 
+sectitle0 {  0% {
+ -webkit-transform:translateX(-100%);
+ transform:translateX(-100%);
+}
+ 100% {
+ -webkit-transform:translateX(0);
+ transform:translateX(0);
+}
+}
+ @-webkit-keyfarmes 
+sec0 {  0% {
+ -webkit-transform:translateX(100%);
+ transform:translateX(100%);
+}
+ 100% {
+ -webkit-transform:translateX(0);
+ transform:translateX(0);
+}
+}
+ @keyfarmes 
+sec0 {  0% {
+ -webkit-transform:translateX(100%);
+ transform:translateX(100%);
+}
+ 100% {
+ -webkit-transform:translateX(0);
+ transform:translateX(0);
+}
+}
+
+.slide {
+  transform: translateX(0);
+  transition: all ease-in-out 500ms;
+}
+</style>
+	</head>
+	<body>
+<div id="container" data-PageSwitch>
+      <div class="selections" style="position:relative">
+    <div class="selection" id="selection0"> 
+          <!--<img src="images/11.jpg" />--> 
+        </div>
+    <div class="selection" id="selection1"> 
+          <!--<img src="images/12.jpg" />--> 
+        </div>
+    <div class="selection" id="selection2"> 
+          <!--<img src="images/13.jpg" />--> 
+        </div>
+    <div class="selection" id="selection3"> 
+          <!--<img src="images/14.jpg" />--> 
+        </div>
+    <div class="selection" id="selection4"> 
+          <!--<img src="images/14.jpg" />--> 
+        </div>
+  </div>
+    </div>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/PageSwitch.js"></script> 
+<script type="text/javascript">
+     $("#container").PageSwitch({
+     	duration:1000
+     });
+	</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

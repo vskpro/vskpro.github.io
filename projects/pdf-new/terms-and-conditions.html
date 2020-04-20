@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <title>New UI | Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/contact.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Raleway|Montserrat:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="primary-bg">
+
+    <div class="preloader">
+        <div class="center">
+            <div class="img-wrapper">
+                <img src="./assets/images/loading.gif" class="img-responsive" alt="Loading...">
+                <!-- <img src="https://media.giphy.com/media/U3wwuyh8AVkwU/giphy.gif" class="img-responsive" alt="Loading..."> -->
+            </div>
+            <div class="loading-title">
+                Loading...
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky fixed">
+
+        <div class="top-bar clearfix">
+            <div class="float-right-md">
+                <ul class="top-bar-ul clearfix">
+                    <li>
+                        <a href="#" class="inline-block cart-wrapper">
+                            <span class="badge badge-xs badge-danger">9</span>
+                            <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Cart
+                        </a>
+                    </li>
+                    <li class="dropdown language-wrapper">
+                        <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+                            <i class="fa fa-language fa-lg" aria-hidden="true"></i>
+                            English
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu width-auto animated fadeIn">
+                            <li>
+                                <a href="#">हिंदी</a>
+                            </li>
+                            <li>
+                                <a href="#">தமிழ்</a>
+                            </li>
+                            <li>
+                                <a href="#">తెలుగు</a>
+                            </li>
+                            <li>
+                                <a href="#">മലയാളം</a>
+                            </li>
+                            <li>
+                                <a href="#">ಕನ್ನಡ</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown language-wrapper">
+                        <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+                            <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                            Admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu width-auto animated fadeIn">
+
+                            <li>
+                                <a href="profile.html">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="orders.html">
+                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                    Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                                    Logout
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="inline-block bold neon-text" style="padding-right: 0px;">Login</a>
+                        <span class="inline-block neon-text">|</span>
+                        <a href="#" class="inline-block neon-text bold" style="padding-left: 0px;">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-container primary-bg">
+            <div class="container-fluid">
+                <div class="clearfix nav-holder">
+                    <div class="pull-left logo-wrapper">
+                        <a href="index.html">
+                            <img src="./assets/images/logo-inverse.png" class="img-responsive" alt="pet diet fix logo">
+                        </a>
+                    </div>
+                    <div class="pull-right nav-wrapper">
+                        <nav class="menu-wrapper clearfix">
+                            <span class="close-mobile-menu">&times;</span>
+                            <ul class="my-nav clearfix">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About
+                                        <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu full-width-on-mobile animated fadeIn">
+                                        <li>
+                                            <a href="who-we-are.html">Who We Are</a>
+                                        </li>
+                                        <li>
+                                            <a href="our-story.html">Our Story</a>
+                                        </li>
+                                        <li>
+                                            <a href="our-pet-diet-fix-solution.html">Our Pet Diet Fix Solution</a>
+                                        </li>
+                                        <li>
+                                            <a href="pet-feeding-guildness.html">Pet Feeding Guidelines</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="store.html">Store</a>
+                                </li>
+                                <li>
+                                    <a href="recipes.html" class="active">Recipes</a>
+                                </li>
+                                <li>
+                                    <a href="our-challenge.html">Our Challenge</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="mobile-menu-toggle-wrapper">
+                            <div class="mobile-overlay"></div>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="javascript:void(0)" class="mobile-menu-toggler">
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="fixed-spacing">
+
+        <div class="sections-wrapper white-bg pd-40">
+
+            <div class="text-left center-container" style="color: #000 !important">
+
+                <h1 class="border" align="center">TERMS AND CONDITIONS</h1>
+                <div class="bdivider divider-auto neon-bg"></div>
+
+                <p>Welcome! Aindhri Innovations Pvt. Ltd. and its affiliated companies (together, “Pet Diet Fix” or ”we” or
+                    “us”) offers this and other websites, webpages, applications, games, widgets and other online and mobile
+                    services in which these Terms of Use are posted or linked (collectively, the “Pet Diet Fix Sites”). We
+                    hope that you will find the Pet Diet Fix Sites informative and entertaining.</p>
+
+                <p>These Terms of Use and our Privacy Statement, located at
+                    <a href="https://petdietfix.com/terms-and-condition">www.petdietfix.com/terms-and-condition</a> and
+                    <a href="https://petdietfix.com/privacy-policy">www.petdietfix.com/privacy-policy</a> (together, these "Terms") describe the terms and conditions on
+                    which Pet Diet Fix offers you access to the Pet Diet Fix Sites.</p>
+
+                <p>Before accessing and using the Pet Diet Fix Sites, please read these Terms carefully because they constitute
+                    a legal agreement between Pet Diet Fix and you.&nbsp;
+                    <strong>BY USING THE PET DIET FIX SITES, YOU AGREE TO THESE TERMS AND AFFIRM THAT YOU ARE ABLE AND LEGALLY COMPETENT
+                        TO DO SO.</strong>
+                </p>
+
+                <p>
+                    <strong>IMPORTANT NOTE:</strong>&nbsp;These Terms contain provisions that limit our liability to you and require
+                    you to resolve any dispute with us through final and binding arbitration on an individual basis and not
+                    as part of any class or representative action. Please see “DISCLAIMER OF WARRANTIES &amp; LIMITATIONS
+                    OF LIABILITY” (Section 8) and “DISPUTE RESOLUTION” (Section 10) below for more information.</p>
+
+                <p>
+                    <strong>IF YOU DO NOT AGREE TO ANY PART OF THESE TERMS, THEN PLEASE DO NOT USE THE PET DIET FIX SITES.</strong>
+                </p>
+
+                <ol>
+                    <li>
+                        <strong>CHANGES TO TERMS</strong>
+
+
+                        <p>The Effective Date of these Terms is set forth at the top of this webpage. We do not intend to change
+                            these Terms very often but reserve the right to do so. We will notify you of any material change
+                            by posting notice on this webpage. Whenever possible, we will notify you in advance of our changes.
+                            We do not make changes that have retroactive effect unless we are legally required to do so.</p>
+
+                        <p>Your continued use of the Pet Diet Fix Sites after the Effective Date constitutes your acceptance
+                            of the amended Terms. The amended Terms supersede all previous versions of the Terms. For this
+                            reason, we encourage you to review these Terms any time you access or use the Pet Diet Fix Sites
+                            and to print out a copy of these Terms for your records.</p>
+                    </li>
+
+                    <li>
+                        <strong>ADDITIONAL TERMS</strong>
+
+                        <p>Certain services offered by or through the Pet Diet Fix Sites, such as mobile applications, sweepstakes,
+                            offers, contests and other services, may be governed by additional terms and conditions presented
+                            in conjunction with them. You must agree to the additional terms before using such services.
+                            These Terms and any additional terms will apply equally. If any additional term is irrevocably
+                            inconsistent with any provision of these Terms, the additional term will prevail.</p>
+
+                    </li>
+
+                    <li>
+                        <strong>PET DIET FIX CONTENT</strong>
+                        <p>Pet Diet Fix retains full and complete title to all information and materials provided on or through
+                            or submitted to the Pet Diet Fix Sites, including any artwork, graphics, text, video and audio
+                            clips, trademarks, logos and other content (collectively, "Pet Diet Fix Content").</p>
+
+                        <p>If you agree to these Terms (as well as any additional terms and conditions related to specific Pet
+                            Diet Fix Content), then you may download, print and/or copy Pet Diet Fix Content solely for your
+                            own personal use.</p>
+
+                        <p>Unless Pet Diet Fix provides you with written authorization to do so, you may not:</p>
+
+                        <ul>
+                            <li>
+                                <p>Incorporate any Pet Diet Fix Content into any other work (such as your own website) or use
+                                    Pet Diet Fix Content in any public or commercial manner;</p>
+                            </li>
+                            <li>
+                                <p>Copy, modify, reproduce, adapt, reverse engineer, distribute, frame, republish, upload, display,
+                                    post, transmit, transfer, license or sell Pet Diet Fix Content in any form or by any
+                                    means;
+                                </p>
+                            </li>
+                            <li>
+                                <p>Change any of the notices about copyright, trademarks or other intellectual property rights
+                                    that may be part of the Pet Diet Fix Content; or</p>
+                            </li>
+                            <li>
+                                <p>‘Deep link’ to any of the Pet Diet Fix Sites (i.e., link to any page other than the home
+                                    page of one of the Pet Diet Fix Sites).</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>YOUR SUBMISSIONS</strong>
+
+                        <p>In addition to job applications, Pet Diet Fix may from time to time offer areas where you and other
+                            users can post or otherwise submit information, photos, graphics, creative suggestions, ideas,
+                            notes, concepts, information, ratings or other materials on or to the Pet Diet Fix Sites (collectively,
+                            "Submissions"). By sending, posting or transmitting Submissions to Pet Diet Fix (and/or our designees)
+                            or any area of the Pet Diet Fix Sites, you grant Pet Diet Fix and our designees a worldwide,
+                            non-exclusive, sub-licensable (through multiple tiers), transferable, royalty-free, perpetual,
+                            irrevocable right to use, reproduce, sublicense (through multiple tiers), distribute, create
+                            derivative works of, perform and import your Submissions in any media now known or hereafter
+                            developed, for any purpose whatsoever, commercial or otherwise, without compensation to you.
+                            In other words, Pet Diet Fix has the automatic right to use your Submissions -- including reproducing,
+                            disclosing, and publishing or broadcasting your Submission -- anywhere, anytime, in any medium
+                            and for any purpose. Under no circumstances are you entitled to payment if Pet Diet Fix uses
+                            one for your Submissions. All Submissions are deemed non-confidential and non-proprietary.</p>
+
+                        <p>You are responsible for the content of your Submissions. By posting a Submission, you represent and
+                            warrant that:</p>
+
+                        <ul>
+                            <li>
+                                <p>You own or otherwise control all of the rights to your Submission, including without limitation
+                                    all copyrights and trademarks;</p>
+                            </li>
+                            <li>
+                                <p>Your Submission is true and accurate;</p>
+                            </li>
+                            <li>
+                                <p>Your Submission does not violate the rights of any other person or entity, such as rights
+                                    of privacy and publicity; and</p>
+                            </li>
+                            <li>
+                                <p>Your Submission complies with applicable laws, rules and regulations.</p>
+                            </li>
+                        </ul>
+                        <p>You acknowledge and agree that Pet Diet Fix has the right (but not the obligation) to alter, remove
+                            or refuse to post or allow to be posted any Submission. Pet Diet Fix takes no responsibility
+                            and assumes no liability for any Submission posted by you or any third party.</p>
+
+                        <p>Pet Diet Fix strongly encourages you not to disclose any personal information in your Submissions
+                            because other people can see and use the personal information in your Submissions. Pet Diet Fix
+                            is not responsible for information that you choose to communicate via Submissions.</p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <strong>USING THE PET DIET FIX SITES</strong>
+                        </p>
+                        <p>YOU MUST BE AT LEAST AGE THIRTEEN (13) TO USE THE PET DIET FIX SITES. By accessing, using and/or
+                            submitting information to or through any of the Pet Diet Fix Sites, you represent that you are
+                            not younger than age 13.</p>
+
+                        <p>IF YOU ARE BETWEEN AGE THIRTEEN (13) AND THE AGE OF MAJORITY IN YOUR PLACE OF RESIDENCE, YOU MAY
+                            USE THE PET DIET FIX SITES ONLY UNDER THE SUPERVISION OF YOUR PARENT OR LEGAL GUARDIAN.</p>
+
+                        <p>IF YOU ARE THE PARENT OR LEGAL GUARDIAN AND CONSENT TO YOUR MINOR CHILD’S ACCESS TO AND USE OF THE
+                            PET DIET FIX SITES, YOU AGREE TO BE BOUND BY THESE TERMS ON BEHALF OF YOURSELF AND YOUR MINOR
+                            CHILD. We encourage you to investigate commercially-available parental control protections (such
+                            as computer hardware, software or filtering services) that may assist you in limiting access
+                            to material considered harmful to minors.</p>
+
+                        <p>While using the Pet Diet Fix Sites, you will not:</p>
+
+                        <ul>
+                            <li>
+                                <p>Create a false identity or impersonate any person, including falsely indicating that you
+                                    are a Pet Diet Fix official or representative, celebrity or public figure;</p>
+                            </li>
+                            <li>
+                                <p>Transmit to or through the Pet Diet Fix Sites any advertisement, solicitation, junk mail
+                                    or other unsolicited or unauthorized commercial or promotional content (unless expressly
+                                    permitted in writing by Pet Diet Fix);</p>
+                            </li>
+                            <li>
+                                <p>Disrupt or attempt to disrupt the proper working of the Pet Diet Fix Sites (e.g., by hacking
+                                    into Pet Diet Fix’ servers or Pet Diet Fix’ social media accounts);</p>
+                            </li>
+                            <li>
+                                <p>Restrict or inhibit any other person from using and enjoying the Pet Diet Fix Sites;</p>
+                            </li>
+                            <li>
+                                <p>Use any spam-bot, bot net or other bot, scraper or other automated means to access the Pet
+                                    Diet Fix Sites or transmit any virus, worm, Trojan or other malware to or though the
+                                    Pet Diet Fix Sites;</p>
+                            </li>
+                            <li>
+                                <p>Modify, adapt, sublicense, translate, sell, reverse engineer, decompile or disassemble any
+                                    portion of any of the Pet Diet Fix Sites;</p>
+                            </li>
+                            <li>
+                                <p>"Frame" or "mirror" any part of any of the Pet Diet Fix Sites unless you have Pet Diet Fix’
+                                    prior written authorization;</p>
+                            </li>
+                            <li>
+                                <p>Post or transmit any material or engage in any other behaviour or activity that is false,
+                                    misleading, unlawful, offensive, disruptive, harmful or otherwise objectionable (as determined
+                                    by Pet Diet Fix); or</p>
+                            </li>
+                            <li>
+                                <p>Assist any person in engaging in any of the activities described above.</p>
+                            </li>
+                        </ul>
+
+                        <p>Pet Diet Fix has the discretion to terminate your access to the Pet Diet Fix Sites without notice
+                            for any violation of the above rules. If you access and use the Pet Diet Fix Sites on your smartphone,
+                            tablet or other mobile device, you must have wireless service through Wi-Fi or a participating
+                            mobile service provider. Certain services may require text messaging (SMS or MMS) capability.
+                            You agree that you are solely responsible for all message and data charges that you incur from
+                            your mobile service provider. These charges may include standard and premium SMS charges and
+                            may be one-time or recurring charges. All charges are billed by and payable to your mobile service
+                            provider. Please contact your mobile service provider for pricing plans and details. Pet Diet
+                            Fix is not liable for any delays in the receipt of any text messages as delivery is subject to
+                            effective transmission from your mobile service provider. Text messages are provided on an “as
+                            is” basis and may not be available in all areas at all times.</p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>THIRD-PARTY WEBSITES</strong>
+                        </p>
+                        <p>The Site may contain links to third-party websites and services, including social media (collectively,
+                            “Linked Sites”). Linked Sites are not under the control of Pet Diet Fix and Pet Diet Fix is not
+                            responsible for Linked Sites or for any information or materials on, or any form of transmission
+                            received from, any Linked Site. The inclusion of a link does not imply endorsement by Pet Diet
+                            Fix of the Linked Site or any association with the operators of the Linked Site. Pet Diet Fix
+                            does not investigate, verify or monitor the Linked Sites. Pet Diet Fix provides links to Linked
+                            Sites for your convenience only. You access Linked Sites at your own risk.</p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>PRIVACY</strong>
+                        </p>
+                        <p>Please make sure that you carefully read our Privacy Statement to learn about the information that
+                            Pet Diet Fix collects on the Pet Diet Fix Sites and how we process it. Without limiting the terms
+                            of our Privacy Statement, you understand that Pet Diet Fix does not and cannot guarantee that
+                            your use of the Pet Diet Fix Sites and/or the information provided by you through the Pet Diet
+                            Fix Sites will be private or secure. Pet Diet Fix is not responsible or liable to you for any
+                            lack of privacy or security you may experience. You are responsible for using the precautions
+                            and security measures best suited for your situation and intended use of the Pet Diet Fix Sites.
+                            Pet Diet Fix reserves the right at all times to disclose any information as Pet Diet Fix deems
+                            necessary to satisfy any applicable law, regulation, legal process or governmental request.</p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>DISCLAIMERS OF WARRANTIES &amp; LIMITATIONS OF LIABILITY</strong>
+                        </p>
+
+                        <p>Pet Diet Fix warrants that Pet Diet Fix has validly entered into these Terms and has the legal power
+                            to do so. You warrant that you have validly entered into these Terms and have the legal power
+                            to do so.</p>
+
+                        <p>EXCEPT AS EXPRESSLY PROVIDED ABOVE, THE PET DIET FIX SERVICES ARE PROVIDED "AS IS" AND “AS AVAILABLE”
+                            WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. Pet Diet Fix specifically disclaims all warranties
+                            and conditions of any kind, including all implied warranties and conditions of merchantability,
+                            fitness for a particular purpose, title, non-infringement, freedom from defects, uninterrupted
+                            use and all warranties implied from any course of dealing or usage of trade. Pet Diet Fix does
+                            not warrant that (a) the Pet Diet Fix Sites will meet your requirements, (b) operation of the
+                            Pet Diet Fix Sites will be uninterrupted or virus- or error-free or (c) errors will be corrected.
+                            Any oral or written advice provided by Pet Diet Fix or its authorized agents does not and will
+                            not create any warranty. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES
+                            WHICH MEANS THAT SOME OR ALL OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.</p>
+
+                        <p>
+                            <strong>YOUR USE OF THE PET DIET FIX SERVICES IS AT YOUR OWN RISK.</strong>
+                        </p>
+
+                        <p>YOU AGREE THAT IN NO EVENT WILL PET DIET FIX BE LIABLE (Y) FOR DAMAGES OF ANY KIND, INCLUDING DIRECT,
+                            INDIRECT, SPECIAL, EXEMPLARY, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES (INCLUDING, BUT NOT
+                            LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS OR BUSINESS
+                            INTERRUPTION), HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, WHETHER ARISING IN ANY WAY IN
+                            CONNECTION WITH THESE TERMS AND WHETHER IN CONTRACT, STRICT LIABILITY OR TORT (INCLUDING NEGLIGENCE
+                            OR OTHERWISE), EVEN IF PET DIET FIX HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE OR (Z)
+                            FOR ANY OTHER CLAIM, DEMAND OR DAMAGES WHATSOEVER RESULTING FROM OR ARISING OUT OF OR IN CONNECTION
+                            WITH YOUR USE OF THE PET DIET FIX SERVICES.</p>
+
+                        <p>The foregoing disclaimer of liability will not apply to the extent prohibited by applicable law in
+                            the jurisdiction of your place of residence. You acknowledge and agree that the above limitations
+                            of liability together with the other provisions in these Terms that limit liability are essential
+                            terms and that Pet Diet Fix would not be willing to grant you the rights set forth in these Terms
+                            but for your agreement to the above limitations of liability.</p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>INDEMNIFICATION</strong>
+                        </p>
+                        <p>You agree to indemnify and defend Pet Diet Fix and its directors, officers, employees and agents
+                            from and against all losses, liabilities, actual or pending claims, actions, damages, expenses,
+                            costs of defense and reasonable attorneys’ fees brought against Pet Diet Fix by any third-party
+                            arising from your use of the Pet Diet Fix Sites or any violation of these Terms, the rights of
+                            a third-party or applicable law. Pet Diet Fix reserves the right, at its own expense, to assume
+                            the exclusive defense and control of any matter subject to indemnification hereunder. In any
+                            event, no settlement that affects the rights or obligations of Pet Diet Fix may be made without
+                            Pet Diet Fix’s prior written approval.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>DISPUTE RESOLUTION</strong>
+                        </p>
+                        <p>This Agreement shall be construed and governed by the laws of India without regard to principles
+                            of conflict of laws. The parties agree to negotiate in good faith to resolve any dispute between
+                            them regarding this Agreement. If the negotiations do not resolve the dispute to the reasonable
+                            satisfaction of parties, then each party’s CEO or a representative designated by the CEO (“Representatives”)
+                            shall, within thirty (30) days of a written request by either party to call such a meeting, meet
+                            either in person or through any other media and alone (except for one assistant for each party)
+                            and shall attempt in good faith to resolve the dispute. If such representatives in such meeting
+                            cannot resolve the disputes, the parties agree that they shall, if requested in writing by either
+                            party, meet within thirty (30) days after such written notification for one day with an impartial
+                            mediator and consider dispute resolution alternatives other than litigation. The mediation will
+                            be treated as a settlement discussion and therefore will be confidential and may not be used
+                            in a later evidentiary proceeding. The mediator may not testify for either party in any later
+                            proceeding relating to the dispute. No recording or transcript shall be made of the mediation
+                            proceedings. Each party will bear its own costs in the mediation. The parties will share the
+                            Fees and expenses of the mediator equally. If an alternative method of dispute resolution is
+                            not agreed upon within thirty (30) days after the one-day mediation, either party may invoke
+                            arbitration proceedings for resolution of disputes.</p>
+
+                        <p>The arbitration will be conducted in Hyderabad, India in English language, in accordance with the
+                            rules of the Arbitration and Conciliation Act, 1996 The parties agree that the dispute shall
+                            be settled by a sole arbitrator appointed in accordance with the said Rules, and the sole arbitrator
+                            so appointed shall be referred to herein as an “Arbitrator.”</p>
+
+                        <ul>
+                            <li>
+                                <p>Following the appointment of the Arbitrator, the Arbitrator shall set forth the schedule
+                                    and timing of the arbitration proceedings in accordance with the applicable provisions
+                                    of the Rules.</p>
+                            </li>
+                            <li>
+                                <p>Upon rendering an award or a decision, the Arbitrator shall set forth in writing findings
+                                    of fact, conclusions of law and a reasoned opinion explaining the basis of such award
+                                    or decision, and shall make a determination of which party shall be considered the prevailing
+                                    party, which determination shall be consistent with such reasoned opinion.</p>
+                            </li>
+                            <li>
+                                <p>The Arbitrator shall be empowered to issue injunctive or other equitable relief.</p>
+                            </li>
+                            <li>
+                                <p>Judgment on the award or any other final or interim decision rendered by the Arbitrator may
+                                    be entered, registered or filed for enforcement purposes in any court having jurisdiction
+                                    thereof.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Nothing in this Section shall prevent, or be construed as preventing, a party from seeking
+                                    injunctive or other equitable relief in a court of appropriate jurisdiction.</p>
+                            </li>
+                        </ul>
+
+                        <p>
+                            <strong>Please Note: </strong>By agreeing to these Terms, you explicitly agree that any claims or actions
+                            that you may otherwise have against Pet Diet Fix under the laws of any jurisdiction outside the
+                            India are hereby waived, including without limitation, any claims or actions under the laws of
+                            your own country, and that your sole location and applicable law for any dispute is in India
+                            according to the terms of this Section 10.</p>
+
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>TERMINATION</strong>
+                        </p>
+                        <p>These Terms automatically terminate when you fail to comply with any term or condition of them. Pet
+                            Diet Fix may terminate or modify your access to the Pet Diet Fix Sites, with or without notice
+                            to you, at any time for any reason. For example, access to the Pet Diet Fix Sites may be denied
+                            without notice if Pet Diet Fix believes that you are not at least age 13.</p>
+
+                        <p>Termination will not limit any of Pet Diet Fix’ other rights or remedies. This Section 11, along
+                            with Sections 3, 8, 9, 10 and 14, survive termination of these Terms.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>JURISDICTIONAL ISSUES; TAXES</strong>
+                        </p>
+                        <p>You are responsible for compliance with all applicable laws. Pet Diet Fix reserves the right to limit
+                            the availability of the Pet Diet Fix Sites and/or Pet Diet Fix Content to any person or geographic
+                            area at any time. Any software offered on or through the Pet Diet Fix Sites may be subject to
+                            EIC India laws and mandates.</p>
+
+                        <p>You are solely responsible for any and all duties, taxes, levies or fees (including any sales, use
+                            or withholding taxes) imposed on or in connection with use of the Pet Diet Fix Site by any taxing
+                            authority.
+                        </p>
+
+                    </li>
+
+                    <li>
+                        <p>
+                            <strong>CLAIMS OF COPYRIGHT INFRINGEMENT</strong>
+                        </p>
+                        <p>We respond to notices of alleged infringement as required by the Office of the Controller General
+                            of Patents, Designs &amp; Trade Marks (CGPDTM), including by removing or disabling access to
+                            material claimed to be the subject of infringing activity.</p>
+
+                        <p>If you have a good faith belief that your work has been copied in a way that constitutes copyright
+                            infringement or that your intellectual property rights otherwise have been violated on or through
+                            the Pet Diet Fix Sites, please send your claim or notice of infringement to Pet Diet Fix’s legal
+                            team at:</p>
+
+                        <p>
+                            <strong>Legal Dept.</strong>
+                        </p>
+
+                        <p>
+                            <strong>Aindhri Innovations Pvt. Ltd.</strong>
+                        </p>
+
+                        <p>
+                            <strong>4</strong>
+                            <strong>th</strong>
+                            <strong> Floor, LNG 82</strong>
+                            <strong>nd</strong>
+                            <strong> Tollywood Complex</strong>
+                        </p>
+
+                        <p>
+                            <strong>Road No. 82, Film Nagar, Hyderabad</strong>
+                        </p>
+
+                        <p>
+                            <strong>500033</strong>
+                        </p>
+
+                        <p>
+                            <strong>Telangana, India</strong>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>MISCELLANEOUS</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <p>These Terms, together with our Privacy Statement, contain the entire understanding by and
+                                    between Pet Diet Fix and you with respect to the matters contained herein and there are
+                                    no promises, covenants or undertakings other than those expressly set forth herein.</p>
+                            </li>
+                            <li>
+                                <p>These Terms (i) inure to the benefit of and will be binding upon Pet Diet Fix’s and you and
+                                    your successors and assigns, respectively, and (ii) may be assigned by Pet Diet Fix but
+                                    you may not assign them without the prior express written consent of Pet Diet Fix.</p>
+                            </li>
+                            <li>
+                                <p>If any provision of these Terms is or becomes unenforceable or invalid, the remaining provisions
+                                    will continue with the same effect as if such unenforceable or invalid provision had
+                                    not been inserted herein.</p>
+                            </li>
+                            <li>
+                                <p>If Pet Diet Fix fails or you fail to perform any term hereof and the other party does not
+                                    enforce such term, the failure to enforce on any occasion will not constitute a waiver
+                                    of any term and will not prevent enforcement on any other occasion.</p>
+                            </li>
+                            <li>
+                                <p>Nothing contained in these Terms will be deemed to constitute Pet Diet Fix or you as the
+                                    agent or representative of the other or as joint venturers or partners.</p>
+                            </li>
+                            <li>
+                                <p>If Pet Diet Fix is or you are prevented from performing or unable to perform any obligation
+                                    under these Terms due to any cause beyond the reasonable control of the party invoking
+                                    this provision, the affected party's performance will be extended for the period of delay
+                                    or inability to perform due to such occurrence.</p>
+                            </li>
+                            <li>
+                                <p>The headings and captions contained herein are for convenience only.</p>
+                            </li>
+                            <li>
+                                <p>These Terms and all related documentation will be drafted in English. While certain text
+                                    in these Terms may be made available in languages other than English (whether translated
+                                    by a person or solely by computer software), the English language version controls.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ol>
+
+                <h1 class="border" align="center">Return, Refund and Cancellation policy</h1>
+
+                <p>At Pet Diet Fix, your satisfaction is very important to us. We know pet parents are busy, so we've made our
+                    return policies easy and convenient.</p>
+
+                <p>
+                    <strong>Returning Online Purchases</strong>
+                </p>
+
+                <p>Since Pet Diet Fix range of products are food solutions,
+                    <strong>we don’t accept any returns or exchanges on our products</strong>. However, if you're not satisfied with
+                    the condition in which your Pet Diet Fix.com purchase has been delivered to you, you can return the product
+                    for the purchase price (minus the shipping, handling, gift wrap and other charges). Product must be in
+                    its original packaging.</p>
+
+                <p>
+                    <strong>How to Return?</strong>
+                </p>
+
+                <ul>
+                    <li>
+                        <p>Pack the item safely and securely for shipping and include the packing slip (retain a copy for your
+                            records). Affix the RETURN shipping label provided and send the package via a traceable and insurable
+                            method. Please note: exchanges are not available by mail. All shipping charges must be paid by
+                            the customer. COD deliveries will be returned to the customer.</p>
+                    </li>
+                    <li>
+                        <p>Receipts are valid for 10 days from the date of purchase. Returns or exchanges if any must be initiated
+                            within this time period.</p>
+                    </li>
+                    <li>
+                        <p>If paid for by credit card, the card used to purchase the merchandise is required so that your return
+                            can be credited to the same card (minus the cost of shipping and gift wrapping). If you do not
+                            have the same credit card that you used to make your Pet Diet Fix.com purchase, or used a payment
+                            method other than a credit card for your order (such as PayPal or Google Wallet), you'll receive
+                            a merchandise return card for the appropriate amount, which will be sent via e-mail and /or SMS.</p>
+                    </li>
+                    <li>
+                        <p>Debit card purchases will be refunded in cash. If the original card is not available, a merchandise
+                            return card will be issued, which will be sent via e-mail and /or SMS.</p>
+                    </li>
+                    <li>
+                        <p>If a purchase is paid with a gift card, a refund will be issued with a merchandise return card, which
+                            will be sent via e-mail and /or SMS.</p>
+                    </li>
+                    <li>
+                        <p>If a purchase is paid with cash, a refund will be issued in cash.</p>
+                    </li>
+                    <li>
+                        <p>Merchandise return cards can be used for future online purchases and cannot be redeemed for cash.</p>
+                    </li>
+                </ul>
+
+                <p>Write to us at
+                    <strong>care@petdietfix.com</strong>&nbsp;or call our customer support at:
+                    <strong>040-67849999</strong>
+                    <strong> </strong>
+                </p>
+
+                <p>
+                    <strong>Return Exceptions</strong>
+                </p>
+
+                <ul>
+                    <li>
+                        <p>You must have a valid receipt to return or exchange any of the Pet Diet Fix products.</p>
+                    </li>
+                    <li>
+                        <p>The customers are liable to pay shipping charges on all COD orders.</p>
+                    </li>
+                    <li>
+                        <p>Shipping charges will apply on COD orders and will not be refundable even in the event of return,
+                            cancellation or exchange, due to the delivery of defective products. In such an event, shipping
+                            of the exchanged order will be free.</p>
+                    </li>
+                </ul>
+
+                <p>
+                    <strong>© 2018 Copyright PetDietFix.</strong>
+                </p>
+
+
+                <p>
+                    <strong>Updated, Apr 2018</strong>
+                </p>
+
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="neon-bg">
+        <div class="container-fluid">
+            <div class="row mt-90 black-text">
+                <div class="col-sm-12 col-md-4 footer-image">
+                    <img src="./assets/images/logo-real.png" alt="Logo" class="img-responsive">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer-heading">Help</div>
+                    <div class="footer-content">
+                        <ul class="line-height-2-5">
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer-heading">Pet Diet Fix</div>
+                    <div class="footer-content">
+                        <ul class="line-height-2-5">
+                            <li>
+                                <a href="who-we-are.html">About</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="testimonials.html">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-90 black-text">
+                <div class="col-xs-12 text-center pd-20">
+                    &copy; 2018. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

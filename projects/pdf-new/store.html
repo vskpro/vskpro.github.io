@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <title>New UI | Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/jquery.fullpage.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/store.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Raleway|Montserrat:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="center">
+            <div class="img-wrapper">
+                <img src="./assets/images/loading.gif" class="img-responsive" alt="Loading...">
+                <!-- <img src="https://media.giphy.com/media/U3wwuyh8AVkwU/giphy.gif" class="img-responsive" alt="Loading..."> -->
+            </div>
+            <div class="loading-title">
+                Loading...
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky fixed">
+
+        <div class="top-bar clearfix">
+            <div class="float-right-md">
+                <ul class="top-bar-ul clearfix">
+                    <li>
+                        <a href="#" class="inline-block cart-wrapper">
+                            <span class="badge badge-xs badge-danger">9</span>
+                            <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Cart
+                        </a>
+                    </li>
+                    <li class="dropdown language-wrapper">
+                        <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+                            <i class="fa fa-language fa-lg" aria-hidden="true"></i>
+                            English
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu width-auto animated fadeIn">
+                            <li>
+                                <a href="#">हिंदी</a>
+                            </li>
+                            <li>
+                                <a href="#">தமிழ்</a>
+                            </li>
+                            <li>
+                                <a href="#">తెలుగు</a>
+                            </li>
+                            <li>
+                                <a href="#">മലയാളം</a>
+                            </li>
+                            <li>
+                                <a href="#">ಕನ್ನಡ</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown language-wrapper hide">
+                        <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+                            <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                            Admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu width-auto animated fadeIn">
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                    Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                                    Logout
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="inline-block bold neon-text" style="padding-right: 0px;">Login</a>
+                        <span class="inline-block neon-text">|</span>
+                        <a href="#" class="inline-block neon-text bold" style="padding-left: 0px;">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-container primary-bg">
+            <div class="container-fluid">
+                <div class="clearfix nav-holder">
+                    <div class="pull-left logo-wrapper">
+                        <a href="index.html">
+                            <img src="./assets/images/logo-inverse.png" class="img-responsive" alt="pet diet fix logo">
+                        </a>
+                    </div>
+                    <div class="pull-right nav-wrapper">
+                        <nav class="menu-wrapper clearfix">
+                            <span class="close-mobile-menu">&times;</span>
+                            <ul class="my-nav clearfix">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About
+                                        <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu full-width-on-mobile animated fadeIn">
+                                        <li>
+                                            <a href="who-we-are.html">Who We Are</a>
+                                        </li>
+                                        <li>
+                                            <a href="our-story.html">Our Story</a>
+                                        </li>
+                                        <li>
+                                            <a href="our-pet-diet-fix-solution.html">Our Pet Diet Fix Solution</a>
+                                        </li>
+                                        <li>
+                                            <a href="pet-feeding-guildness.html">Pet Feeding Guidelines</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="store.html" class="active">Store</a>
+                                </li>
+                                <li>
+                                    <a href="recipes.html">Recipes</a>
+                                </li>
+                                <li>
+                                    <a href="our-challenge.html">Our Challenge</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="mobile-menu-toggle-wrapper">
+                            <div class="mobile-overlay"></div>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="javascript:void(0)" class="mobile-menu-toggler">
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="fixed-spacing">
+
+        <div class="pd-30">
+            <img src="assets/images/store-ban.png" class="m-auto img-responsive">
+        </div>
+
+        <div class="container mb-30">
+            <div class="section fp-noscroll single-product">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="assets/images/product-images/green.png" class="w-300 m-auto img-responsive" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-9 black-text font-mont">
+                        <div class="hide">
+                            <div class="product-title-1">
+                                Veg home food recipe
+                            </div>
+                            <div class="product-title-2">
+                                nutrition mix
+                            </div>
+                            <div class="product-title-3">
+                                for Adult and Elder Canines
+                            </div>
+                        </div>
+                        <div class="product-title-single-line">
+                            Pet diet fix
+                            <strong>Veg</strong> home food recipe nutrition mix for Adult and Elder Canines
+                        </div>
+                        <div class="product-weights">
+                            <span class="uppercase">Available in</span>
+                            <span class="green-weight"> 30g, 150g, 500g</span>
+                        </div>
+
+                        <div class="product-cart-wrapper">
+                            <form action="#" class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label for="weight">Weight</label>
+                                        <select class="form-control" id="weight">
+                                            <option>500 Grams</option>
+                                            <option>150 Grams</option>
+                                            <option>30 Grams</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-2">
+                                    <div class="form-group">
+                                        <label for="Quantity">Quantity:</label>
+                                        <input type="number" min="1" value="1" class="round-off-quantity form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label for="Price">Price</label>
+                                        <input style="padding-left: 0px" type="text" value="40,000" class="form-control product-price price-input" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <button type="submit" class="btn btn-default add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="product.html" class="btn product-buy-now-button btn-default">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section fp-noscroll single-product">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="./assets/images/product-images/orange.png" class="w-300 m-auto img-responsive" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-9 black-text font-mont">
+                        <div class="hide">
+                            <div class="product-title-1">
+                                Non-Veg home food recipe
+                            </div>
+                            <div class="product-title-2">
+                                nutrition mix
+                            </div>
+                            <div class="product-title-3">
+                                for Mother, Puppy and Pregnant Canines
+                            </div>
+                        </div>
+                        <div class="product-title-single-line">
+                            Pet diet fix
+                            <strong>Non - Veg</strong> home food recipe nutrition mix for Adult and Elder Canines
+                        </div>
+                        <div class="product-weights">
+                            <span class="uppercase">Available in</span>
+                            <span class="orange-weight"> 30g, 150g, 500g</span>
+                        </div>
+
+                        <div class="product-cart-wrapper">
+                            <form action="#" class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label for="weight">Weight</label>
+                                        <select class="form-control" id="weight">
+                                            <option>500 Grams</option>
+                                            <option>150 Grams</option>
+                                            <option>30 Grams</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-2">
+                                    <div class="form-group">
+                                        <label for="Quantity">Quantity:</label>
+                                        <input type="number" min="1" value="1" class="round-off-quantity form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label for="Price">Price</label>
+                                        <input style="padding-left: 0px" type="text" value="40,000" class="form-control product-price price-input" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <button type="submit" class="btn btn-default add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="product.html" class="btn product-buy-now-button btn-default">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section fp-noscroll single-product">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="./assets/images/product-images/neon.png" class="w-300 m-auto img-responsive" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-9 black-text font-mont">
+
+                        <div class="hide">
+                            <div class="product-title-1">
+                                Non-Veg home food recipe
+                            </div>
+                            <div class="product-title-2">
+                                nutrition mix
+                            </div>
+                            <div class="product-title-3">
+                                for Adult and Elder Canines
+                            </div>
+                        </div>
+
+                        <div class="product-title-single-line">
+                            Pet diet fix
+                            <strong>Non - Veg</strong> home food recipe nutrition mix for Mother, Puppy and Pregnant Canines
+                        </div>
+
+                        <div class="product-weights">
+                            <span class="uppercase">Available in</span>
+                            <span class="neon-weight"> 30g, 150g, 500g</span>
+                        </div>
+
+                        <div class="product-cart-wrapper">
+                            <form action="#" class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label for="weight">Weight</label>
+                                        <select class="form-control" id="weight">
+                                            <option>500 Grams</option>
+                                            <option>150 Grams</option>
+                                            <option>30 Grams</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-2">
+                                    <div class="form-group">
+                                        <label for="Quantity">Quantity:</label>
+                                        <input type="number" min="1" value="1" class="round-off-quantity form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        <label for="Price">Price</label>
+                                        <input style="padding-left: 0px" type="text" value="40,000" class="form-control product-price price-input" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <button type="submit" class="btn btn-default add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="product.html" class="btn product-buy-now-button btn-default">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="neon-bg">
+        <div class="container-fluid">
+            <div class="row mt-90 black-text">
+                <div class="col-sm-12 col-md-4 footer-image">
+                    <img src="./assets/images/logo-real.png" alt="Logo" class="img-responsive">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer-heading">Help</div>
+                    <div class="footer-content">
+                        <ul class="line-height-2-5">
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer-heading">Pet Diet Fix</div>
+                    <div class="footer-content">
+                        <ul class="line-height-2-5">
+                            <li>
+                                <a href="who-we-are.html">About</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="testimonials.html">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-90 black-text">
+                <div class="col-xs-12 text-center pd-20">
+                    &copy; 2018. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/jquery.fullpage.min.js"></script> -->
+    <script src="./assets/js/custom.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // $('#fullpage').fullpage({
+            //     navigation: true,
+            //     navigationPosition: 'right',
+            //     verticalCentered: false
+            // });
+        });
+
+    </script>
+
+</body>
+
+</html>

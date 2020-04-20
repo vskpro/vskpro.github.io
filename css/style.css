@@ -7,7 +7,7 @@ Description: This is my portfolio custom built from scratch.
 Link :https://vskpro.github.io
 */
 
-@import 'https://fonts.googleapis.com/css?family=Amatic+SC|Calligraffitti|Caveat|Raleway';
+@import "https://fonts.googleapis.com/css?family=Amatic+SC|Calligraffitti|Caveat|Raleway";
 
 * {
   padding: 0px;
@@ -17,13 +17,13 @@ Link :https://vskpro.github.io
 
 header {
   overflow: hidden;
-  display: table!important;
+  display: table !important;
   width: 100%;
   position: fixed;
   width: 100%;
-  top:0;
+  top: 0;
   left: 0;
-  background:rgba(0,0,50,0.9);
+  background: rgba(0, 0, 50, 0.9);
   z-index: 1;
 }
 
@@ -34,7 +34,7 @@ nav.menu {
 nav.menu ul {
   overflow: hidden;
   list-style-type: none;
-  float:right;
+  float: right;
   margin-bottom: 0px;
 }
 
@@ -46,24 +46,27 @@ nav.menu ul li a {
   text-decoration: none;
   display: block;
   padding: 20px;
-  color:#dcdcdc;
-  font-family: 'Amatic SC';
+  color: #dcdcdc;
+  font-family: "Amatic SC";
   font-size: 1.8em;
 }
 .logo {
   font-size: 2.5em;
   display: table-cell;
   vertical-align: middle;
-  font-family: 'Caveat';
-  padding:0px 5px;
+  font-family: "Caveat";
+  padding: 0px 5px;
   -webkit-filter: drop-shadow(2px 3px 5px grey);
-  color:white;
+  color: white;
 }
-#about,#skills,#portfolio,#contact {
+#about,
+#skills,
+#portfolio,
+#contact {
   width: 75%;
-  margin:auto;
+  margin: auto;
   padding: 20px;
-  background:rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.62);
   margin-top: 100px;
   box-shadow: -5px 50px 58px -37px #000;
 }
@@ -73,12 +76,10 @@ nav.menu ul li a {
   max-height: 100%;
   width: 160px;
   max-width: 100%;
-  margin: 20px;
-  margin-left: 50%;
+  margin: auto;
   overflow: hidden;
   border-radius: 50%;
-  box-shadow: 0 0 10px 0px rgba(0,0,108,0.8);
-  transform: translateX(-50%);
+  box-shadow: 0 0 10px 0px rgba(26, 26, 26, 0.8);
 }
 .dp-wrapper img {
   max-height: 100%;
@@ -86,65 +87,59 @@ nav.menu ul li a {
   transition: all 0.6s ease;
   border-radius: 50%;
   overflow: hidden;
-  opacity: 0.4;
 }
 .dp-wrapper img:hover {
   transform: rotate(-2deg) scale(1.1);
-  opacity: 0.8;
   cursor: pointer;
 }
 .attract-line div {
   width: 300px;
   max-width: 100%;
-  background: #1B5E20;
-  background:rgba(0,0,120,0.7);
-  margin: auto;
+  background: #1b5e20;
+  background: rgba(0, 0, 120, 0.7);
+  margin: 20px auto;
   height: 2px;
 }
 
 .desc {
-  padding:30px;
-  font-family: 'Raleway';
+  padding: 30px;
+  font-family: "Raleway";
   font-size: 1.2em;
   color: #dcdcdc;
   text-align: justify;
 }
 
-
 /* Filters CSS Custom Made */
-
-#projects-container {
-  height: 100%;
-}
 
 #filters {
   list-style-type: none;
-  //background:rgba(0,0,50,0.9);
+  /* //background:rgba(0,0,50,0.9); */
   margin: 20px 15px;
 }
 
-#filters li{
+#filters li {
   float: left;
 }
 #filters li a {
   display: block;
-  padding:5px 25px;
+  padding: 5px 25px;
   text-decoration: none;
-  color:#dcdcdc;
+  color: #dcdcdc;
   transition: 0.3s all ease;
   font-size: 1.2em;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
-.highlight,.active-link {
+.highlight,
+.active-link {
   background: #dcdcdc;
-  color:#000!important;
+  color: #000 !important;
 }
 
 #filters li a:hover {
   background: #dcdcdc;
   opacity: 0.85;
-  color:#000;
+  color: #000;
 }
 
 /* Elements CSS CUstom Made */
@@ -157,7 +152,7 @@ nav.menu ul li a {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 .single-project img {
   max-width: 100%;
@@ -165,28 +160,28 @@ nav.menu ul li a {
 }
 .left-overlay {
   position: absolute;
-  top:-100%;
+  top: -100%;
   left: 0;
   width: 50%;
   height: 100%;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   transition: 0.3s all ease;
 }
 .right-overlay {
   position: absolute;
-  bottom:-100%;
+  bottom: -100%;
   right: 0;
   width: 50%;
   height: 100%;
-  background: rgba(0,0,100,0.8);
+  background: rgba(0, 0, 100, 0.8);
   transition: 0.3s all ease;
 }
 
 .single-project:hover .left-overlay {
-  top:0;
+  top: 0;
 }
 .single-project:hover .right-overlay {
-  bottom:0;
+  bottom: 0;
 }
 
 .center-the-element {
@@ -198,19 +193,17 @@ nav.menu ul li a {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  color:#dcdcdc;
+  color: #dcdcdc;
 }
-.center-the-element span a{
+.center-the-element span a {
   text-decoration: none;
-  color:#dcdcdc;
+  color: #dcdcdc;
   transition: all 0.2s ease;
 }
-.center-the-element span a:hover i{
-  color:#fff;
+.center-the-element span a:hover i {
+  color: #fff;
   transform: scale(1.1);
 }
-
-
 
 /*Skills Section Styles*/
 .skills-wrapper {
@@ -225,38 +218,39 @@ nav.menu ul li a {
 }
 
 /*Icon Backgrounds*/
-.lk-html5{
-  background: #FFB300;
+.lk-html5 {
+  background: #ffb300;
 }
 .lk-css3 {
-  background: #E65100;
+  background: #e65100;
 }
 .lk-js {
-  background: #0277BD;
+  background: #0277bd;
 }
-.lk-jquery{
-  background: #9E9D24;
+.lk-jquery {
+  background: #9e9d24;
 }
 .lk-ajax {
-  background: #6A1B9A;
+  background: #6a1b9a;
 }
 .lk-bootstrap {
-  background: #AEEA00;
+  background: #aeea00;
 }
-.lk-php{
-  background: #FF5722;
+.lk-php {
+  background: #ff5722;
 }
 .lk-mysql {
-  background: #8BC34A;
+  background: #8bc34a;
 }
 .lk-git {
-  background: #1B5E20;
+  background: #1b5e20;
 }
 
 .center-icon {
   height: 55px;
   transition: 0.3s all ease-in;
   margin: auto;
+  max-width: 100%;
 }
 .additional-content {
   position: absolute;
@@ -264,11 +258,11 @@ nav.menu ul li a {
   bottom: -100px;
   width: 100%;
   color: #dcdcdc;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   padding: 5px 0px;
   text-align: center;
   transition: 0.3s all ease-in;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 1.1em;
 }
 .languages-known:hover .additional-content {
@@ -280,9 +274,9 @@ nav.menu ul li a {
 .section-heading {
   text-align: center;
   font-size: 2.5em;
-  color:#dcdcdc;
+  color: #dcdcdc;
   padding: 5px 0px;
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
 }
 
 a:focus {
@@ -312,51 +306,42 @@ a:focus {
 
 @keyframes shake {
   0% {
-
-   transform: translateY(-1px);
-
- }
-   10% {
-
-   transform: translateY(-8px);
-
- }
- 20% {
-   transform: translateY(0px);
-
- }
+    transform: translateY(-1px);
+  }
+  10% {
+    transform: translateY(-8px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
   40% {
-   transform: translateY(-6px);
-
- }
+    transform: translateY(-6px);
+  }
   60% {
-   transform: translateY(0px);
+    transform: translateY(0px);
+  }
 
- }
-
- 80% {
-   transform: translateY(-4px);
-
- }
- 100% {
-   transform: translateY(0px);
-
- }
+  80% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
-.linkedin a{
-  color:#0177B5;
+.linkedin a {
+  color: #0177b5;
   transition: all 0.4s ease-in;
 }
 
-.facebook a{
-  color:#3B579D;
+.facebook a {
+  color: #3b579d;
 }
-.github a{
-  color:#810081;
+.github a {
+  color: #810081;
 }
-.googleplus a{
-  color:#d34836;
+.googleplus a {
+  color: #d34836;
 }
 
 .isotope-item {
@@ -370,40 +355,28 @@ a:focus {
 
 footer {
   overflow: hidden;
-  display: table!important;
+  display: table !important;
   width: 100%;
   width: 100%;
-  bottom:0;
+  bottom: 0;
   left: 0;
-  background:rgba(0,0,50,1);
+  background: rgba(0, 0, 50, 1);
   z-index: 1;
   padding: 5px 0px;
   text-align: center;
-  color:#dcdcdc;
-  font-family: 'Amatic SC';
+  color: #dcdcdc;
+  font-family: "Amatic SC";
   letter-spacing: 1px;
   font-size: 1.5em;
 }
 
 .coffee {
-  color:#593C1F;
+  color: #593c1f;
 }
 
 .music {
-  color:#810081;
+  color: #810081;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
 Title: My Portfolio
@@ -416,12 +389,12 @@ Link :https://vskpro.github.io
 
 /* Responsive Styles */
 
-
 @media screen and (min-width: 768px) {
   body {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
-    background-image: linear-gradient(130deg, #dcdcdc 5%, #000 95%), url("../images/diamonds.png");
+    background-image: linear-gradient(130deg, #dcdcdc 5%, #000 95%),
+      url("../images/diamonds.png");
   }
 }
 
@@ -435,35 +408,33 @@ Link :https://vskpro.github.io
     margin: 10px 0px;
   }
   body {
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
   }
-  #about,#skills,#portfolio,#contact {
+  #about,
+  #skills,
+  #portfolio,
+  #contact {
     width: 100%;
-    margin:auto;
+    margin: auto;
     padding: 20px;
-    background:rgba(0,0,0,0.75);
+    background: rgba(0, 0, 0, 0.75);
     margin-top: 100px;
   }
   .dp-wrapper img {
     opacity: 1;
   }
-  nav.menu ul li a  {
+  nav.menu ul li a {
     padding: 10px 20px;
     font-size: 1.4em;
   }
   #filters {
     list-style-type: none;
-    background:rgba(0,0,50,0.9);
+    background: rgba(0, 0, 50, 0.9);
     margin: 20px 15px;
   }
   #filters li {
     display: block;
     float: none;
-  }
-  .projects-wrapper {
-    height: 350px;
-    max-height: 100%;
-    overflow: scroll;
   }
   .languages-known {
     height: 150px;
@@ -473,6 +444,10 @@ Link :https://vskpro.github.io
     position: relative;
     overflow: hidden;
   }
+}
+
+#projects {
+  padding: 25px 15px;
 }
 
 /* 

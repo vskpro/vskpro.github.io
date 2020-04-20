@@ -1,0 +1,66 @@
+
+/*--main container--*/
+
+.des-content{
+    /*margin-top:25px;*/
+  }
+   .des-content h1
+   {
+       padding-top:0px;
+       padding-bottom:10px;
+       letter-spacing:5px;
+   }
+  .des-content h3{
+    margin-top:0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+  }
+  .des-content p{ line-height: 1.7;}
+   .des-content h1 span{
+    border-bottom:1px solid #000;
+    display:inline-block;
+    padding-bottom:20px;
+   }
+   .video-content
+   {
+   -webkit-box-shadow: -6px -1px 29px 8px rgba(0,0,0,.15);
+  -moz-box-shadow: -6px -1px 29px 8px rgba(0,0,0,.15);
+  box-shadow: -6px -1px 29px 8px rgba(0,0,0,.15);
+   }
+  
+  .store-link{
+     font-size:18px;
+     text-transform: uppercase;
+     text-decoration: underline;
+     display:inline-block;
+     margin-top:20px;
+     letter-spacing: 1px;
+     cursor:pointer;
+  }
+  
+  
+  @media (min-width:767px) and (max-width:968px)
+  {
+   .des-content
+   {
+       margin-top:0;
+   }   
+   
+      
+  }
+  
+  @media (max-width:467px)
+  {
+      
+   .des-content h1
+   {
+       font-size:24px;
+   }   
+   #main-container{ padding:15px;}
+    .des-content h3{ margin-bottom:10px;}
+    .store-link{ font-size:14px;}  
+  }
+  

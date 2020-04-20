@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <title>New UI | Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Raleway|Montserrat:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="primary-bg">
+
+    <div class="preloader">
+        <div class="center">
+            <div class="img-wrapper">
+                <img src="./assets/images/loading.gif" class="img-responsive" alt="Loading...">
+                <!-- <img src="https://media.giphy.com/media/U3wwuyh8AVkwU/giphy.gif" class="img-responsive" alt="Loading..."> -->
+            </div>
+            <div class="loading-title">
+                Loading...
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky fixed">
+
+        <div class="top-bar clearfix">
+            <div class="float-right-md">
+                <ul class="top-bar-ul clearfix">
+                    <li>
+                        <a href="#" class="inline-block cart-wrapper">
+                            <span class="badge badge-xs badge-danger">9</span>
+                            <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Cart
+                        </a>
+                    </li>
+                    <li class="dropdown language-wrapper">
+                        <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+                            <i class="fa fa-language fa-lg" aria-hidden="true"></i>
+                            English
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu width-auto animated fadeIn">
+                            <li>
+                                <a href="#">हिंदी</a>
+                            </li>
+                            <li>
+                                <a href="#">தமிழ்</a>
+                            </li>
+                            <li>
+                                <a href="#">తెలుగు</a>
+                            </li>
+                            <li>
+                                <a href="#">മലയാളം</a>
+                            </li>
+                            <li>
+                                <a href="#">ಕನ್ನಡ</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown language-wrapper">
+                        <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+                            <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                            Admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu width-auto animated fadeIn">
+
+                            <li>
+                                <a href="profile.html">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="orders.html">
+                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                    Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                                    Logout
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#" class="inline-block bold neon-text" style="padding-right: 0px;">Login</a>
+                        <span class="inline-block neon-text">|</span>
+                        <a href="#" class="inline-block neon-text bold" style="padding-left: 0px;">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-container primary-bg">
+            <div class="container-fluid">
+                <div class="clearfix nav-holder">
+                    <div class="pull-left logo-wrapper">
+                        <a href="index.html">
+                            <img src="./assets/images/logo-inverse.png" class="img-responsive" alt="pet diet fix logo">
+                        </a>
+                    </div>
+                    <div class="pull-right nav-wrapper">
+                        <nav class="menu-wrapper clearfix">
+                            <span class="close-mobile-menu">&times;</span>
+                            <ul class="my-nav clearfix">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About
+                                        <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu full-width-on-mobile animated fadeIn">
+                                        <li>
+                                            <a href="who-we-are.html">Who We Are</a>
+                                        </li>
+                                        <li>
+                                            <a href="our-story.html">Our Story</a>
+                                        </li>
+                                        <li>
+                                            <a href="our-pet-diet-fix-solution.html">Our Pet Diet Fix Solution</a>
+                                        </li>
+                                        <li>
+                                            <a href="pet-feeding-guildness.html">Pet Feeding Guidelines</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="store.html">Store</a>
+                                </li>
+                                <li>
+                                    <a href="recipes.html" class="active">Recipes</a>
+                                </li>
+                                <li>
+                                    <a href="our-challenge.html">Our Challenge</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="mobile-menu-toggle-wrapper">
+                            <div class="mobile-overlay"></div>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="javascript:void(0)" class="mobile-menu-toggler">
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="fixed-spacing">
+
+        <div class="go-to-top">
+            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+        </div>
+
+        <div class="sections-wrapper white-bg pd-40 min-height-400">
+            <div class="black-bg pd-40 text-center">
+                <h2 class="bold neon-text">
+                    <i class="fa fa-comments-o fa-lg white-text"></i>
+                    Frequently Asked Questions
+                </h2>
+                <br>
+                <p>
+                    Frequently Asked Questions contains information that you can use, to make the right choices when feeding your pet. It is
+                    given in good faith, but the suitability of pet food varies for different life stage, lifestyle or health
+                    condition of the pet.
+                </p>
+                <p>
+                    When in doubt, either write to our customer care at
+                    <strong class="neon-text">support@petdietfix.com</strong> or consult a veterinarian.
+                </p>
+            </div>
+            <div class="gap-40"></div>
+            <div class="faq-wrapper black-text">
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is petdietfix food solution?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            The pet diet fix solution combines the goodness of home food with the balance of essential vitamins, minerals and fibers,
+                            which are lost in the home food recipe. We recommend tailor-made home food recipes considering
+                            the weight, life stageand recipe categories of your pets and provide the exact nutrition mix
+                            to add to each recipe. All you have to do is mix the two and serve.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I use it as a nutrition supplement?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Pet diet fix is much more than a nutrition supplement. A general nutrition mix is an occasional requirement. Whereas pet
+                            diet fix mix is an essential part of the daily homefood consumed by your pets. Rest assured,
+                            with pet diet fix, your pet will get completely balanced tasty home food with entire 37 nutrients,
+                            which your pet can enjoy every day.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        How do I make the pet diet fix food?
+
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Log on to our website and choose the weight range, life stage and recipe category. You will be directed to a webpage which
+                            shows the exact daily quantity of the recipe and the right mix that will go with it perfectly.
+                            The QTM recipe making guidelines will also be available in the same page. Take a print out of
+                            it and paste it near your kitchen. Since, the website is available in 6 regional languages, it
+                            is easy to understand. Then, add the mix to your shopping cart or consult your nearest pet store/your
+                            veterinary doctor/direct retailer/pet ambassador. Then, cook the QTM recipe, add the mix as per
+                            the serving suggested (You don’t have to worry about the exact measurements. A variation of +
+                            or – 5 to 10% is perfectly fine) and a healthy, tasty, completely balanced pet home food recipe
+                            is ready.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        Is the serving suggested for entire day or for 1 portion?
+
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            All pet diet fix recipe quantities are provided on the basis of daily dietary requirements. You can divide the suggested
+                            daily quantity into 2 or 3 portions depending upon the feeding schedule you already follow. When
+                            in doubt, consult your trusted veterinarian.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        How does your website create the recipe?
+
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+
+                            Our unique onboard ‘usage calculator’ processes several thousands of diet calculations in a second and creates a custom recipe
+                            for your pet based on your pet’s body weight, life stage and recipe category, you chose. These
+                            variables tell the program what nutrient levels are right for your pet as well as how many calories
+                            should be provided in the daily recipe.
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        How long will it take to make the recipe?
+
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+
+                            Our recipes are quick to make (QTM) and can be prepared in less than 9 - 18 minutes.All ingredients of the QTM recipes were
+                            formulated after years of research by renowned scientists with decades of experience in the pet
+                            nutrition industry.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        Why don't the recipes have spices and seasonings?
+
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+
+                            Many seasonings are untested on dogs and cats for safety. For example, onions and garlic are toxic to dogs and cats at levels
+                            that are well-tolerated by people. A worry would be that adding rarely used seasonings might
+                            pose a health risk.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        Why are the ingredients names and amounts so specific?
+
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+
+                            We have made the pet's recipe specific because the nutrient content of the ingredients can differ significantly by cooking
+                            procedure, cut (specific to meat), inclusion of skin (such as with poultry or potatoes), etc.
+                            We have been as specific as possible in our instructions, just to ensure that your pet's diet
+                            has all the desired nutrients and intended benefits. However, a variation in quantity of 5 to
+                            10% is perfectly fine.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What if I mix more or less of the recommended portion of Petdietfix?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Nothing to worry.We, however, advise you to follow the instruction given in our website. If you have any other doubts, you
+                            may write to us at
+                            <strong>support@petdietfix.com</strong> or consult your veterinarian.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        Can I mix Pet diet fix powder with packaged pet food?
+
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Pet diet fix mix should not be mixed with packaged pet food. On its own, pet diet fix mix has all the necessary nutrients
+                            in it. Hence, adding it to the packaged food will result in excess of nutrients and is not good
+                            for your pet. It should only be mixed with the recommended home pet food recipe, in the exact
+                            quantity suggested.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        We serve 2 portions of food for our dog, every day. Can I serve packaged food as 1 portion and home food with pet diet fix
+                        mix for another portion in the same day?
+
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Most of the pet owners in India are already feeding both packaged food and home food in a day. To elaborate, they are already
+                            feeding packaged food for 1 portion and home food for another portion in a day. This system is
+                            being followed to balance the dehydration issue, increased digestibility and also to cut down
+                            the huge costs of buying packaged pet food. You can use pet diet fix in this way too by proportionately
+                            reducing the suggested quantities of both packaged food and pet diet fix home food every day.
+                            When in doubt, kindly consult your veterinarian.
+                        </p>
+                        <p>
+                            To conclude, pet diet fix food solution is already of the highest quality and will cost far lesser than the above mentioned
+                            option and it doesn’t cause dehydration and digestibility problems. Hence, for optimum results,
+                            we suggest following pet diet fix food solution only.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I use pet diet fix for pets with health problems?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Sure. Pet diet fix is absolutely safe and can be used without any fear for a host of health conditions such as for pets with
+                            digestive problems, pets with skin problems, pets with general weakness, pets with diabetes,
+                            pets with bone and joint problems, pets with glaucoma, pets with general sickness, slim or obese
+                            pets, for pets pre surgery, for pets post-surgery, etc. It is a general daily use pet food solution
+                            which is proven to be safe and does not have any ingredient which will cause even the slightest
+                            problem to your pet.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        During summer, should I have to feed my pet only curd rice?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Pet diet fix is ideal summer food for your pet and is easy to digest. It does not cause any dehydration or heat strokes.
+                            It is a completely balanced home food for your pet and provides the entire 37 nutrients required
+                            for it. Hence it is not necessary to feed your pet curd rice alone. However, pet diet fix mix
+                            can be added to curd rice if you desire as such.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How can the Pet diet fix nutrition mix work with so many different recipes and for so many different types of dogs and cats?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Our scientists and nutrition experts have spent years refining the recipes and the nutrition mix to ensure that the result
+                            had the highest likelihood of meeting your pet's individual needs. In choosing the recipes and
+                            the nutrition mix combination, adequate care has been taken to select those ingredients which
+                            are easily available in all seasons and can be easily digestible for all life stages of pets.
+                            Pet diet fix food has been tested on thousands of canines and felines across 6 nutritional zones
+                            in India to meet the highest standards of health and safety for your pets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I use pet diet fix nutrition mix with some other home food recipe that I have prepared but were not mentioned in your
+                        website?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Pet diet fix provides complete nutrition by balancing the nutrition losses of the home pet food. All the ingredients suggested
+                            in our QTM recipes are all already commonly available in your kitchen and are used by you in
+                            everyday human food preparations and pet home food preparations. Hence, they are the easiest
+                            recipes to cook and serve your beloved pet. On the other hand, you can add pet diet fix in a
+                            different home food recipe (which is already proven to be safe and healthy) and your pet will
+                            get most of the nutrients. But for optimum results, we suggest using our QTM recipes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        I forgot to add/don’t have one or two of the ingredients mentioned in the QTM recipe. Will it create any problems for my
+                        pet?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Nothing to worry. If one or the other ingredient mentioned in our QTM recipe is not available, then you can increase the
+                            quantity of other ingredients in the said recipe by 10% to attain nearest possible well balanced
+                            nutritious home meal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can you give us guidelines on how to choose the ingredients used in the QTM recipes?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Some common ingredients used in our QTM recipes are:
+                        </p>
+                        <ul>
+                            <li>
+                                Chicken: Use skinless and boneless chicken
+                            </li>
+                            <li>
+                                Eggs: Any normal egg either white or brown is O.K.
+                            </li>
+                            <li>
+                                Milk: Use any cow milk (either skimmed or whole milk)
+                            </li>
+                            <li>
+                                Rice: Use raw milled white rice
+                            </li>
+                            <li>
+                                Carrot: Use orange color carrot
+                            </li>
+                            <li>
+                                French beans: Any good quality French beans are O.K.
+                            </li>
+                            <li>
+                                Soya bean oil: Any good quality, pure soya bean oil is O.K.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can we use any cooking oil other than soya bean oil?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            You can use any good quality cooking oil. But soya bean oil has additional benefits of soy that are highly beneficial for
+                            your pet. For optimum results, we suggest using soya bean oil.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        I find it difficult to mix the exact portion of the eggs or the nutrition mix as suggested. What should I do?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            One egg is roughly 60 grams. You may round off the daily requirement to the nearest number of eggs to be mixed, like 1 or
+                            2 or 3 eggs.
+                        </p>
+                        <p>
+                            One table spoon is roughly 3.5 grams of nutrition mix. You may round off the daily requirement to the nearest number of table
+                            spoons required, like 1 or 2 or 3 table spoons.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I mix the pet diet fix nutrition mix in water or milk instead of food?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Our nutrition mix is not soluble in water or milk, so we advise you not to mix it with either milk or water. Mix it with
+                            the QTM home food pet recipe only.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        At what temperature of the QTM recipe should I mix Pet diet fix nutrition mix?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Pet diet fix nutrition mix contains vitamins and minerals which are subject to degradation at temperatures over 40 degrees
+                            C. So we advise you to mix it with the QTM recipe at room temperature
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I introduce Petdietfix to my pet’s diet?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            If you are feeding your pet totally on packaged dry food, introduce pet diet fix diet to your pets slowly in the following
+                            manner.
+                        </p>
+                        <ul>
+                            <li>
+                                Day 1-2 = 25%
+                            </li>
+                            <li>
+                                Day 3-4 = 50%
+                            </li>
+                            <li>
+                                Day 5-6 = 75%
+                            </li>
+                            <li>
+                                Day 7-8 = 100%
+                            </li>
+                        </ul>
+                        <p>
+                            If you are already feeding home food, then directly introduce pet diet fix mix into the home food, from day 1.
+                        </p>
+                        <p>
+                            If you are feeding one portion of packaged food and another portion of home food every day, then directly start with 50%
+                            of the suggested daily pet diet fix quantity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        I have two pet diet fix nutrition mix: one veg and one non veg. By mistake I mixed the wrong powder in the recipe, what might
+                        happen?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Do not worry. Your pet will still get most of the nutrients. We, however, advise you to follow the instruction given in our
+                            website. If you have any other doubts, you may write to us at
+                            <strong>support@petdietfix.com</strong> or consult your veterinarian.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        My maid had given more than the recommended dosage of nutrient mix to my pet? What will happen tomy pet?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Nothing to worry. Our products are vigorously tested on thousands of pets and it is absolutely safe and easily digestible.
+                            A variation of 5 to 10% is ok. We, however, advise you to follow the instruction given in our
+                            website. If you have any other doubts, you may write to us at
+                            <strong>support@petdietfix.com</strong> or consult your veterinarian.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        When my pet switched to the new pet diet fix home food, it developed gas, soft stools or diarrhea. What should I do?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            The chances of indigestion with pet diet fix food solution are very remote. If your pet has digestion problems, it could
+                            be due to some other reason or some other food that it must have eaten.We advise you to consult
+                            your veterinarian immediately.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I use the left over pet meal again for my pet?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Yes. You may refrigerate it and use it again by warming it before serving, as per the serving guidelines.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What are the benefits of using pet diet fix food solution during summer?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Pet diet fix is highly beneficial to your pets especially during summers because unlike dry foods it does not cause dehydration.
+                            Your pets will find pet diet fix food much easier to digest as it has a digestibility of 90%
+                            compared to 60% digestibility of cheap quality dry packaged food. The home food nutrition mix
+                            and our pet food solutionare specially formulated to control dehydration, keeping your pet cool
+                            and happy during summer.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How many types of QTM recipes are available?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            There are two types of QTM recipes: Home Food Economy and Home Food Premium. The quality, nutrition mix and essential nutrition
+                            balance are exactly the same in both the recipes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is the difference between QTM Home Food Economy and QTM Home Food Premium?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            The QTM home food economy is intended for owners having a large number of pets. It is a highly economical alternative to
+                            breeders and shelters who maintain large number of pets.
+                        </p>
+                        <p>
+                            The QTM home food premium is intended for owners having a few pets and contains all the ingredients that are commonly available
+                            in a household kitchen. Used along with the nutrition mix; it has the perfect nutrition to address
+                            the unique dietary needs of your small, medium or large pets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        You are saying your pet food solution is 50%-70% less costly than packaged food. But, your 500 gm mix cost is around 800
+                        rupees. Our pomerian dog packaged food costs around 1500 rupees for a month. How can you say your
+                        product is cost effective?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Let’s take your case as an example. Our pet diet fix 500 grams veg recipe mix will last for 5 months for a 4 kg pomerian
+                            dog. Hence, the mix costs only 100 rupees per month for you. Also, You can feed the best quality
+                            pet diet fix food solution to your pet at a monthly expenditure of 400-500 rupees only (including
+                            home food preparation costs) whereas it will take a minimum of 1000-1500 rupees to feed the same
+                            with packaged food diet for a whole month. Not only this breed of dog, you take any dog of any
+                            type or weight or breed, our product will be definitely 50%-70% less than the cost of the packaged
+                            food but at the same time is of highest quality. Please check our usage calculator and calculate
+                            the costs. You will know the truth.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        My credit card was declined. What happened?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            This often happens for one of two reasons. They are:
+                        </p>
+
+                        <ol>
+                            <li>
+                                You may have entered the wrong credit card code or
+                            </li>
+                            <li>
+                                You may have entered the wrong billing address for your credit card.
+                            </li>
+                        </ol>
+                        <p>
+                            We apologize for any inconvenience caused to you, but to avoid fraudulent charges, we have to follow industry recommendations
+                            on security.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How can we categorize pets based on their activity level?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Every pet has different activity levels. At petdietfix, we recognize that the nutritional requirements of your pet must vary
+                            according to its activity level, which is why we suggest you select the appropriate level of
+                            your pet based on this information:
+                        </p>
+                        <ul>
+                            <li>
+                                NORMAL ACTIVITY (Domestic canine): 30 minutes – 1 hour
+                            </li>
+                            <li>
+                                SEMI ACTIVITY: 1 hour- 2 hours
+                            </li>
+                            <li>
+                                ACTIVE: Anything above 2 hours
+                            </li>
+                        </ul>
+                        <p>
+                            <strong>NOTE:</strong> The quantities we suggested are on a general basis; please refer to your veterinarian
+                            for more precise information of your pet’s activity levels.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        My browser isn't supported. What should I do?
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We currently support three browsers - Microsoft Internet Explorer (IE) 9+, Google Chrome, and Apple iOS Safari (for iPhone
+                            and iPad).
+                        </p>
+                        <p>
+                            Older versions of these browsers do not support the capabilities we need to make the site and its software work. Other browsers
+                            like Firefox, Opera and regular Safari may work, but we do not test our site on these less commonly
+                            used browsers so we suggest using one of the supported browsers to avoid potential problems.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="black-bg pd-40 white-text text-center">
+                    <h3 class="bold">My question isn't listed. What should i do?</h3>
+                    <p>Please write to us at
+                        <strong class="neon-text">support@petdietfix.com</strong>
+                    </p>
+                    <p>
+                        We will be glad to help you.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="neon-bg">
+        <div class="container-fluid">
+            <div class="row mt-90 black-text">
+                <div class="col-sm-12 col-md-4 footer-image">
+                    <img src="./assets/images/logo-real.png" alt="Logo" class="img-responsive">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer-heading">Help</div>
+                    <div class="footer-content">
+                        <ul class="line-height-2-5">
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer-heading">Pet Diet Fix</div>
+                    <div class="footer-content">
+                        <ul class="line-height-2-5">
+                            <li>
+                                <a href="who-we-are.html">About</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="testimonials.html">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-90 black-text">
+                <div class="col-xs-12 text-center pd-20">
+                    &copy; 2018. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

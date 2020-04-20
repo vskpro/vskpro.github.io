@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petdietfix | Welcome</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon1.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="./assets/css/progress-tracker.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/site-lang.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/login.component.css">
+    <link rel="stylesheet" href="./assets/css/register.component.css">
+    <link rel="stylesheet" href="./assets/css/homepage.component.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/color.css">
+
+    <link type="text/css" rel="stylesheet" href="./assets/css/custom.css">
+
+    <style>
+        #main-container {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .bg-neon {
+            background: #dafd00;
+            background: linear-gradient(18deg, #dafd00, #cfef0b);
+        }
+
+        .neon-text {
+            color: #dafd00 !important;
+        }
+
+        .black-text {
+            color: black !important;
+        }
+
+        .bg-black {
+            background: black;
+        }
+
+        .pd-20 {
+            padding: 20px;
+        }
+
+        .testimonial-heading {
+            color: black;
+            font-size: 1.65em;
+            font-weight: bold;
+            font-family: Roboto;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            padding: 40px;
+        }
+
+        .doc-name {
+            font-size: 1.25em;
+            font-weight: bold;
+            color: black;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .doc-quote {
+            position: relative;
+        }
+
+        .doc-quote .fa-quote-left {
+            position: absolute;
+            top: -5px;
+        }
+
+        .doc-quote span {
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+
+        .testimonial-footer {
+            font-weight: bold;
+        }
+
+        .testimonial-row {
+            /* background: #f3f3f3; */
+        }
+
+        .t-heading {
+            font-size: 1.35em;
+            padding: 15px 0px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .t-center {
+            width: 600px;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .divider-auto {
+            margin: 0px auto;
+        }
+
+        .bdivider {
+            height: 2px;
+            width: 65px;
+            margin-bottom: 20px;
+        }
+
+        .t-type {
+            color: #dafd00;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #dafd00;
+            border-radius: 50px;
+            padding: 10px;
+            min-width: 100px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0px 10px;
+            transition: all 0.25s ease-in-out;
+        }
+        .t-type.active {
+            background: #dafd00;
+            color: black;
+            
+        }
+
+        .t-type:hover {
+            background: #cfef0b;
+            color: black;
+        }
+
+        @media screen and (min-width: 768px) {
+            .testimonial-row {
+                width: 75%;
+                margin: 20px auto;
+                /* background: #fff; */
+                border: 1px solid #dcdcdc;
+                box-shadow: 0px 2px 5px -3px black;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .testimonial-heading {
+                font-size: 1.2em;
+                padding: 0px;
+            }
+            .t-heading {
+                font-size: 1.25em;
+                padding: 20px 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <div id="wrapper">
+        <div class="container-fluid">
+
+            <header>
+                <nav class="navbar navbar-fixed-top">
+                    <div class="clearfix equiry-contet">
+                        <ul *ngIf="!hideElement" class="top-nav triangle-down  pull-right ">
+                            <li>
+                                <a style="cursor: pointer;" data-toggle="modal" data-target="#LoginModal">Login</a>
+                            </li>
+                            <li>
+                                <a>/</a>
+                            </li>
+                            <li>
+                                <a style="cursor: pointer;" data-toggle="modal" data-target="#SignupModal">signup</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav support-links pull-right">
+
+                            <li class="dropdown cart-dropdown">
+                                <a class="dropdown-toggle waves-effect waves-light cartIcon" data-toggle="dropdown" href="javascript:">
+
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="badge badge-xs badge-danger">2</span>
+                                    Cart
+                                </a>
+                                <div class="dropdown-menu mailbox">
+
+                                    <div class="drop-title">
+                                        There are {{ 2 }} item(s) in your cart
+                                    </div>
+                                    <div class="list-wrapper">
+                                        <div class="media cart-media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="
+                                                        alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Product Name</h4>
+                                                <div>
+                                                    Unit Price: 20 INR
+                                                </div>
+                                                <div>
+                                                    Quantity: 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media cart-media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg=="
+                                                        alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Product Name</h4>
+                                                <div>
+                                                    Unit Price: 20 INR
+                                                </div>
+                                                <div>
+                                                    Quantity: 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center total-content">
+                                        <strong class="ng-tns-c1-0 total-txt">Sub-Total: {{cartSubTotal}}</strong>
+                                        <br />
+                                        <button class="btn btn-inverse" routerLink="/cart">{{labels.GotoCart}}</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="dropdown" *ngIf="hideElement">
+                                <a href="javascript:" class="dropdown-toggle u-dropdown text-blue" data-toggle="dropdown" aria-expanded="false">
+                                    Admin
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu user-dropdown animated flipInY">
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="fa fa-user"></i> Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="orders.html">
+                                            <i class="fa fa-list-ol"></i> My Orders</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-power-off"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="javascript:" class="dropdown-toggle u-dropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <!-- Current Language Label below -->
+                                    <i class="fa fa-language"></i> English
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu user-dropdown animated fadeIn">
+                                    <!-- Loop LI element below to show list of languages -->
+                                    <li>
+                                        <a href="javascript:">Hindi</a>
+                                    </li>
+                                    <!-- End of LI Loop -->
+
+                                    <li>
+                                        <a href="javascript:">Telugu</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:">Tamil</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./assets/images/logo1.png" alt="logo" width="100%" />
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="homepage-english.html" class="active">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" class="active">About
+
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="about-us-1.html">Company Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-2.html">Who We Are</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-3.html">Our Story</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-4.html">Our Pet Diet Fix Solution</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-5.html">Our Philosopy</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="store.html">Store</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="challenge.html">OurChallage</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+
+                </nav>
+            </header>
+
+            <div id="main-container">
+
+                <div class="bg-black pd-20" style="border-bottom: 1px solid #dafd00;">
+
+                    <span class="t-type active" data-t-type="doctors">Doctors</span>
+                    <span class="t-type" data-t-type="clients">Pet Parents</span>
+
+                </div>
+
+                <div class="doctors animated">
+                    <div class="row bg-black pd-20">
+                        <div class="col-xs-12">
+                            <div class="testimonial-heading neon-text">
+                                Hear what doctors are saying about us.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row bg-neon pd-20">
+
+                        <div class="col-xs-12">
+                            <div class="t-center">
+                                <div class=" t-heading black-text">
+                                    Doctors Testimonials - English
+                                </div>
+                                <div class="bdivider divider-auto bg-black"></div>
+                                <div class="t-video">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLh3Oej5pi7zU2_mjkXrRUUOgNyq5yrkIm"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row bg-black pd-20">
+
+                        <div class="col-xs-12">
+                            <div class="t-center">
+                                <div class=" t-heading neon-text">
+                                    Doctors Testimonials - Telugu
+                                </div>
+                                <div class="bdivider divider-auto bg-neon"></div>
+                                <div class="t-video">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLh3Oej5pi7zXhS-cCJzny-C3K1Xdx-k27"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row bg-neon pd-20">
+
+                        <div class="col-xs-12">
+                            <div class="t-center">
+                                <div class=" t-heading black-text">
+                                    Doctors Testimonials - Kannada
+                                </div>
+                                <div class="bdivider divider-auto bg-black"></div>
+                                <div class="t-video">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLh3Oej5pi7zXv_2LjhFERQ9gsNJeBT3sp"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row bg-black pd-20">
+
+                        <div class="col-xs-12">
+                            <div class="t-center">
+                                <div class=" t-heading neon-text">
+                                    Doctors Testimonials - Hindi
+                                </div>
+                                <div class="bdivider divider-auto bg-neon"></div>
+                                <div class="t-video">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLh3Oej5pi7zV8HtGWGw4ETULkDpzowNf9"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="clients hide animated">
+                    <div class="row bg-black pd-20">
+                        <div class="col-xs-12">
+                            <div class="testimonial-heading neon-text">
+                                Hear what pet parents are saying about us.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row bg-neon pd-20">
+
+                        <div class="col-xs-12">
+                            <div class="t-center">
+                                <div class=" t-heading black-text">
+                                    Review on PetDietFix - Sridhar Lagadapati
+                                </div>
+                                <div class="bdivider divider-auto bg-black"></div>
+                                <div class="t-video">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/MqdBvz_Pgns?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row bg-black pd-20">
+
+                        <div class="col-xs-12">
+                            <div class="t-center">
+                                <div class=" t-heading neon-text">
+                                    Review on PetDietFix - Bandhvi Sanvi
+                                </div>
+                                <div class="bdivider divider-auto bg-neon"></div>
+                                <div class="t-video">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/WPNfYgQfqic?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-content clearfix">
+
+                <ul>
+                    <li>
+                        <span class="line-border"></span>
+                    </li>
+                    <li>2018 &copy; copyright |</li>
+                    <li>allrights reserved</li>
+                </ul>
+                <ul class="hidden-xs pull-right">
+                    <li>
+                        <span class="line-border"></span>
+                    </li>
+                    <li>privacy policy /</li>
+                    <li>tems & conditions</li>
+                </ul>
+            </div>
+
+            <div id="video-popup" class="hide">
+                <div class="video-close">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="video-wrapper">
+                    <iframe id="popUpVideoPlayer" src="https://www.youtube.com/embed/7P85BMCCboI?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- <div (window:resize)="onResize($event)" id="theme-config" class="{{ menuType }} {{ headerType }} {{ sidebarType }} {{ themeType}}">
+          <canvas id="canvas" width="1950px" height="800px" style="display:none"></canvas>
+        
+      </div> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="./assets/js/tween.min.js"></script>
+    <script src="./assets/js/MorphSVGPlugin.min.js"></script>
+    <script src="./assets/js/particles.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'assets/data/particles.json', null);
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.t-type').on('click',function(){
+                var activeClass = $(this).attr('data-t-type');
+                console.log(activeClass);
+
+                if(activeClass === 'clients'){
+                    
+                    // show clients div
+                    $('.clients').removeClass('hide').addClass('fadeIn');
+                    $('.doctors').addClass('hide');
+                    
+                    // remove active class from doctors data-t-type
+                    // and add it to clients data-t-type 
+
+                    $("span[data-t-type='doctors']").removeClass('active');
+                    $("span[data-t-type='clients']").addClass('active');
+
+                    console.log();
+
+                    
+
+                } else {
+                    
+                    //show doctors div
+
+                    $('.doctors').removeClass('hide').addClass('fadeIn');
+                    $('.clients').addClass('hide');
+
+                    $("span[data-t-type='doctors']").addClass('active');
+                    $("span[data-t-type='clients']").removeClass('active');
+
+
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

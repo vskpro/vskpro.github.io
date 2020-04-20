@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .top-image {
+            min-height: 600px;
+            background: url('assets/images/slider-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center -15px;
+            z-index: 1;
+        }
+
+        .top-image > img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .content-1 {
+            height: 400px;
+            position: relative;
+            background: #dafd00;
+            z-index: 2;
+            display: table;
+            width: 100%;
+            text-align: center;
+        }
+
+        .content-1 > span {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .content-2 {
+            height: 600px;
+            position: relative;
+            background: black;
+            z-index: 2;
+            display: table;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(to left,rgba(0, 0,0,0.55),rgba(0, 0,0,0.55)),url('assets/images/parallax_2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .content-2 > span {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 5px;
+            color: #dafd00;
+        }
+
+        .content-2::before {
+            position: absolute;
+            content: '';
+            height: 100px;
+            width: 100%;
+            top: -48px;
+            left: 0;
+            transform: skewY(2deg);
+            background: #dafd00;
+        }
+
+        .content-2::after {
+            position: absolute;
+            content: '';
+            height: 100px;
+            width: 100%;
+            bottom: -25px;
+            left: 0;
+            transform: skewY(-2deg);
+            background: #dafd00;
+        }
+
+        .content-3 {
+            background: #dafd00;
+            position: relative;
+            height: 400px;
+            display: table;
+            width: 100%;
+            text-align: center;
+        }
+
+        .content-3 > span {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-image">
+
+    </div>
+
+    <div class="content-1">
+        <span>The Best Pet Food Solution in India!</span>
+    </div>
+
+    <div class="content-2">
+        <span>PET DIET FIX AMBASSADOR PROGRAM</span>
+    </div>
+
+    <div class="content-3">
+        <span>HEAR WHAT DOCTORS ARE SAYING ABOUT US.</span>
+        
+    </div>
+
+</body>
+
+</html>

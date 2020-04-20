@@ -1,0 +1,246 @@
+.recipe-wrapper .image {
+    width: 200px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.recipe-wrapper .title {
+    font-size: 1.25em;
+    color: black;
+    background: #dafd00;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: 0px 1px 2px 0px #00000094;
+    padding: 5px;
+}
+
+.recipe-title {
+    font-weight: bold;
+    font-size: 1.35em;
+}
+
+.recipe-non-veg {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 2px 5px;
+    color: red;
+    font-size: 14px;
+}
+
+.recipe-veg {
+    display: inline-block;
+    border: 1px solid green;
+    padding: 2px 5px;
+    color: green;
+    font-size: 14px;
+}
+
+.recipe-sub-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.15em;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.prep-time {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.25em;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.prep-time-inverse {
+    text-align: center;
+    font-weight: bold;
+    color: #dafd00;
+    font-size: 1.25em;
+    border: 2px solid #dafd00;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.content-table-wrapper {
+    border: 2px solid;
+}
+
+.dark-table {
+    border: 1px solid black;
+    border-color: transparent;
+}
+
+.dark-table>thead>tr>th {
+    border: 1px solid black;
+    padding: 5px 8px;
+    font-weight: bold;
+    color: black;
+    border-color: transparent;
+}
+
+.dark-table>tbody>tr>td {
+    border: 1px solid black;
+    padding: 5px 8px;
+    border-color: transparent;
+}
+
+.printbtn {
+    margin-bottom: 20px;
+}
+
+.note-wrapper {
+    border: 1px solid red;
+    color: red;
+    background: #f7b7b7;
+    padding: 15px 20px;
+}
+
+.calc-wrapper {
+    position: fixed;
+    bottom: 0px;
+    right: 10%;
+    z-index: 9;
+}
+
+.calc-content {
+    background: #3c3c3c;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.calc-button {
+    text-align: center;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: #dafd00;
+    font-weight: 500;
+    padding: 5px 30px;
+    background: #3c3c3c;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    padding-top: 12px;
+    cursor: pointer;
+    box-shadow: 0px -5px 10px -5px #000000;
+}
+
+.calc-button:hover {
+    background: #242424;
+}
+
+.close-button {
+    position: absolute;
+    right: 15px;
+    font-size: 2em;
+    top: 0px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calc-form-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    min-width: 275px;
+    max-width: 100%;
+    padding: 15px 25px;
+}
+
+.my-scroll-form {
+    padding-top: 20px;
+}
+
+.my-scroll-form .form-control {
+    background: #020202;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 0px;
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .calc-form-wrapper {
+        max-height: 200px;
+    }
+    .close-button {
+        right: 10px;
+    }
+}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .calc-form-wrapper {
+        max-height: 210px;
+    }
+    .close-button {
+        right: 10px;
+    }
+}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .calc-form-wrapper {
+        max-height: 275px;
+    }
+    .close-button {
+        right: 10px;
+    }
+}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .calc-form-wrapper {
+        max-height: 220px;
+    }
+    .close-button {
+        right: 10px;
+    }
+}
+
+#lcatating_div1, #lactating_div2 {
+    display: none;
+}
+
+.usage-calc-weight-input {
+    width: 90%;
+    border: 1px solid #fff;
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: #000000;
+}
+
+.usage-calc-weight-inpu::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white!important;
+    opacity: 0.65;
+    /* Firefox */
+}
+
+.usage-calc-weight-inpu:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white!important;
+}
+
+#mbw, #weight {
+    display: none;
+}
+
+.my-footer {
+    display: none!important;
+}
+
+.my-scroll-form {
+    padding-top: 20px;
+}

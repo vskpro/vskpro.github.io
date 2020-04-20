@@ -1,0 +1,134 @@
+
+.product-items {
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 0 30px 45px;
+    flex-wrap: wrap;
+}
+
+.item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.item-bg {
+    width: 80%;
+    height: 300px;
+    -webkit-transform: skew(-25deg);
+    transform: skew(-25deg);
+    margin: 5px 25px;
+}
+
+.item:nth-child(2n) {
+    margin-top: 60px;
+    margin-left: -60px;
+}
+
+.item1 .item-bg {
+    background: #e5e5e5;
+}
+
+.item2 .item-bg {
+    background: #8dc73f;
+}
+
+.item3 .item-bg {
+    background: #1abbb4;
+}
+
+.item4 .item-bg {
+    background: #f26522;
+}
+
+.item-content {
+    position: absolute;
+    top: 7%;
+    left: -3%;
+    width: 85%;
+}
+
+.item-content img {
+    width: 100%;
+}
+
+.skewBox {
+    width: 140px;
+    display: inline-block;
+    color: #fff;
+    -webkit-transform: skew(-25deg);
+    transform: skew(-25deg);
+    background: #000;
+    padding: 5px;
+    margin-right: -23px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    opacity: 0;
+}
+
+.item-content>p {
+    margin-top: 40px;
+    margin-left: -150px;
+}
+
+.item-content>p a {
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+#main-container {
+    overflow: hidden;
+}
+
+.product-details {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.category-choice {
+    width: 190px;
+    background: #000;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.category-details {
+    position: relative;
+}
+
+.category-details img {
+    position: absolute;
+    left: -26px;
+    top: -15px;
+    width: 45px;
+}
+
+.category-span {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.item-content h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 5px;
+}
+
+@media (min-width:1500px) {
+    .container-fluid {
+        height: 100%;
+    }
+    /* .item-bg {
+        height: 320px;
+    } */
+    .product-items {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+

@@ -1,0 +1,144 @@
+.add-to-cart-button {
+    margin-top: 22px;
+    height: 34px;
+    background: black;
+    color: #dafd00;
+    border-radius: 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-color: black;
+    width: 150px;
+}
+
+.add-to-cart-button:hover {
+    border: 1px solid black;
+    background: #dafd00 ;
+    color: #000;
+    transition: 0.25s;
+}
+
+.add-to-cart-button:active, .add-to-cart-button:focus {
+    margin-top: 22px;
+    height: 34px;
+    background: black;
+    color: #dafd00;
+    border-radius: 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-color: black;
+    width: 150px;
+    outline: none;
+}
+
+.product-buy-now-button {
+    margin-top: 22px;
+    height: 34px;
+    background: #dafd00;
+    color: #000;
+    border-radius: 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-color: #000;
+    width: 150px;
+    transition: 0.25s;
+}
+
+.product-buy-now-button:hover {
+    background: #000 ;
+    color: #dafd00;
+}
+
+.product-cart-wrapper {
+    margin-top: 30px;
+}
+
+.product-price {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.green-weight {
+    color: #007300;
+}
+
+.orange-weight {
+    color: #D35D00;
+}
+
+.neon-weight {
+    color: #B4D205;
+}
+
+.product-title-single-line {
+    font-size: 2.25em;
+}
+
+.fp-noscroll {
+    padding: 50px 30px;
+}
+
+.single-product {
+    /* display: inline-block; */
+    position: relative;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    /* margin-bottom: -5px; */
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.product-weights {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+.product-title-1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.product-title-2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.product-title-3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.price-input {
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+    background-color: white!important;
+}
+
+.price-input:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.more-images-wrapper {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.product-image {
+    min-height: 300px;
+}
+
+.product-list-image {
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    border: 2px solid transparent;
+}
+
+.product-list-image>img {
+    width: 100%;
+}
+
+.product-list-image.active {
+    border: 2px solid #007300;
+}
