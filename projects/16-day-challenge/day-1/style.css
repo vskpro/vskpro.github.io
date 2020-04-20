@@ -180,7 +180,7 @@ ul > li {
   line-height: 1.4;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 580px) {
   /* Mobile styles go here */
   .row:nth-child(2) > .col-wrapper {
     flex-direction: column;
