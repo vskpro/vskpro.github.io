@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+body {
+  font-size: 16rem;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #222;
+  font-family: "Josefin Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.section.left {
+  width: 60%;
+  background-image: url("./base-apparel-coming-soon-master/images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.section.right {
+  width: 40%;
+  background-image: url("./base-apparel-coming-soon-master/images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mobile-image {
+  display: none;
+  background-image: url("./base-apparel-coming-soon-master/images/hero-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sub-section {
+  margin: 30rem 200rem;
+}
+
+.hero-text {
+  font-size: 55rem;
+  text-transform: uppercase;
+  letter-spacing: 10rem;
+  font-weight: 600;
+}
+
+.hero-text > div.golden-brown {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+.logo {
+  margin-bottom: 30rem;
+}
+
+p.desc {
+  color: hsl(0, 36%, 70%);
+  margin: 30rem 0;
+}
+
+.input-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.input-wrapper > input[type="text"] {
+  width: 90%;
+  position: relative;
+  border-radius: 30rem;
+  border: 2rem solid hsl(0, 36%, 70%);
+  padding: 15rem 20rem;
+}
+
+input[type="submit"] {
+  position: absolute;
+  right: 30rem;
+  border: none;
+  background-image: url(./base-apparel-coming-soon-master/images/icon-arrow.svg),
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 17rem 36rem;
+  border-radius: 30rem;
+  top: 0rem;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: -6px 0px 16px -5px hsl(0, 36%, 70%);
+}
+
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  outline: none;
+}
+
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  background-image: url(./base-apparel-coming-soon-master/images/icon-arrow.svg),
+    linear-gradient(135deg, hsl(0, 89%, 93%), hsl(0, 100%, 77%));
+}
+
+input[type="submit"]:hover {
+  background-image: url(./base-apparel-coming-soon-master/images/icon-arrow.svg),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 90%));
+}
+
+input[type="text"].invalid {
+  border: 2rem solid hsl(0, 93%, 68%);
+}
+
+input[type="text"].valid {
+  border: 2rem solid hsl(123, 100%, 36%);
+}
+
+.error-icon {
+  display: inline-block;
+  position: absolute;
+  right: 30%;
+  padding: 11rem;
+  display: none;
+}
+
+.error-icon.show {
+  display: inline-block;
+}
+
+.error-message, .success-message {
+  color: hsl(0, 93%, 68%);
+  display: inline-block;
+  margin-top: 20rem;
+  padding-left: 15rem;
+  display: none;
+}
+
+.success-message {
+  color: hsl(123, 100%, 36%);
+}
+
+.error-message.show, .success-message.show {
+  display: inline-block;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 991px) {
+  .sub-section {
+    margin: 30rem 60rem;
+  }
+  .hero-text {
+    font-size: 45rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sub-section {
+    margin: 20rem 40rem;
+  }
+  .hero-text {
+    font-size: 40rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .section.left,
+  .section.right {
+    width: 100%;
+  }
+  .section.right {
+    display: none;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .mobile-image {
+    display: block;
+    height: 200rem;
+  }
+  .logo {
+    margin: 0;
+  }
+  input[type="submit"] {
+    right: 25rem;
+  }
+}

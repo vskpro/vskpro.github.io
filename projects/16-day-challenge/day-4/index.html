@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel Coming Soon | Day 4</title>
+    <link rel="shortcut icon" href="./base-apparel-coming-soon-master/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="section left">
+            <div class="wrapper">
+                <div class="sub-section logo-area">
+                    <img src="./base-apparel-coming-soon-master/images/logo.svg" alt="" class="logo">
+                </div>
+                <div class="mobile-image"></div>
+                <div class="sub-section hero-area">
+                    <div class="hero-text">
+                        <div class="golden-brown">We're</div>
+                        <div>Coming</div>
+                        <div>Soon</div>
+                    </div>
+                    <p class="desc">
+                        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+                        up-to-date with announcements and our launch details
+                    </p>
+                    <div class="form-area">
+                        <form>
+                            <div class="input-wrapper">
+                                <input type="text" name="email" placeholder="Email address" id="email">
+                                <input type="submit" value=" ">
+                                <span id="errorIcon" class="error-icon"><img src="./base-apparel-coming-soon-master/images/icon-error.svg" alt="" class="error"></span>
+                            </div>
+                            <span id="errorMessage" class="error-message">Please provide a valid email</span>
+                            <span id="successMessage" class="success-message">Thanks. We'll keep you posted.</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section right"></div>
+    </div>
+
+    <script>
+        var form = window.document.forms[0];
+        console.log(form);
+        form.onsubmit = function(e) {
+            e.preventDefault();
+            var emailId = form["email"].value;
+            var inputTag = document.getElementById("email");
+            var errorIcon = document.getElementById("errorIcon");
+            var errorMessage = document.getElementById("errorMessage");
+            var successMessage = document.getElementById("successMessage");
+
+            if ((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailId))) {
+                inputTag.classList.add('valid');
+                inputTag.classList.remove('invalid');
+                errorIcon.classList.remove('show');
+                errorMessage.classList.remove('show');
+                successMessage.classList.add('show');
+            } else {
+                inputTag.classList.remove('valid');
+                inputTag.classList.add('invalid');
+                errorIcon.classList.add('show');
+                errorMessage.classList.add('show');
+                successMessage.classList.remove('show');
+                console.log("Nope");
+            }
+        }
+    </script>
+</body>
+
+</html>
