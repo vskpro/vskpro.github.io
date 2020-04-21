@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Component with Signup form | Day 5</title>
+    <link rel="shortcut icon" href="./intro-component-with-signup-form-master/images/favicon-32x32.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="heading">Learn to code by <br>watching others</div>
+            <p class="desc">See how experienced developers solve problems in real time. Watching scripted tutorials is
+                great, but understanding how developers think is invaluable.</p>
+        </div>
+        <div class="section">
+            <div class="form-wrapper">
+                <div class="form-heading"><span class="bold">Try it free 7 days</span> then $20/mo thereafter</div>
+                <div class="form-area">
+                    <form autocomplete="off">
+                        <div class="input-wrapper" id="firstName">
+                            <input type="text" name="firstName" placeholder="First Name">
+                            <span class="icon"></span>
+                            <span class="error message">First name cannot be empty</span>
+                        </div>
+                        <div class="input-wrapper" id="lastName">
+                            <input type="text" name="lastName" placeholder="Last Name">
+                            <span class="icon"></span>
+                            <span class="error message">Last name cannot be empty</span>
+                        </div>
+                        <div class="input-wrapper" id="email">
+                            <input type="text" name="email" placeholder="Email Address">
+                            <span class="icon"></span>
+                            <span class="error message">Email Address cannot be empty</span>
+                            <span class="error message">Look like this is not an email</span>
+                        </div>
+                        <div class="input-wrapper" id="password">
+                            <input type="password" name="password" placeholder="Password">
+                            <span class="icon"></span>
+                            <span class="error message">Password cannot be empty</span>
+                        </div>
+                        <div class="input-wrapper">
+                            <button class="submit-btn">CLAIM YOUR FREE TRIAL</button>
+                        </div>
+                    </form>
+                    <div class="statement">By clicking submit button you are agreeing to our <span
+                            class="bold red">Terms and Conditions</span></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var form = document.forms[0];
+            form.onsubmit = function(e) {
+                e.preventDefault();
+                var firstName = document.getElementById('firstName');
+                var lastName = document.getElementById('lastName');
+                var email = document.getElementById('email');
+                var password = document.getElementById('password');
+                if (form['firstName'].value === '') {
+                    form['firstName'].classList.add('invalid');
+                    firstName.children[1].classList.add('show');
+                    firstName.children[2].classList.add('show');
+                } else {
+                    form['firstName'].classList.remove('invalid');
+                    firstName.children[1].classList.remove('show');
+                    firstName.children[2].classList.remove('show');
+                } 
+                if (form['lastName'].value === '') {
+                    form['lastName'].classList.add('invalid');
+                    lastName.children[1].classList.add('show');
+                    lastName.children[2].classList.add('show');
+                } else {
+                    form['lastName'].classList.remove('invalid');
+                    lastName.children[1].classList.remove('show');
+                    lastName.children[2].classList.remove('show');
+                }
+                if (form['email'].value === '') {
+                    form['email'].classList.add('invalid');
+                    email.children[1].classList.add('show');
+                    email.children[2].classList.add('show');
+                } else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form['email'].value))) {
+                    email.children[1].classList.add('show');
+                    email.children[2].classList.remove('show');
+                    email.children[3].classList.add('show');
+                } else {
+                    form['email'].classList.remove('invalid');
+                    email.children[1].classList.remove('show');
+                    email.children[2].classList.remove('show');
+                    email.children[3].classList.remove('show');
+                }
+                if (form['password'].value === '') {
+                    form['password'].classList.add('invalid');
+                    password.children[1].classList.add('show');
+                    password.children[2].classList.add('show');
+                } else {
+                    form['password'].classList.remove('invalid');
+                    password.children[1].classList.remove('show');
+                    password.children[2].classList.remove('show');
+                }
+            };
+        </script>
+
+    </div>
+</body>
+
+</html>
