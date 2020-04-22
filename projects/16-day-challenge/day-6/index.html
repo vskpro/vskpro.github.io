@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Component with Toggle | Day 6</title>
+    <link rel="shortcut icon" href="./pricing-component-with-toggle-master/images/favicon-32x32.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">Our Pricing</div>
+        <div class="actions">
+            <span class="action-name">Annually</span>
+            <span class="action">
+                <label class="switch">
+                    <input type="checkbox" id="toggler">
+                    <span class="slider round"></span>
+                </label>
+            </span>
+            <span class="action-name">Monthly</span>
+        </div>
+        <div class="cards annually">
+            <div class="card">
+                <div class="title">Basic</div>
+                <div class="total-price"><span class="dollar">$</span>199.99</div>
+                <div class="points">500 GB Storage</div>
+                <div class="points">2 Users Allowed</div>
+                <div class="points">Send Upto 3 GB</div>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="card active">
+                <div class="title">Professional</div>
+                <div class="total-price"><span class="dollar">$</span>249.99</div>
+                <div class="points">1 TB Storage</div>
+                <div class="points">5 Users Allowed</div>
+                <div class="points">Send Upto 10 GB</div>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="card">
+                <div class="title">Master</div>
+                <div class="total-price"><span class="dollar">$</span>399.99</div>
+                <div class="points">2 TB Storage</div>
+                <div class="points">10 Users Allowed</div>
+                <div class="points">Send Upto 20 GB</div>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+        </div>
+        <div class="cards monthly">
+            <div class="card">
+                <div class="title">Basic</div>
+                <div class="total-price"><span class="dollar">$</span>19.99</div>
+                <div class="points">500 GB Storage</div>
+                <div class="points">2 Users Allowed</div>
+                <div class="points">Send Upto 3 GB</div>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="card active">
+                <div class="title">Professional</div>
+                <div class="total-price"><span class="dollar">$</span>24.99</div>
+                <div class="points">1 TB Storage</div>
+                <div class="points">5 Users Allowed</div>
+                <div class="points">Send Upto 10 GB</div>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="card">
+                <div class="title">Master</div>
+                <div class="total-price"><span class="dollar">$</span>39.99</div>
+                <div class="points">2 TB Storage</div>
+                <div class="points">10 Users Allowed</div>
+                <div class="points">Send Upto 20 GB</div>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var toggler = document.getElementById("toggler");
+        function toggleSwitch(isChecked) {
+
+            if (isChecked) {
+                // Show monthly
+                document.getElementsByClassName('monthly')[0].style.display = "flex";
+                document.getElementsByClassName('annually')[0].style.display = "none";
+            } else {
+                // Show Anually
+                document.getElementsByClassName('annually')[0].style.display = "flex";
+                document.getElementsByClassName('monthly')[0].style.display = "none";
+            }
+
+        }
+        var isChecked = toggler.checked;
+        toggleSwitch(isChecked);
+        toggler.onchange = function (e) {
+            isChecked = !isChecked;
+            console.log(isChecked);
+            toggleSwitch(isChecked);
+        }
+
+
+    </script>
+</body>
+
+</html>
