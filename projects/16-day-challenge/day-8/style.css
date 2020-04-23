@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;500;600;700&display=swap");
+
+* {
+  max-width: 100%;
+}
+
+body {
+  font-size: 14rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.f-bg {
+  background-color: hsl(216, 53%, 9%);
+}
+
+.f-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.common-padding {
+  padding-left: 100rem;
+  padding-right: 100rem;
+}
+
+.center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.light {
+  background-color: hsl(217, 28%, 15%);
+}
+
+.dark {
+  background-color: hsl(218, 28%, 13%);
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40rem;
+  padding-bottom: 40rem;
+  align-items: center;
+}
+
+.menu > ul {
+  display: flex;
+}
+
+.menu > ul > li {
+  display: inline-block;
+}
+
+.menu > ul > li > a {
+  display: block;
+  margin: 0 30rem;
+}
+
+.hero {
+  background-image: url('./fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.hero-image {
+  margin-bottom: 50rem;
+}
+
+.hero-text {
+  width: 600rem;
+  max-width: 100%;
+  padding-bottom: 100rem;
+}
+
+.heading {
+  font-size: 36rem;
+  font-weight: 600;
+  margin: 40rem auto;
+}
+
+.desc {
+  font-size: 16rem;
+  max-width: 500rem;
+}
+
+.action-btn {
+  background: hsl(176, 68%, 64%);
+  padding: 12rem 48rem;
+  margin: 40rem 0;
+  border-radius: 25rem;
+  font-weight: 600;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100rem;
+}
+
+.card-grid .card {
+  width: 50%;
+}
+
+.card-grid .card .card-wrapper {
+  max-width: 350rem;
+  margin: 30rem auto;
+}
+
+.card-wrapper > div {
+  margin: 15rem auto;
+}
+
+.card-wrapper > .title {
+  font-size: 18rem;
+  font-weight: 600;
+}
+
+.card-wrapper > .content {
+  line-height: 1.6;
+}
+
+.highlight {
+  padding: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100rem;
+}
+
+.highlight > div {
+  flex-basis: 50%;
+  padding: 20rem;
+}
+
+.highlight > .text-area > div {
+  margin: 20rem auto;
+}
+
+.link {
+  display: inline-block;
+  color: hsl(176, 68%, 64%);
+  padding-bottom: 2rem;
+  border-bottom: 1rem solid hsl(176, 68%, 64%);
+}
+
+.link > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 100rem;
+}
+
+.testimonial {
+  width: 30%;
+  background-color: hsl(219, 30%, 18%);
+  padding: 30rem;
+  box-shadow: 3rem 3rem 6rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.testimonial:nth-child(1) {
+  position: relative;
+}
+
+#quotes {
+  position: absolute;
+  top: -30rem;
+  left: -15rem;
+  z-index: -1;
+}
+
+.testimonial > div {
+  margin: 20rem auto;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile > .picture > img {
+  width: 40rem;
+  border-radius: 100%;
+  margin-right: 10rem;
+  vertical-align: middle;
+}
+
+.details > div {
+  margin: 2rem auto;
+}
+
+.details > .name {
+  font-size: 12rem;
+  font-weight: 600;
+}
+
+.details > .designation {
+  font-size: 10rem;
+  font-weight: 600;
+}
+
+.above-footer {
+  position: relative;
+  margin-top: 300rem;
+}
+
+.contact-card {
+  max-width: 900rem;
+  margin: 0 auto;
+  padding: 40rem;
+  transform: translateY(-50%);
+  border-radius: 10rem;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 32rem;
+  font-weight: 600;
+}
+
+.contact-desc {
+  margin: 20rem auto;
+  max-width: 600rem;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form > div {
+  margin: 0 20rem;
+}
+
+.input {
+  width: 65%;
+}
+
+.input > input {
+  width: 100%;
+  padding: 10rem 30rem;
+  border-radius: 30rem;
+  border-width: 0;
+}
+
+.contact-action-btn {
+  background: linear-gradient(to left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  padding: 8rem 30rem;
+  border-radius: 30rem;
+  font-weight: 600;
+  border-width: 0;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+footer {
+  padding-top: 40rem!important;
+  padding-bottom: 40rem!important;
+}
+
+.footer-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section {
+  width: 20%;
+  padding: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section.one {
+  flex-direction: row;
+}
+
+.section.one img {
+  width: 100rem;
+}
+
+.section.two > .contact-wrapper > span{
+  padding: 2rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.section > div {
+  padding: 10rem;
+}
+
+.section.five {
+  flex-direction: row;
+}
+
+.section.five > span {
+  display: inline-block;
+  height: 35rem;
+  width: 35rem;
+  text-align: center;
+  border: 1rem solid;
+  border-radius: 30rem;
+  margin: 0 6rem;
+}
+
+.section.five > span > i {
+  vertical-align: middle;
+  padding: 10rem;
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 991px) {
+  .common-padding {
+    padding-left: 50rem;
+    padding-right: 50rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .common-padding {
+    padding-left: 25rem;
+    padding-right: 25rem;
+  }
+  .card-grid .card {
+    width: 100%;
+  }
+  .hero, .hero-image {
+    max-width: 100%;
+  }
+  .hero-image {
+    padding: 20rem;
+  }
+  .highlight, .testimonials, .contact-form, .footer-data  {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .testimonial, .contact-form > div, .section {
+    margin: 20rem auto;
+    width: 100%;
+  }
+  .section.one img {
+    width: 30rem;
+  }
+  .section {
+    padding: 0;
+  }
+  .contact-heading, .heading {
+    font-size: 20rem;
+  }
+  .hero .desc {
+    padding: 20rem;
+  }
+  .hero-text {
+    padding-bottom: 0;
+  }
+  .card-grid, .highlight, .testimonials {
+    margin-bottom: 50rem;
+  }
+  .heading {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .hero {
+    background-image: url('./fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg');
+  }
+  .nav-wrapper {
+    align-items: unset;
+  }
+  .menu > ul > li > a {
+    font-size: 12rem;
+    margin: 0 8rem;
+  }
+  .logo {
+    max-width: 80rem;
+  }
+}
