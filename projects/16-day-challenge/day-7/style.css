@@ -464,6 +464,9 @@ footer > .top {
   .highlights {
     flex-direction: column;
   }
+  .card {
+      padding: 20rem!important;
+  }
   .card-wrapper {
     text-align: center;
   }
