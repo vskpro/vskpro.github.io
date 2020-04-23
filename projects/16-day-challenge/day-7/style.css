@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;500;600;700&display=swap");
+body {
+  font-size: 16rem;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #222;
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo > img {
+  vertical-align: middle;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.nav > ul {
+  display: block;
+  margin: 0;
+}
+
+.nav > ul > li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13rem;
+  font-weight: 600;
+  color: hsl(273, 4%, 51%);
+  padding: 6rem 18rem;
+  border: 1.25rem solid transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav > ul > li:hover {
+  color: hsl(270, 9%, 17%);
+}
+
+.nav > ul > li.active {
+  border: 1.25rem solid hsl(270, 9%, 17%);
+  color: hsl(270, 9%, 17%);
+}
+
+.nav > ul > li.active:hover {
+  background-color: hsl(270, 9%, 17%);
+  color: hsl(273, 4%, 51%);
+}
+
+.mobile-nav {
+  background-color: hsl(256, 26%, 20%);
+  color: hsl(273, 4%, 51%);
+  text-align: center;
+  padding: 20rem;
+  display: none;
+}
+
+.mobile-nav > ul > li {
+  border: 1.25rem solid transparent;
+  display: block;
+  padding: 10rem 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.mobile-nav > ul > li:hover {
+  border: 1.25rem solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+
+.mobile-nav-toggler > img {
+  cursor: pointer;
+}
+
+#menu,
+#close {
+  display: none;
+}
+
+.hero {
+  background-color: hsl(256, 26%, 20%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70vh;
+  padding: 0 150rem;
+  z-index: 2;
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: -60%;
+  left: 0;
+  z-index: 2;
+}
+
+.hero > div {
+  width: 50%;
+  padding: 10rem;
+}
+
+.hero-image {
+  position: relative;
+  height: 100%;
+}
+
+.hero-image > img {
+  position: absolute;
+  width: 100%;
+  bottom: -25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.hero-text {
+  color: hsl(0, 0%, 98%);
+}
+
+.bar-line {
+  background-color: hsl(0, 0%, 98%);
+  height: 0.75rem;
+  width: 90rem;
+  margin-bottom: 50rem;
+}
+
+.heading {
+  font-size: 40rem;
+  font-weight: 700;
+  letter-spacing: 2rem;
+  line-height: 1;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 30rem;
+}
+
+.desc {
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 30rem;
+}
+
+.action > button {
+  border: 1.25rem solid hsl(0, 0%, 98%);
+  padding: 8rem 18rem;
+  text-transform: uppercase;
+  font-size: 13rem;
+  font-weight: 600;
+  transition: 0.2s;
+  font-family: "Karla", sans-serif;
+}
+
+.action > button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+}
+
+.hero-extension {
+  background: white;
+  height: 30vh;
+}
+
+.top-left,
+.bottom-right {
+  display: none;
+}
+
+.mobile-hero-image {
+  display: none;
+}
+
+.common-padding {
+  padding: 20rem 150rem;
+}
+
+.bar-line.dark-grey {
+  background-color: hsl(216, 30%, 68%);
+}
+
+.highlights {
+  display: flex;
+}
+
+.card {
+  flex-basis: 33.33%;
+  padding: 20rem;
+}
+
+.card:nth-child(1) {
+  padding-left: 0;
+}
+
+.card:nth-child(3) {
+  padding-right: 0;
+}
+
+.card-wrapper > div {
+  margin: 15rem auto;
+}
+
+.card-wrapper > .desc {
+  font-size: 16rem;
+  color: hsl(273, 4%, 51%);
+}
+
+.title {
+  font-size: 28rem;
+  font-weight: 500;
+  font-family: "DM Serif Display", serif;
+}
+
+.banner {
+  background-color: hsl(256, 26%, 20%);
+  margin: 50rem 0 100rem 0;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("./insure-landing-page-master/images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+
+.banner-title {
+  font-size: 55rem;
+  padding: 40rem 0;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  letter-spacing: 1.5rem;
+}
+
+.action-btn {
+  padding: 40rem 0;
+}
+
+.banner button {
+  border: 1.25rem solid hsl(0, 0%, 98%);
+  padding: 12rem 24rem;
+  text-transform: uppercase;
+  font-size: 14rem;
+  font-weight: 600;
+  transition: 0.2s;
+  font-family: "Karla", sans-serif;
+}
+
+.banner button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+}
+
+footer {
+  background-color: hsl(0, 0%, 98%);
+  background-image: url("./insure-landing-page-master/images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+footer > .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rem 0;
+  border-bottom: 1rem solid hsl(0, 0%, 85%);
+  margin-bottom: 30rem;
+}
+
+.social-media > span {
+  display: inline-block;
+  margin: 0 4rem;
+}
+
+.footer-menu {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 30rem;
+}
+
+.section-title {
+  color: hsl(273, 4%, 51%);
+  margin-bottom: 30rem;
+}
+
+.footer-menu .link {
+  margin: 15rem 0;
+  color: hsl(270, 9%, 17%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer-menu .link:hover {
+  color: hsl(273, 4%, 51%);
+}
+
+@media screen and (min-width: 1400px) {
+  .hero-image > img {
+    width: 75%;
+  }
+  .heading {
+    font-size: 60rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    line-height: 1;
+    font-family: "DM Serif Display", serif;
+    margin-bottom: 30rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+  }
+  .heading {
+    font-size: 28rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .title {
+    font-size: 24rem;
+  }
+  .card-wrapper > .desc {
+    font-size: 14rem;
+  }
+  .common-padding {
+    padding: 20rem 80rem;
+  }
+  .hero-image {
+    position: relative;
+    height: auto;
+  }
+  .hero-image > img {
+    position: relative;
+  }
+  .heading {
+    font-size: 32rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .common-padding {
+    padding: 20rem 40rem;
+  }
+  .nav > ul > li {
+    padding: 6rem;
+  }
+  .top-right {
+    width: 40%;
+  }
+  .desc {
+    font-size: 14rem;
+  }
+  .heading {
+    font-size: 32rem;
+  }
+  .bottom-left,
+  .hero-extension {
+    display: none;
+  }
+  .bar-line.dark-grey {
+    display: block;
+    margin: 50rem 0;
+  }
+  .banner-title {
+    font-size: 40rem;
+  }
+  .banner-title,
+  .action-btn {
+    padding: 20rem 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  .nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .nav > ul > li {
+    display: block;
+  }
+  .hero-image {
+    display: none;
+  }
+  .top-right,
+  .bottom-left {
+    display: none;
+  }
+  .heading {
+    font-size: 32rem;
+  }
+  .hero > div {
+    width: 100%;
+    text-align: center;
+  }
+  .bar-line {
+    display: none;
+  }
+  .top-left {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bottom-right {
+    display: inline-block;
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+  }
+  .mobile-hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+  }
+
+  .mobile-hero-image > img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero-text {
+    margin: 40rem auto;
+  }
+  .hero-extension {
+    height: 100rem;
+  }
+
+  .bar-line.dark-grey {
+    margin: 50rem auto;
+  }
+
+  .heading {
+    text-align: center;
+  }
+  .highlights {
+    flex-direction: column;
+  }
+  .card-wrapper {
+    text-align: center;
+  }
+  .banner,
+  footer > .top,
+  .footer-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer > .top > div,
+  .menu-section {
+    margin: 20rem 0;
+  }
+  footer {
+    background-image: url("./insure-landing-page-master/images/bg-pattern-footer-mobile.svg");
+  }
+  .banner {
+    background-image: url("./insure-landing-page-master/images/bg-pattern-how-we-work-mobile.svg");
+  }
+  .banner-title {
+    font-size: 32rem;
+  }
+}
