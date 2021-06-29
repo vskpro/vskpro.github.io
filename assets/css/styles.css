@@ -225,6 +225,10 @@ section {
   );
 }
 
+.color-red-white {
+  background: linear-gradient(to bottom right, #f44336, rgb(67 60 59));
+}
+
 .work-items > .item > .top-right {
   right: 0;
   top: -6rem;
@@ -269,7 +273,7 @@ section {
 }
 
 .view-btn:hover {
-   transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 button:focus {
@@ -548,16 +552,16 @@ button:focus {
     right: 0.5rem;
   }
   .hero-text {
-      position: absolute;
-      bottom: 15%;
+    position: absolute;
+    bottom: 15%;
   }
   .hero-text > .big {
-      font-size: 3rem;
+    font-size: 3rem;
   }
-  .big-black-text  {
-      bottom: 5%;
+  .big-black-text {
+    bottom: 5%;
   }
   .item-split .glass-wrapper:first-child {
-      margin-top: 0;
+    margin-top: 0;
   }
 }
