@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/projects/netflix/static/css/main.fb175573.chunk.css",
-    "main.js": "/projects/netflix/static/js/main.fed0398d.chunk.js",
-    "main.js.map": "/projects/netflix/static/js/main.fed0398d.chunk.js.map",
-    "runtime-main.js": "/projects/netflix/static/js/runtime-main.93d169a4.js",
-    "runtime-main.js.map": "/projects/netflix/static/js/runtime-main.93d169a4.js.map",
-    "static/js/2.c51b3050.chunk.js": "/projects/netflix/static/js/2.c51b3050.chunk.js",
-    "static/js/2.c51b3050.chunk.js.map": "/projects/netflix/static/js/2.c51b3050.chunk.js.map",
-    "static/js/3.3c911765.chunk.js": "/projects/netflix/static/js/3.3c911765.chunk.js",
-    "static/js/3.3c911765.chunk.js.map": "/projects/netflix/static/js/3.3c911765.chunk.js.map",
-    "index.html": "/projects/netflix/",
-    "static/css/main.fb175573.chunk.css.map": "/projects/netflix/static/css/main.fb175573.chunk.css.map",
-    "static/js/2.c51b3050.chunk.js.LICENSE.txt": "/projects/netflix/static/js/2.c51b3050.chunk.js.LICENSE.txt"
+    "main.css": "/projects/netflix/static/css/main.6acd80c1.chunk.css",
+    "main.js": "/projects/netflix/static/js/main.3a0c6797.chunk.js",
+    "main.js.map": "/projects/netflix/static/js/main.3a0c6797.chunk.js.map",
+    "runtime-main.js": "/projects/netflix/static/js/runtime-main.e5335ec6.js",
+    "runtime-main.js.map": "/projects/netflix/static/js/runtime-main.e5335ec6.js.map",
+    "static/js/2.60ccc171.chunk.js": "/projects/netflix/static/js/2.60ccc171.chunk.js",
+    "static/js/2.60ccc171.chunk.js.map": "/projects/netflix/static/js/2.60ccc171.chunk.js.map",
+    "static/js/3.785717a6.chunk.js": "/projects/netflix/static/js/3.785717a6.chunk.js",
+    "static/js/3.785717a6.chunk.js.map": "/projects/netflix/static/js/3.785717a6.chunk.js.map",
+    "index.html": "/projects/netflix/index.html",
+    "static/css/main.6acd80c1.chunk.css.map": "/projects/netflix/static/css/main.6acd80c1.chunk.css.map",
+    "static/js/2.60ccc171.chunk.js.LICENSE.txt": "/projects/netflix/static/js/2.60ccc171.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.93d169a4.js",
-    "static/js/2.c51b3050.chunk.js",
-    "static/css/main.fb175573.chunk.css",
-    "static/js/main.fed0398d.chunk.js"
+    "static/js/runtime-main.e5335ec6.js",
+    "static/js/2.60ccc171.chunk.js",
+    "static/css/main.6acd80c1.chunk.css",
+    "static/js/main.3a0c6797.chunk.js"
   ]
 }
